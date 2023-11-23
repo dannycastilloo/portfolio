@@ -48,6 +48,7 @@
     border: none;
     cursor: pointer;
     font-family: 'Rubik-Regular';
+    width: 100%;
 }
 
 .button-contact {
