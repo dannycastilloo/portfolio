@@ -31,7 +31,7 @@
 }
 
 .project-button > span {
-    font-family: 'Rubik-Regular';
+    font-family: 'Rubik', sans-serif;
     font-size: 12px;
     margin-left: 10px;
 }
@@ -45,12 +45,12 @@
 }
 
 .project-right > h2 {
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto', sans-serif;
     
 }
 
 .project-right > p {
-    font-family: 'Rubik-Regular';
+    font-family: 'Rubik', sans-serif;
 }
 
 .technologies {
@@ -85,7 +85,7 @@
     }
     
     .project-right > p {
-        font-family: 'Rubik-Regular';
+        font-family: 'Rubik', sans-serif;
         font-size: 14px;
         text-align: center;
     }
@@ -120,7 +120,7 @@
     }
     
     .project-right > p {
-        font-family: 'Rubik-Regular';
+        font-family: 'Rubik', sans-serif;
         font-size: 16px;
         text-align: center;
     }

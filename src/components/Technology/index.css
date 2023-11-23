@@ -11,7 +11,8 @@
 }
 
 .btn-technology > span {
-    font-family: 'Rubik-Bold';
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
     font-size: 10px;
 }
 
@@ -21,7 +22,6 @@
     }
 
     .btn-technology > span {
-        font-family: 'Rubik-Regular';
         font-size: 8px;
     }
 }

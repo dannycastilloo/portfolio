@@ -8,20 +8,20 @@
 }
 
 .role {
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .time {
-    font-family: 'Rubik-Regular';
+    font-family: 'Rubik', sans-serif;
     color: #98A4AE;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
 .description {
-    font-family: 'Rubik-Regular';
+    font-family: 'Rubik', sans-serif;
     font-size: 14px;
     text-wrap: pretty;
     color: #DBDBDB;
@@ -51,7 +51,7 @@
     }
     
     .time {
-        font-family: 'Rubik-Regular';
+        font-family: 'Rubik', sans-serif;
         color: #98A4AE;
         font-size: 12px;
         margin-bottom: 20px;
@@ -59,7 +59,7 @@
     }
     
     .description {
-        font-family: 'Rubik-Regular';
+        font-family: 'Rubik', sans-serif;
         font-size: 12px;
         text-wrap: pretty;
         text-align: center;
@@ -89,7 +89,7 @@
     }
     
     .time {
-        font-family: 'Rubik-Regular';
+        font-family: 'Rubik', sans-serif;
         color: #98A4AE;
         font-size: 12px;
         margin-bottom: 20px;
@@ -97,7 +97,7 @@
     }
     
     .description {
-        font-family: 'Rubik-Regular';
+        font-family: 'Rubik', sans-serif;
         font-size: 12px;
         text-wrap: pretty;
         text-align: left;
