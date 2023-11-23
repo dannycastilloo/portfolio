@@ -1,0 +1,66 @@
+.education-container {
+    display: flex;
+    flex-direction: column; 
+    margin: 50px 0;
+}
+
+.education-card {
+    padding: 50px 45px;
+    background-color: white;
+    display: flex;
+   
+    margin: 0 auto;
+    border-radius: 15px;
+    max-width: 574px;
+    gap: 45px;
+}
+
+.education-card > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.education-card > p {
+    font-family: 'Rubik-Regular';
+    color: #242424;
+}
+
+@media (width <= 767px) {
+    .education-card {
+        padding: 20px 26px;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 50%;
+        gap: 5px;
+    }
+    
+    .education-card > img {
+        margin: 10px auto;
+        width: 150px;
+    }
+    
+    .education-card > p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media (768px <= width < 1440px) {
+    .education-card {
+        padding: 20px 26px;
+        margin: 0 auto;
+        border-radius: 15px;
+        max-width: 60%;
+        gap: 30px;
+    }
+    
+    .education-card > img {
+        display: block;
+        margin: 0 auto;
+        width: 220px;
+    }
+    
+    .education-card > p {
+        font-size: 14px;
+    }
+}

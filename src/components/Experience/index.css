@@ -1,0 +1,110 @@
+.experience-card {
+    display: flex;
+}
+
+.experience-info {
+    margin-right: auto;
+    width: 370px;
+}
+
+.role {
+    font-family: 'Roboto-Light';
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-family: 'Rubik-Regular';
+    color: #98A4AE;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Rubik-Regular';
+    font-size: 14px;
+    text-wrap: pretty;
+    color: #DBDBDB;
+}
+
+.company-image {
+    display: block;
+    margin: auto 0;
+}
+
+@media (width <= 767px) {
+    .experience-card {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 65%;
+    }
+
+    .experience-info {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .role {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .time {
+        font-family: 'Rubik-Regular';
+        color: #98A4AE;
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .description {
+        font-family: 'Rubik-Regular';
+        font-size: 12px;
+        text-wrap: pretty;
+        text-align: center;
+    }
+    
+    .company-image {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (768px <= width < 1440px) {
+    .experience-card {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .experience-info {
+        margin-right: 2rem;
+        width: 50%;
+    }
+    
+    .role {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .time {
+        font-family: 'Rubik-Regular';
+        color: #98A4AE;
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .description {
+        font-family: 'Rubik-Regular';
+        font-size: 12px;
+        text-wrap: pretty;
+        text-align: left;
+    }
+    
+    .company-image {
+        display: block;
+        margin: auto;
+    }
+}

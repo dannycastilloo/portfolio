@@ -1,0 +1,142 @@
+.profile-container {
+    display: flex;
+    padding: 100px 0;
+}
+
+.profile-info {
+    margin-right: auto;
+}
+
+.name {
+    font-family: 'RobotoSlab-Bold';
+    font-size: 60px;
+    margin-bottom: 18px;
+}
+
+.name > span {
+    color: #2979FF;
+}
+
+.career {
+    font-family: 'Rubik-Regular';
+    font-size: 20px;
+    color: #9BA7B1;
+    margin-bottom: 30px;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 25px;
+}
+
+.profile-actions * {
+    display: block;
+    margin: auto 0;
+}
+
+.icons-social {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.button-cv {
+    background-color: #2979FF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rubik-Regular';
+}
+
+.button-contact {
+    border: none;
+    background-color: #1B2332;
+    cursor: pointer;
+}
+
+.button-contact > img {
+    width: 24px;
+}
+
+@media (width <= 767px) {
+    .profile-container {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .profile-info {
+        margin: 0 auto;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .career {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .profile-actions {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .button-cv {
+        padding: 15px 20px;
+        margin-bottom: 10px;
+    }
+
+    .icons-social {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .my-photo {
+        display: block;
+        margin: 2.5rem auto 0 auto;
+    }
+}
+
+@media (768px <= width < 1440px) {
+    .profile-info {
+        margin: 0 auto;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .career {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    .profile-actions {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .button-cv {
+        padding: 15px 20px;
+        margin-bottom: 10px;
+    }
+
+    .icons-social {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .my-photo {
+        display: block;
+        margin: 0 auto;
+    }
+}

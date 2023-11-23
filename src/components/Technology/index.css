@@ -1,0 +1,33 @@
+.btn-technology {
+    display: flex;
+    gap: 5px;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.btn-technology *  {
+    margin: auto;
+}
+
+.btn-technology > span {
+    font-family: 'Rubik-Bold';
+    font-size: 10px;
+}
+
+@media (width <= 767px) {
+    .btn-technology {
+        margin: 0 auto;
+    }
+
+    .btn-technology > span {
+        font-family: 'Rubik-Regular';
+        font-size: 8px;
+    }
+}
+
+@media (768px <= width < 1440px) {
+    .btn-technology {
+        margin: 0 auto;
+    }
+}

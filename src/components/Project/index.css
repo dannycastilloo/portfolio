@@ -1,0 +1,135 @@
+.project-card {
+    display: flex;
+    padding: 40px;
+}
+
+.project-left {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-actions {
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+}
+
+.project-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    background-color: #173459;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    width: 110px;
+    cursor: pointer;
+}
+
+.project-button > span {
+    font-family: 'Rubik-Regular';
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.project-button:hover {
+    background-color: #3498DB;
+}
+
+.project-right {
+    width: 355px;
+}
+
+.project-right > h2 {
+    font-family: 'Roboto-Light';
+    
+}
+
+.project-right > p {
+    font-family: 'Rubik-Regular';
+}
+
+.technologies {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+}
+
+@media (width <= 767px) {
+    .project-card {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0 auto 2rem auto;
+        width: 65%;
+    }
+
+    .project-left {
+        margin-right: 0;
+        gap: 20px;
+        margin-bottom: 10px
+    }
+
+    .project-right {
+        width: 100%;
+    }
+    
+    .project-right > h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project-right > p {
+        font-family: 'Rubik-Regular';
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .technologies {
+        gap: 15px;
+        width: 100%;
+    }
+}
+
+@media (768px <= width < 1440px) {
+    .project-card {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0 auto 3rem auto;
+        width: 68%;
+    }
+
+    .project-left {
+        margin-right: 0;
+        gap: 20px;
+        margin-bottom: 10px
+    }
+
+    .project-right {
+        width: 100%;
+    }
+    
+    .project-right > h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .project-right > p {
+        font-family: 'Rubik-Regular';
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .technologies {
+        margin: 1.5rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+    }
+}

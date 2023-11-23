@@ -1,0 +1,102 @@
+/* Roboto Slab */
+@font-face {
+    font-family: RobotoSlab-Bold;
+    src: url(./fonts/Roboto_Slab/RobotoSlab-Bold.ttf);
+}
+
+/* Rubik */
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(./fonts/Rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(./fonts/Rubik/Rubik-Bold.ttf);
+}
+
+/* Roboto */
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+
+body {
+    background-color: #1B2332;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    right: 5%;
+    top: 36%;
+    gap: 3rem;
+    position: fixed;
+}
+
+@media (width <= 452px) {
+    header {
+        top: 40%;
+    }
+
+    .navbar-icon {
+        width: 25px;
+    }
+}
+
+@media (width >= 768px) {
+    header {
+        gap: 2.5rem;
+        top: 38%;
+    }
+}
+
+.main {
+    max-width: 749px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (width <= 899px) {
+    main {
+        max-width: 550px;
+    }
+}
+
+@media (900px <= width <= 1200px) {
+    main {
+        max-width: 700px;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Roboto-Bold';
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.experience-container {
+    margin: 50px 0;
+}
+
+a {
+    text-decoration: none;
+}
