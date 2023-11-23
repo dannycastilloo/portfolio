@@ -11,9 +11,10 @@ import '../App.css'
 function MainView() {
 
     const htmlColor = { r: 255, g: 112, b: 67 };
-    const cssColor = { r: 23, g: 52, b: 89 };
+    const cssColor = { r: 109, g: 181, b: 233 };
     const jsColor = {r: 234, g: 181, b: 18 };
-    const reactColor = { r: 85, g: 95, b: 102 };
+    const tsColor = {r: 137, g: 194, b: 255 };
+    const reactColor = { r: 48, g: 49, b: 52 };
     const firebaseColor = {r: 3, g: 155, b: 229 };
     const figmaColor = {r: 0, g: 0, b: 0 };
     const tailwindColor = {r: 14, g: 211, b: 207 };
@@ -74,7 +75,7 @@ function MainView() {
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
-                            { img: './icons/JavaScript.svg', name: 'JS', backgroundColor: jsColor },
+                            { img: './icons/JavaScript.svg', name: 'JavaScript', backgroundColor: jsColor },
                             { img: './icons/React.svg', name: 'React', backgroundColor: reactColor },
                             { img: './icons/Firebase.svg', name: 'Firebase', backgroundColor: firebaseColor },
                             { img: './icons/Bootstrap.svg', name: 'Bootstrap', backgroundColor: bootstrapColor },
@@ -89,7 +90,7 @@ function MainView() {
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
-                            { img: './icons/JavaScript.svg', name: 'JS', backgroundColor: jsColor },
+                            { img: './icons/JavaScript.svg', name: 'JavaScript', backgroundColor: jsColor },
                             { img: './icons/React.svg', name: 'React', backgroundColor: reactColor },
                             { img: './icons/Bootstrap.svg', name: 'Bootstrap', backgroundColor: bootstrapColor },
                             { img: './icons/Figma.svg', name: 'Figma', backgroundColor: figmaColor },
@@ -103,7 +104,7 @@ function MainView() {
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
-                            { img: './icons/JavaScript.svg', name: 'JS', backgroundColor: jsColor },
+                            { img: './icons/JavaScript.svg', name: 'JavaScript', backgroundColor: jsColor },
                             { img: './icons/React.svg', name: 'React', backgroundColor: reactColor },
                             { img: './icons/Bootstrap.svg', name: 'Bootstrap', backgroundColor: bootstrapColor },
                             { img: './icons/Figma.svg', name: 'Figma', backgroundColor: figmaColor },
@@ -117,7 +118,7 @@ function MainView() {
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
-                            { img: './icons/JavaScript.svg', name: 'JS', backgroundColor: jsColor },
+                            { img: './icons/TypeScript.svg', name: 'TypeScript', backgroundColor: tsColor },
                             { img: './icons/React.svg', name: 'React', backgroundColor: reactColor },
                             { img: './icons/Tailwind.svg', name: 'Figma', backgroundColor: tailwindColor },
                         ]} />

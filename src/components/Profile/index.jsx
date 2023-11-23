@@ -18,7 +18,7 @@ function Profile() {
                                 <img src='./contact/Linkedin.svg' alt='Linkedin' />
                             </button>
                         </a>
-                        <a href="https://www.linkedin.com/in/dannycastilloo/">
+                        <a href="https://github.com/dannycastilloo">
                             <button className='button-contact'>
                                 <img src='./contact/Github.svg' alt='Github' />
                             </button>
