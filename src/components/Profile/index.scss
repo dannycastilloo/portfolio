@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .profile-container {
     display: flex;
     padding: 100px 0;
@@ -8,7 +10,7 @@
 }
 
 .name {
-    font-family: 'Roboto Slab', serif;
+    font-family: $roboto;
     font-size: 60px;
     margin-bottom: 18px;
 }
@@ -53,7 +55,7 @@
 
 .button-contact {
     border: none;
-    background-color: #1B2332;
+    background-color: $background;
     cursor: pointer;
 }
 

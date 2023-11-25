@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 
 function Technology({ img, name, backgroundColor }) {
   const defaultColor = { r: 0, g: 0, b: 0 };

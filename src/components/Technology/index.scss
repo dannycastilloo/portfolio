@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .btn-technology {
     display: flex;
     gap: 5px;
@@ -11,7 +13,7 @@
 }
 
 .btn-technology > span {
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
     font-weight: bold;
     font-size: 10px;
 }

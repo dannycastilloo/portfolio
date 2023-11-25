@@ -6,19 +6,19 @@ import Experience from '../components/Experience'
 import Project from '../components/Project'
 import Education from '../components/Education'
 
-import '../App.css'
+import '../App.scss'
 
 function MainView() {
 
     const htmlColor = { r: 255, g: 112, b: 67 };
     const cssColor = { r: 109, g: 181, b: 233 };
-    const jsColor = {r: 234, g: 181, b: 18 };
-    const tsColor = {r: 137, g: 194, b: 255 };
+    const jsColor = { r: 234, g: 181, b: 18 };
+    const tsColor = { r: 137, g: 194, b: 255 };
     const reactColor = { r: 48, g: 49, b: 52 };
-    const firebaseColor = {r: 3, g: 155, b: 229 };
-    const figmaColor = {r: 0, g: 0, b: 0 };
-    const tailwindColor = {r: 14, g: 211, b: 207 };
-    const bootstrapColor = {r: 86, g: 61, b: 124 };
+    const firebaseColor = { r: 3, g: 155, b: 229 };
+    const figmaColor = { r: 0, g: 0, b: 0 };
+    const tailwindColor = { r: 14, g: 211, b: 207 };
+    const bootstrapColor = { r: 86, g: 61, b: 124 };
 
     return (
         <>
@@ -49,12 +49,6 @@ function MainView() {
 
                 <div className='experience-container' id='experience'>
                     <h2 className='subtitle'>Experience</h2>
-                    <Experience
-                        role='Web Design Lead'
-                        time='September 2023 - Present'
-                        description='I lead my work team, supervising and managing projects, guaranteeing punctual deliveries and exceptional quality. I collaborate in the design and prototyping of the aesthetics and the flow of interactive applications, encouraging creativity and cooperation.'
-                        logo='./jobs/Devdatep.svg'
-                        title='Devdatep' />
 
                     <Experience
                         role='Full Stack Developer'
@@ -62,6 +56,13 @@ function MainView() {
                         description='I contribute to the design of the application flows to be implemented. Additionally, I am skilled in creating interactive prototypes for proposed solutions and developing fully functional web applications using a collaborative approach.'
                         logo='./jobs/Tecnovedades.svg'
                         title='Tecnovedades' />
+
+                    <Experience
+                        role='Web Design Lead'
+                        time='September 2023 - Present'
+                        description='I lead my work team, supervising and managing projects, guaranteeing punctual deliveries and exceptional quality. I collaborate in the design and prototyping of the aesthetics and the flow of interactive applications, encouraging creativity and cooperation.'
+                        logo='./jobs/Devdatep.svg'
+                        title='Devdatep' />
                 </div>
 
                 <div className='project-container' id='projects'>

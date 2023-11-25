@@ -1,5 +1,8 @@
+@import '../../App.scss';
+
 .experience-card {
     display: flex;
+    margin: 4rem 0;
 }
 
 .experience-info {
@@ -8,21 +11,20 @@
 }
 
 .role {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .time {
-    font-family: 'Rubik', sans-serif;
-    color: #98A4AE;
+    font-family: $rubik;
+    color: $lightgray;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
 .description {
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
+    font-family: $rubik;
     text-wrap: pretty;
     color: #DBDBDB;
 }
@@ -35,7 +37,7 @@
 @media (width <= 767px) {
     .experience-card {
         flex-direction: column;
-        margin: 0 auto;
+        margin: 2rem auto;
         width: 65%;
     }
 
@@ -51,17 +53,13 @@
     }
     
     .time {
-        font-family: 'Rubik', sans-serif;
-        color: #98A4AE;
         font-size: 12px;
         margin-bottom: 20px;
         text-align: center;
     }
     
     .description {
-        font-family: 'Rubik', sans-serif;
         font-size: 12px;
-        text-wrap: pretty;
         text-align: center;
     }
     
@@ -89,17 +87,13 @@
     }
     
     .time {
-        font-family: 'Rubik', sans-serif;
-        color: #98A4AE;
         font-size: 12px;
         margin-bottom: 20px;
         text-align: left;
     }
     
     .description {
-        font-family: 'Rubik', sans-serif;
         font-size: 12px;
-        text-wrap: pretty;
         text-align: left;
     }
     

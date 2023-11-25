@@ -1,5 +1,5 @@
 import Technology from '../Technology'
-import './index.css'
+import './index.scss'
 
 function Project({ screenshot, title, description, repo, page, technologies }) {
     return (

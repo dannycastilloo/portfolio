@@ -1,6 +1,9 @@
+@import '../../App.scss';
+
 .project-card {
     display: flex;
-    padding: 40px;
+    margin: 40px 0;
+    padding: 2rem 0;
 }
 
 .project-left {
@@ -31,7 +34,7 @@
 }
 
 .project-button > span {
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
     font-size: 12px;
     margin-left: 10px;
 }
@@ -41,16 +44,16 @@
 }
 
 .project-right {
-    width: 355px;
+    width: 400px;
 }
 
 .project-right > h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     
 }
 
 .project-right > p {
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
 }
 
 .technologies {
@@ -58,7 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 80%;
+    width: 100%;
 }
 
 @media (width <= 767px) {
@@ -85,7 +88,6 @@
     }
     
     .project-right > p {
-        font-family: 'Rubik', sans-serif;
         font-size: 14px;
         text-align: center;
     }
@@ -120,7 +122,6 @@
     }
     
     .project-right > p {
-        font-family: 'Rubik', sans-serif;
         font-size: 16px;
         text-align: center;
     }

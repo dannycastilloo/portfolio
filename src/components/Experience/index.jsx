@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 
 function Experience({ role, time, description, logo, title }) {
     return (

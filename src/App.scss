@@ -1,0 +1,73 @@
+/* Fonts */
+$roboto: 'Roboto', sans-serif;
+$rubik: 'Rubik', sans-serif;
+
+/* Colors */
+$background: #1B2332;
+$lightgray: #98A4AE;
+
+/* General Styles */
+body {
+    background-color: $background;
+    color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    right: 5%;
+    top: 36%;
+    gap: 3rem;
+    position: fixed;
+}
+
+@media (width <= 452px) {
+    header {
+        top: 40%;
+    }
+
+    .navbar-icon {
+        width: 25px;
+    }
+}
+
+@media (width >= 768px) {
+    header {
+        gap: 2.5rem;
+        top: 38%;
+    }
+}
+
+.main {
+    max-width: 749px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (width <= 899px) {
+    main {
+        max-width: 550px;
+    }
+}
+
+@media (900px <= width <= 1200px) {
+    main {
+        max-width: 700px;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    font-family: $roboto;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.experience-container {
+    margin: 50px 0;
+}
+
+a {
+    text-decoration: none;
+}
