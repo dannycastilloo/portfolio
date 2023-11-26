@@ -72,7 +72,7 @@ function MainView() {
                         title='Smart Reserve'
                         description='Computer reservation system with a statistical graph generator and warehouse management.'
                         repo='https://github.com/dannycastilloo/Smart-Reserve'
-                        page=''
+                        page='https://smart-reserve.vercel.app/'
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
@@ -84,10 +84,10 @@ function MainView() {
                         ]} />
                     <Project
                         screenshot='./projects/MusicShop.svg'
-                        title='Music Shop'
+                        title='Audioluxe'
                         description='Marketplace application that allows users to sell and buy instruments around the world.'
                         repo='https://github.com/dannycastilloo/Music-Shop'
-                        page=''
+                        page='https://audioluxe.vercel.app/'
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
@@ -101,7 +101,7 @@ function MainView() {
                         title='SciLink'
                         description='NASA hackaton project that allows users to share their projects and receive support from investors.'
                         repo='https://github.com/dannycastilloo/SciLink'
-                        page=''
+                        page='https://sci-link.vercel.app/'
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
@@ -112,10 +112,10 @@ function MainView() {
                         ]} />
                     <Project
                         screenshot='./projects/Shopi.svg'
-                        title='Shopi'
+                        title='Shocket'
                         description='Clothing store that allows purchasing products, filtering and saving them in their shopping cart.'
                         repo='https://github.com/dannycastilloo/Shopi'
-                        page=''
+                        page='https://shocket.vercel.app/'
                         technologies={[
                             { img: './icons/HTML.svg', name: 'HTML', backgroundColor: htmlColor },
                             { img: './icons/CSS.svg', name: 'CSS', backgroundColor: cssColor },
