@@ -65,10 +65,10 @@ function MainView() {
                         title='Devdatep' />
                 </div>
 
+                <h2 className='subtitle'>Projects</h2>
                 <div className='project-container' id='projects'>
-                    <h2 className='subtitle'>Projects</h2>
                     <Project
-                        screenshot='./projects/SmartReserve.svg'
+                        screenshot='./projects/SmartReserve.png'
                         title='Smart Reserve'
                         description='Computer reservation system with a statistical graph generator and warehouse management.'
                         repo='https://github.com/dannycastilloo/Smart-Reserve'
@@ -83,7 +83,7 @@ function MainView() {
                             { img: './icons/Figma.svg', name: 'Figma', backgroundColor: figmaColor },
                         ]} />
                     <Project
-                        screenshot='./projects/MusicShop.svg'
+                        screenshot='./projects/Audioluxe.png'
                         title='Audioluxe'
                         description='Marketplace application that allows users to sell and buy instruments around the world.'
                         repo='https://github.com/dannycastilloo/Music-Shop'
@@ -97,7 +97,7 @@ function MainView() {
                             { img: './icons/Figma.svg', name: 'Figma', backgroundColor: figmaColor },
                         ]} />
                     <Project
-                        screenshot='./projects/SciLink.svg'
+                        screenshot='./projects/SciLink.png'
                         title='SciLink'
                         description='NASA hackaton project that allows users to share their projects and receive support from investors.'
                         repo='https://github.com/dannycastilloo/SciLink'
@@ -111,7 +111,7 @@ function MainView() {
                             { img: './icons/Figma.svg', name: 'Figma', backgroundColor: figmaColor },
                         ]} />
                     <Project
-                        screenshot='./projects/Shopi.svg'
+                        screenshot='./projects/Shocket.png'
                         title='Shocket'
                         description='Clothing store that allows purchasing products, filtering and saving them in their shopping cart.'
                         repo='https://github.com/dannycastilloo/Shopi'

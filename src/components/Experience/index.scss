@@ -2,24 +2,24 @@
 
 .experience-card {
     display: flex;
-    margin: 4rem 0;
+    margin: 5rem 0;
+    gap: 20rem;
 }
 
 .experience-info {
     margin-right: auto;
-    width: 370px;
 }
 
 .role {
     font-family: $roboto;
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
 .time {
     font-family: $rubik;
     color: $lightgray;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -27,6 +27,7 @@
     font-family: $rubik;
     text-wrap: pretty;
     color: #DBDBDB;
+    font-size: 20px;
 }
 
 .company-image {
@@ -39,11 +40,13 @@
         flex-direction: column;
         margin: 2rem auto;
         width: 65%;
+        gap: 1rem;
     }
 
     .experience-info {
-        margin-right: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
+        padding: 0 1rem;
     }
     
     .role {
@@ -60,24 +63,30 @@
     
     .description {
         font-size: 14px;
-        text-align: center;
+        line-height: 20px;
     }
     
     .company-image {
         display: block;
         margin: 10px auto;
     }
+
+    .company-image > img {
+        width: 200px;
+    }
 }
 
 @media (768px <= width < 1440px) {
     .experience-card {
-        margin: 0 auto;
+        display: flex;
+        gap: 0;
+        margin: 4rem auto;
         width: 70%;
     }
 
     .experience-info {
         margin-right: 2rem;
-        width: 50%;
+        width: 40%;
     }
     
     .role {
@@ -100,5 +109,9 @@
     .company-image {
         display: block;
         margin: auto;
+    }
+
+    .company-image > img {
+        width: 200px;
     }
 }

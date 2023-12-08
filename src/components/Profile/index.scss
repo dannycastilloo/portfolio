@@ -2,17 +2,20 @@
 
 .profile-container {
     display: flex;
-    padding: 100px 0;
+    padding: 150px 0;
+    align-items: center;
 }
 
 .profile-info {
     margin-right: auto;
+    text-align: center;
 }
 
 .name {
     font-family: $roboto-slab;
-    font-size: 60px;
-    margin-bottom: 18px;
+    font-size: 64px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .name > span {
@@ -21,14 +24,15 @@
 
 .career {
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: #9BA7B1;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .profile-actions {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .profile-actions * {
@@ -40,17 +44,23 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
+    margin: 0 auto;
 }
 
 .button-cv {
     background-color: #2979FF;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 20px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
     font-family: 'Rubik', sans-serif;
     width: 100%;
+    font-weight: bold;
+}
+
+.button-cv:hover {
+    background-color: #196bf8;
 }
 
 .button-contact {
@@ -60,13 +70,19 @@
 }
 
 .button-contact > img {
-    width: 24px;
+    width: 30px;
 }
 
-@media (width <= 767px) {
+.photo {
+    display: block;
+    width: 20rem;
+}
+
+@media (width < 768px) {
     .profile-container {
         flex-direction: column;
         padding: 30px 0;
+        gap: 50px;
     }
 
     .profile-info {
@@ -74,57 +90,63 @@
     }
 
     .name {
-        text-align: center;
         font-size: 2.5rem;
+        margin-bottom: 25px;
     }
 
     .career {
-        text-align: center;
         font-size: 1rem;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .profile-actions {
         gap: 10px;
-        flex-direction: column;
     }
 
     .button-cv {
         padding: 15px 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .icons-social {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
     }
 
     .my-photo {
-        display: block;
-        margin: 2.5rem auto 0 auto;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
 
 @media (768px <= width < 1440px) {
+    .profile-container {
+        gap: 0;
+    }
+
     .profile-info {
         margin: 0 auto;
     }
 
     .name {
-        text-align: center;
-        font-size: 3rem;
+        font-size: 40px;
     }
 
     .career {
-        text-align: center;
-        font-size: 1.1rem;
+        font-size: 16px;
         margin-bottom: 25px;
     }
 
     .profile-actions {
         gap: 10px;
-        flex-direction: column;
     }
 
     .button-cv {
@@ -135,11 +157,17 @@
     .icons-social {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
     }
 
     .my-photo {
-        display: block;
         margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo {
+        width: 200px;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -34,36 +34,17 @@ header {
     }
 }
 
-@media (width >= 768px) {
-    header {
-        gap: 2.5rem;
-        top: 38%;
-    }
-}
-
 .main {
-    max-width: 749px;
+    max-width: 1000px;
     display: block;
     margin: 0 auto;
 }
 
-@media (width <= 899px) {
-    main {
-        max-width: 550px;
-    }
-}
-
-@media (900px <= width <= 1200px) {
-    main {
-        max-width: 700px;
-    }
-}
-
 .subtitle {
     text-align: center;
-    font-family: $roboto;
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-family: $roboto-slab;
+    font-size: 48px;
+    margin: 50px auto;
     color: $blue;
     font-weight: bold;
 }
@@ -74,4 +55,26 @@ header {
 
 a {
     text-decoration: none;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (width < 768px) {
+    header {
+        gap: 2.5rem;
+        top: 38%;
+    }
+
+    .subtitle {
+        font-size: 36px;
+    }
+
+}
+
+@media (768px <= width < 1440px) {
 }

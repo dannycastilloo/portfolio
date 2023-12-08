@@ -37,7 +37,7 @@ function Profile() {
                 </div>
             </div>
             <div className='my-photo'>
-                <img src='./Danny.svg' alt="Danny Castillo" />
+                <img className='photo' src='./Danny.png' alt="Danny Castillo" />
             </div>
         </>
     )
