@@ -1,10 +1,12 @@
 /* Fonts */
 $roboto: 'Roboto', sans-serif;
 $rubik: 'Rubik', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
 
 /* Colors */
-$background: #1B2332;
+$background: #1E1E1E;
 $lightgray: #98A4AE;
+$blue: #2979FF;
 
 /* General Styles */
 body {
@@ -60,8 +62,10 @@ header {
 .subtitle {
     text-align: center;
     font-family: $roboto;
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 40px;
+    color: $blue;
+    font-weight: bold;
 }
 
 .experience-container {
