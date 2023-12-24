@@ -4,4 +4,11 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    width: 40px;
+}
+
+@media (width < 768px) {
+    .navbar-icon {
+        width: 24px;
+    }
 }

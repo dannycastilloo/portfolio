@@ -4,9 +4,10 @@ $rubik: 'Rubik', sans-serif;
 $roboto-slab: 'Roboto Slab', serif;
 
 /* Colors */
-$background: #1E1E1E;
+$background: #1A1A1A;
 $lightgray: #98A4AE;
 $blue: #2979FF;
+$skyblue: #3498DB;
 
 /* General Styles */
 body {
@@ -22,16 +23,6 @@ header {
     top: 36%;
     gap: 3rem;
     position: fixed;
-}
-
-@media (width <= 452px) {
-    header {
-        top: 40%;
-    }
-
-    .navbar-icon {
-        width: 25px;
-    }
 }
 
 .main {
@@ -66,8 +57,21 @@ a {
 
 @media (width < 768px) {
     header {
-        gap: 2.5rem;
-        top: 38%;
+        left: 0;
+        right: 0;
+        top: auto;
+        flex-direction: row;
+        height: auto;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        bottom: 1.5%;
+        z-index: 1000;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #292929e6;
+        gap: 50px;
+        border-radius: 15px;
     }
 
     .subtitle {
@@ -76,5 +80,10 @@ a {
 
 }
 
-@media (768px <= width < 1440px) {
+@media (768px <=width < 1440px) {
+
+    .subtitle {
+        font-size: 32px;
+    }
+
 }

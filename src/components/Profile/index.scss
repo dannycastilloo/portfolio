@@ -2,8 +2,10 @@
 
 .profile-container {
     display: flex;
-    padding: 150px 0;
+    padding: 140px 0;
     align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .profile-info {
@@ -57,6 +59,7 @@
     font-family: 'Rubik', sans-serif;
     width: 100%;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .button-cv:hover {
@@ -130,6 +133,8 @@
 @media (768px <= width < 1440px) {
     .profile-container {
         gap: 0;
+        max-width: 650px;
+        padding: 80px 0;
     }
 
     .profile-info {
