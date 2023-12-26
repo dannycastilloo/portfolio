@@ -52,14 +52,14 @@ function MainView() {
 
                     <Experience
                         role='Full Stack Developer'
-                        time='October 2023 - Present'
+                        time='Tecnovedades Web | October 2023 - Present'
                         description='I contribute to the design of the application flows to be implemented. Additionally, I am skilled in creating interactive prototypes for proposed solutions and developing fully functional web applications using a collaborative approach.'
                         logo='./jobs/Tecnovedades.svg'
                         title='Tecnovedades' />
 
                     <Experience
                         role='Web Design Lead'
-                        time='September 2023 - Present'
+                        time='Devdatep Consulting | September 2023 - December 2023'
                         description='I lead my work team, supervising and managing projects, guaranteeing punctual deliveries and exceptional quality. I collaborate in the design and prototyping of the aesthetics and the flow of interactive applications, encouraging creativity and cooperation.'
                         logo='./jobs/Devdatep.svg'
                         title='Devdatep' />

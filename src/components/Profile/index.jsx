@@ -7,7 +7,7 @@ function Profile() {
                 <h1 className='name'>Danny <span>Castillo</span></h1>
                 <h2 className='career'>Frontend Developer and UI/UX Designer</h2>
                 <div className='profile-actions'>
-                    <a href="./Danny_Castillo_CV.pdf">
+                    <a href="/Danny_Castillo_CV.pdf">
                         <button className='button-cv'>
                             Download CV
                         </button>

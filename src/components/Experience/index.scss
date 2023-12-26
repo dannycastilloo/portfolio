@@ -2,12 +2,13 @@
 
 .experience-card {
     display: flex;
-    margin: 5rem 0;
+    margin: 5rem auto;
     gap: 12rem;
-}
-
-.experience-info {
-    margin-right: auto;
+    box-shadow: 0 0 10px rgba(219, 219, 219, 0.2);
+    padding: 30px 50px;
+    border-radius: 25px;
+    border: 1px solid #848484;
+    width: 80%;
 }
 
 .role {
@@ -20,7 +21,7 @@
 .time {
     font-family: $rubik;
     color: $lightgray;
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
@@ -28,26 +29,17 @@
     font-family: $rubik;
     text-wrap: pretty;
     color: #DBDBDB;
-    font-size: 20px;
-}
-
-.company-image {
-    display: block;
-    margin: auto 0;
+    font-size: 22px;
+    line-height: 32px;
 }
 
 @media (width <=767px) {
     .experience-card {
         flex-direction: column;
         margin: 20px auto;
-        width: 95%;
+        width: 65%;
         gap: 1rem;
-    }
-
-    .experience-info {
-        margin: 0 auto;
-        width: 80%;
-        padding: 0 1rem;
+        padding: 20px 30px;
     }
 
     .role {
@@ -64,17 +56,6 @@
         font-size: 16px;
         line-height: 20px;
     }
-
-    .company-image {
-        display: block;
-        margin: 10px auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .company-image > img {
-        width: 280px;
-    }
 }
 
 @media (768px <=width < 1440px) {
@@ -82,37 +63,25 @@
         display: flex;
         gap: 0;
         margin: 4rem auto;
-        width: 70%;
-    }
-
-    .experience-info {
-        margin-right: 2rem;
-        width: 40%;
+        width: 60%;
+        padding: 30px;
     }
 
     .role {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 24px;
+        margin-bottom: 16px;
         text-align: left;
     }
 
     .time {
-        font-size: 12px;
-        margin-bottom: 20px;
+        font-size: 16px;
+        margin-bottom: 16px;
         text-align: left;
     }
 
     .description {
-        font-size: 12px;
+        font-size: 16px;
         text-align: left;
-    }
-
-    .company-image {
-        display: block;
-        margin: auto;
-    }
-
-    .company-image>img {
-        width: 200px;
+        line-height: 24px;
     }
 }
