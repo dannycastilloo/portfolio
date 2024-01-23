@@ -7,8 +7,9 @@
     border-radius: 4px;
 }
 
-.btn-technology *  {
+.btn-technology > img {
     margin: auto;
+    width: 24px;
 }
 
 @media (width <= 767px) {
@@ -16,13 +17,18 @@
         margin: 0 auto;
     }
 
-    .btn-technology > span {
-        font-size: 8px;
+    .btn-technology > img {
+        margin: auto;
+        width: 14px;
     }
 }
 
 @media (768px <= width < 1440px) {
     .btn-technology {
         margin: 0 auto;
+    }
+
+    .btn-technology > img {
+        width: 20px;
     }
 }

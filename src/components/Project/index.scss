@@ -2,99 +2,81 @@
 
 .project-card {
     display: flex;
-    flex-direction: column;
     margin: 40px auto;
-    padding: 40px 40px 0 40px;
+    padding: 40px;
     border: 1px solid #848484;
     border-radius: 20px;
-    gap: 40px;
+    gap: 60px;
     box-shadow: 0 0 20px rgba(219, 219, 219, 0.2);
+    max-width: 82%;
 }
 
 .project-name {
-    margin: 0 auto;
     color: $skyblue;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .project-img {
     margin: 0 auto;
     display: flex;
-    gap: 25px;
     justify-content: center;
     align-items: center;
 }
 
-.project-img > img{
-    
-    width: 250px;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 4px;
-    background-color: #173459;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    color: white;
-    width: 110px;
-    cursor: pointer;
-}
-
-.project-button > span {
-    font-family: $rubik;
-    font-size: 12px;
-    margin-left: 10px;
-}
-
-.project-button:hover {
-    background-color: #3498DB;
+.project-img > img {
+    width: 400px;
 }
 
 .project-info {
-    width: 300px;
-    text-align: center;
-    font-size: 18px;
-    gap: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .project-info > h2 {
     font-family: $roboto;
-    
+    margin: 0;
 }
 
 .project-info > p {
     font-family: $rubik;
+    font-size: 20px;
 }
 
 .technologies {
-    margin: 0 auto 40px auto;
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    width: 100%;
+    padding: 12px 15px;
+    background-color: #1E1E1E;
+    border-radius: 6px;
+    margin-top: auto;
 }
 
 @media (width < 768px) {
     .project-card {
         margin: 20px auto;
-        padding: 40px 25px 20px 25px;
-    }
-
-    .project-info {
-        width: 220px;
+        padding: 40px 20px;
+        gap: 30px;
+        flex-direction: column;
+        max-width: 80%;
     }
 
     .project-img > img{
-        width: 180px;
+        width: 90%;
+    }
+
+    .project-info {
+        margin: auto;
+    }
+
+    .project-info > h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project-info > p {
+        font-size: 16px;
+        text-align: center;
     }
 
     .technologies {
@@ -105,5 +87,11 @@
 }
 
 @media (768px <= width < 1440px) {
+    .project-card {
+        max-width: 60%;
+    }
 
+    .project-img > img {
+        width: 200px;
+    }
 }

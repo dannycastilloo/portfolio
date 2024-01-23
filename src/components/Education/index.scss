@@ -7,14 +7,13 @@
 }
 
 .education-card {
-    padding: 50px 45px;
+    padding: 50px 80px;
     background-color: white;
     display: flex;
-   
     margin: 0 auto;
     border-radius: 15px;
-    max-width: 574px;
-    gap: 45px;
+    max-width: 780px;
+    gap: 80px;
 }
 
 .education-card > img {
@@ -22,44 +21,68 @@
     margin: 0 auto;
 }
 
-.education-card > p {
+.education-career {
     font-family: $rubik;
     color: #242424;
+    font-size: 24px;
+}
+
+.education-time {
+    font-family: $rubik;
+    color: #515151;
+    font-size: 20px;
+}
+
+.education-desc {
+    font-family: $rubik;
+    color: #242424;
+    font-size: 20px;
 }
 
 @media (width <= 767px) {
     .education-card {
-        padding: 20px 26px;
+        padding: 40px 20px;
         flex-direction: column;
         margin: 0 auto;
-        max-width: 50%;
-        gap: 5px;
+        max-width: 80%;
+        gap: 10px;
     }
     
     .education-card > img {
         margin: 10px auto;
-        width: 150px;
+        width: 220px;
     }
     
     .education-card > p {
         text-align: center;
         font-size: 14px;
     }
+
+    .education-career {
+        font-size: 20px;
+    }
+    
+    .education-time {
+        font-size: 16px;
+    }
+    
+    .education-desc {
+        font-size: 16px;
+    }
 }
 
 @media (768px <= width < 1440px) {
     .education-card {
-        padding: 20px 26px;
+        padding: 20px 40px;
         margin: 0 auto;
         border-radius: 15px;
         max-width: 60%;
-        gap: 30px;
     }
     
     .education-card > img {
         display: block;
         margin: 0 auto;
-        width: 220px;
+        width: 200px;
     }
     
     .education-card > p {

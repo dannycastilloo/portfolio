@@ -129,6 +129,8 @@ function MainView() {
                     <Education
                         img='./education/TECSUP.svg'
                         title='TECSUP'
+                        career='Software Design & Development'
+                        time='March 2021 - December 2023'
                         description='My performance as a student of the Software Design and Development career positioned me in the top third and made me obtain the 2022 Pronabec Scholarship.' />
                 </div>
             </div>

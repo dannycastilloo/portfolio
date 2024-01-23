@@ -8,7 +8,7 @@ function Project({ screenshot, title, description, repo, page, technologies }) {
                 <img src={screenshot} alt={title} />
             </div>
             <div className='project-info'>
-                <h2 className='project-name' >{title}</h2>
+                <h2 className='project-name'>{title}</h2>
                 <p>{description}</p>
                 <div className='technologies'>
                     {technologies.map((tech, index) => (
