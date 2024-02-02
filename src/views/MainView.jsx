@@ -51,17 +51,21 @@ function MainView() {
                     <h2 className='subtitle'>Experience</h2>
 
                     <Experience
+                        role='Web Developer'
+                        time='Consigue Ventas | January 2024 - Present'
+                        description='Creation, modification and optimization of websites. Analysis of the user needs to determine functional requirements. Configuration and maintenance of web hosting.'
+                        title='Consigue Ventas' />
+
+                    <Experience
                         role='Full Stack Developer'
-                        time='Tecnovedades Web | October 2023 - Present'
+                        time='Tecnovedades Web | October 2023 - February 2024'
                         description='I contribute to the design of the application flows to be implemented. Additionally, I am skilled in creating interactive prototypes for proposed solutions and developing fully functional web applications using a collaborative approach.'
-                        logo='./jobs/Tecnovedades.svg'
                         title='Tecnovedades' />
 
                     <Experience
                         role='Web Design Lead'
                         time='Devdatep Consulting | September 2023 - December 2023'
                         description='I lead my work team, supervising and managing projects, guaranteeing punctual deliveries and exceptional quality. I collaborate in the design and prototyping of the aesthetics and the flow of interactive applications, encouraging creativity and cooperation.'
-                        logo='./jobs/Devdatep.svg'
                         title='Devdatep' />
                 </div>
 
