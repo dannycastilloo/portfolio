@@ -5,14 +5,18 @@ import projectsData from '../../data/projects'
 import ProjectModal from '../ProjectModal'
 
 import './index.scss'
+import SearchButton from '../SearchButton'
 
 function Project() {
 
-  const projectsPerPage = 6;
-  const pageCount = Math.ceil(projectsData.length / projectsPerPage)
+  const projectsPerPage = 6
 
   const [currentPage, setCurrentPage] = useState(0)
   const [selectedProject, setSelectedProject] = useState(null)
+  const [projectTypeFilter, setProjectTypeFilter] = useState(null)
+  const [activeFilter, setActiveFilter] = useState(null)
+  const [search, setSearch] = useState('')
+  const [activeFilters, setActiveFilters] = useState([])
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected)
@@ -27,24 +31,92 @@ function Project() {
     setSelectedProject(null)
   }
 
-  const offset = currentPage * projectsPerPage;
+  const handleFilterClick = (type) => {
+    if (projectTypeFilter === type) {
+      handleClearFilter(type);
+    } else {
+      setProjectTypeFilter(type);
+      setCurrentPage(0);
+      setActiveFilters([type]);
+    }
+  };
+
+  const handleClearFilter = (type) => {
+    setProjectTypeFilter(null);
+    setActiveFilters((prevFilters) => prevFilters.filter((filter) => filter !== type));
+    setCurrentPage(0);
+  };
+
+  const isFilterActive = (type) => activeFilters.includes(type);
+
+  const pageCount = Math.ceil(projectsData.length / projectsPerPage)
+
+  const getPaginatedProjects = () => {
+    const filteredProjects = projectsData.filter((project) => {
+      const title = project.title || '';
+      const typeMatch = !projectTypeFilter || project.type === projectTypeFilter;
+      const searchMatch = search === '' || title.includes(search);
+
+      return typeMatch && searchMatch;
+    });
+
+    const startIndex = currentPage * projectsPerPage;
+    const endIndex = startIndex + projectsPerPage;
+    const paginatedData = filteredProjects.slice(startIndex, endIndex);
+
+    return paginatedData;
+  };
 
   return (
     <div className='project-content'>
       <div className='project-header'>
         <h2>Projects</h2>
         <div className='project-filters'>
-          <button className='project-filter'>Website</button>
-          <button className='project-filter'>Mobile</button>
-          <button className='project-filter'>Design</button>
+          <button
+            onClick={() => handleFilterClick('Website')}
+            className={`project-filter ${isFilterActive('Website') ? 'active' : ''}`}
+            style={{
+              backgroundColor: isFilterActive('Website') ? '#3A3A3A' : 'initial',
+              color: isFilterActive('Website') ? '#FFFFFF' : 'initial'
+            }}
+          >
+            Website
+            {isFilterActive('Website') && (
+              <span className="clear-filter" onClick={() => handleClearFilter('Website')}>
+                x
+              </span>
+            )}
+          </button>
+          <button
+            onClick={() => handleFilterClick('Mobile')}
+            className={`project-filter ${projectTypeFilter === 'Mobile' ? 'active' : ''}`}
+            style={{ backgroundColor: projectTypeFilter === 'Mobile' ? '#3A3A3A' : 'initial', color: projectTypeFilter === 'Mobile' ? '#FFFFFF' : 'initial' }}
+          >
+            Mobile
+            {projectTypeFilter === 'Mobile' && (
+              <span className="clear-filter" onClick={() => handleClearFilter('Mobile')}>
+                x
+              </span>
+            )}
+          </button>
+          <button
+            onClick={() => handleFilterClick('Design')}
+            className={`project-filter ${projectTypeFilter === 'Design' ? 'active' : ''}`}
+            style={{ backgroundColor: projectTypeFilter === 'Design' ? '#3A3A3A' : 'initial', color: projectTypeFilter === 'Design' ? '#FFFFFF' : 'initial' }}
+          >
+            Design
+            {projectTypeFilter === 'Design' && (
+              <span className="clear-filter" onClick={() => handleClearFilter('Design')}>
+                x
+              </span>
+            )}
+          </button>
         </div>
-        <button className='search-project'>
-          <img src="./icons/search.svg" alt="Search" />
-        </button>
+        <SearchButton setSearch={(value) => setSearch(value)} />
       </div>
 
       <div className='project-body'>
-        {projectsData.slice(offset, offset + projectsPerPage).map((project, index) => (
+        {getPaginatedProjects().map((project, index) => (
           <ProjectCard
             key={index}
             {...project}
@@ -55,8 +127,8 @@ function Project() {
 
       <div className='project-footer'>
         <ReactPaginate
-          previousLabel={'Previous'}
-          nextLabel={'Next'}
+          previousLabel={'<'}
+          nextLabel={'>'}
           breakLabel={'...'}
           pageCount={pageCount}
           marginPagesDisplayed={2}

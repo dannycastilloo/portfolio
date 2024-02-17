@@ -80,3 +80,12 @@
     font-size: 12px;
     font-weight: 200;
 }
+
+@media (width < 1440px) {
+    .project-card {
+        width: 220px;
+    }
+    .project-image {
+        width: 220px;
+    }
+}
