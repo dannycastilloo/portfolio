@@ -1,91 +1,50 @@
 @import '../../App.scss';
 
-.education-container {
-    display: flex;
-    flex-direction: column; 
-    margin: 50px 0;
+.education-content {
+    width: 1280px;
+}
+
+.subtitle {
+    color: #122D40;
+    font-family: $suezone;
+    font-size: 32px;
 }
 
 .education-card {
-    padding: 50px 80px;
-    background-color: white;
     display: flex;
-    margin: 0 auto;
-    border-radius: 15px;
-    max-width: 780px;
-    gap: 80px;
+    justify-content: center;
+    align-items: center;
 }
 
-.education-card > img {
-    display: block;
-    margin: 0 auto;
-}
-
-.education-career {
-    font-family: $rubik;
-    color: #242424;
-    font-size: 24px;
-}
-
-.education-time {
-    font-family: $rubik;
-    color: #515151;
-    font-size: 20px;
+.education-card > hr {
+    width: 1px;
+    height: 160px;
+    color: #2E5A76;
 }
 
 .education-desc {
-    font-family: $rubik;
-    color: #242424;
+    color: #122D40;
+    font-family: $lora;
     font-size: 20px;
+    width: 650px;
+    line-height: 32px;
 }
 
-@media (width <= 767px) {
-    .education-card {
-        padding: 40px 20px;
-        flex-direction: column;
-        margin: 0 auto;
+@media (width < 1440px) {
+    .education-content {
         max-width: 80%;
-        gap: 10px;
-    }
-    
-    .education-card > img {
-        margin: 10px auto;
-        width: 220px;
-    }
-    
-    .education-card > p {
-        text-align: center;
-        font-size: 14px;
     }
 
-    .education-career {
-        font-size: 20px;
+    .education-card > hr {
+        display: none;
     }
-    
-    .education-time {
-        font-size: 16px;
-    }
-    
-    .education-desc {
-        font-size: 16px;
-    }
-}
 
-@media (768px <= width < 1440px) {
     .education-card {
-        padding: 20px 40px;
-        margin: 0 auto;
-        border-radius: 15px;
-        max-width: 60%;
+        flex-direction: column;
+        gap: 20px;
     }
-    
-    .education-card > img {
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-    }
-    
-    .education-card > p {
-        font-size: 14px;
+
+    .education-desc {
+        width: auto;
     }
 }

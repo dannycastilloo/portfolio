@@ -1,15 +1,19 @@
 import './index.scss'
 
-function Education({ img, title, career, time, description }) {
+function Education() {
   return (
     <>
-      <h2 className='subtitle'>Education</h2>
-      <div className='education-card'>
-        <img src={img} alt={title} />
-        <div>
-          <h3 className='education-career'>{career}</h3>
-          <h3 className='education-time'>{time}</h3>
-          <p className='education-desc'>{description}</p>
+      <div className='education-content'>
+        <h2 className='subtitle'>Education</h2>
+
+        <div className='education-card'>
+          <div className='education-desc'>
+            <p>I graduated from the <strong>Software Design and Development</strong> career in 2023. Throughout my academic journey, I actively participated in numerous events, including <strong>hackathons</strong>. My consistent academic performance placed me in the <strong>top third</strong> of my graduating class. Additionally, I am proud to have been awarded the 2022 Pronabec <strong>Scholarship</strong>.</p>
+          </div>
+          <hr />
+          <div className='education-photo'>
+            <img src='./education/TECSUP.svg' alt='TECSUP' />
+          </div>
         </div>
       </div>
     </>

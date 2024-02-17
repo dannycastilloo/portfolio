@@ -1,0 +1,25 @@
+@import '../../App.scss';
+
+.job-card {
+    background-color: #CDD7DD;
+    border-radius: 24px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.job-card:hover {
+    background-color: #BAD6EA;
+    transition: all .3s ease-in;
+}
+
+.role {
+    color: #464A4D;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 20px;
+}

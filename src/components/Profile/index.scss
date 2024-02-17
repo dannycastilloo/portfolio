@@ -1,178 +1,124 @@
 @import '../../App.scss';
 
-.profile-container {
+.profile-content {
+    max-width: 1280px;
     display: flex;
-    padding: 140px 0;
-    align-items: center;
     justify-content: center;
-    margin: auto;
+    align-items: center;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info, .profile-photo {
+    width: 50%;
 }
 
 .profile-info {
-    margin-right: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
 }
 
-.name {
-    font-family: $roboto-slab;
-    font-size: 64px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.name > span {
-    color: #2979FF;
-}
-
-.career {
-    font-family: 'Rubik', sans-serif;
+.profile-text > span {
+    font-family: $lora;
     font-size: 24px;
-    color: #9BA7B1;
-    margin-bottom: 40px;
+    color: #2E5A76;
+    margin: 0;
+}
+
+.profile-text > h2 {
+    font-family: $suezone;
+    font-size: 64px;
+    color: #2E5A76;
+    padding: 6px 0 14px 0;
+    margin: 0;
+}
+
+.profile-text > p {
+    font-family: $lora;
+    font-size: 20px;
+    color: #2E5A76;
+    margin: 0;
 }
 
 .profile-actions {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
 }
 
-.profile-actions * {
-    display: block;
-    margin: auto 0;
-}
-
-.icons-social {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    margin: 0 auto;
-}
-
-.button-cv {
-    background-color: #2979FF;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Rubik', sans-serif;
-    width: 100%;
-    font-weight: bold;
+.hire-me {
+    background-color: #F95959;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: $poppins;
     font-size: 16px;
+    font-weight: 500;
 }
 
-.button-cv:hover {
-    background-color: #196bf8;
+.hire-me:hover {
+    background-color: #FF4D4D;
+    padding: 13px 25px;
+    transition: all .3s ease-in;
 }
 
-.button-contact {
-    border: none;
-    background-color: $background;
-    cursor: pointer;
+.cv {
+    border: 1px solid #F95959;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: #F95959;
+    text-decoration: none;
+    font-family: $poppins;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.button-contact > img {
-    width: 30px;
-}
-
-.photo {
-    display: block;
-    width: 20rem;
+.cv:hover {
+    padding: 13px 25px;
+    transition: all .3s ease-in;
 }
 
 @media (width < 768px) {
-    .profile-container {
+    .profile-content {
+        max-width: 80%;
         flex-direction: column;
-        padding: 30px 0;
-        gap: 50px;
+        gap: 60px;
     }
 
-    .profile-info {
-        margin: 0 auto;
+    .profile-info, .profile-photo {
+        width: 100%;
     }
 
-    .name {
-        font-size: 2.5rem;
-        margin-bottom: 25px;
+    .profile-text > h2 {
+        font-size: 48px;
     }
 
-    .career {
-        font-size: 1rem;
-        margin-bottom: 30px;
-    }
-
-    .profile-actions {
-        gap: 10px;
-    }
-
-    .button-cv {
-        padding: 15px 20px;
-        margin-bottom: 20px;
-    }
-
-    .icons-social {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .my-photo {
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .photo {
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+    .profile-photo > img {
+        width: 90%;
     }
 }
 
-@media (768px <= width < 1440px) {
-    .profile-container {
-        gap: 0;
-        max-width: 650px;
-        padding: 80px 0;
+@media (width < 1440px) {
+    .profile-content {
+        max-width: 80%;
+        flex-direction: column;
+        gap: 60px;
     }
 
-    .profile-info {
-        margin: 0 auto;
+    .profile-info, .profile-photo {
+        width: 100%;
     }
 
-    .name {
-        font-size: 40px;
-    }
-
-    .career {
-        font-size: 16px;
-        margin-bottom: 25px;
-    }
-
-    .profile-actions {
-        gap: 10px;
-    }
-
-    .button-cv {
-        padding: 15px 20px;
-        margin-bottom: 10px;
-    }
-
-    .icons-social {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .my-photo {
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .photo {
-        width: 200px;
-        justify-content: center;
-        align-items: center;
+    .profile-photo > img {
+        width: 70%;
     }
 }

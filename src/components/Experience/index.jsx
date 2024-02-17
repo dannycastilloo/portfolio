@@ -1,12 +1,24 @@
 import './index.scss'
+import JobCard from "../JobCard"
 
-function Experience({ role, time, description }) {
+function Experience() {
     return (
-        <div className='experience-card'>
-            <div className='experience-info'>
-                <h2 className='role'>{role}</h2>
-                <p className='time'>{time}</p>
-                <p className='description'>{description}</p>
+        <div className="experience-content">
+            <h2>Laboral Experience</h2>
+            
+            <div className='jobs-container'>
+                <JobCard
+                    logo='./exp/tecnovedades.svg'
+                    role='Full Stack Developer'
+                />
+                <JobCard
+                    logo='./exp/consigueventas.svg'
+                    role='Web Developer'
+                />
+                <JobCard
+                    logo='./exp/devdatep.svg'
+                    role='Web Designer'
+                />
             </div>
         </div>
     )
