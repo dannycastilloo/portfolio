@@ -1,0 +1,159 @@
+@import '../../App.scss';
+
+.exp-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.exp-info-container>div {
+    display: flex;
+}
+
+.exp-info-row {
+    display: flex;
+    gap: 25px;
+}
+
+.exp-main,
+.exp-activities,
+.exp-skills,
+.exp-certificate,
+.exp-back,
+.exp-date {
+    border-radius: 1em;
+    background-color: white;
+}
+
+.exp-main {
+    font-family: $poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3C4044;
+    text-align: center;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.exp-main>img {
+    width: 70%;
+    margin: auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.exp-activities {
+    width: 75%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-activities li {
+    margin-bottom: 16px;
+}
+
+.exp-activities>hr,
+.exp-skills>hr {
+    color: #ccc;
+    width: 100%;
+}
+
+.exp-activities,
+.exp-skills,
+.exp-date {
+    font-family: $lora;
+}
+
+.exp-activities,
+.exp-skills {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.exp-skills {
+    width: 70%;
+    padding: 40px;
+}
+
+.exp-skills>hr {
+    margin-bottom: 20px;
+}
+
+.exp-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.exp-date {
+    font-size: 20px;
+    font-weight: 400;
+    color: #586269;
+    text-align: center;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-activities>ul {
+    color: #000000;
+    font-size: 16px;
+}
+
+.exp-date-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.exp-actions {
+    display: flex;
+    gap: 10px;
+    height: 40%;
+}
+
+.exp-certificate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5%;
+    width: 75%;
+}
+
+.exp-certificate>img {
+    width: 30px;
+}
+
+.exp-certificate>span {
+    color: #586269;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $poppins;
+}
+
+.exp-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.exp-back:hover, .exp-certificate:hover {
+    background-color: #EFEFEF;
+}
+
+.exp-back>img {
+    width: 30px;
+}

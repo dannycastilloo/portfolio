@@ -1,8 +1,8 @@
 import './index.scss'
 
-function JobCard({ logo, role }) {
+function JobCard({ logo, role, onClick }) {
     return (
-        <figure className='job-card'>
+        <figure className='job-card' onClick={onClick}>
             <img className='logo' src={logo} />
             <span className='role'>{role}</span>
         </figure>
