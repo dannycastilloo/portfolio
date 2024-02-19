@@ -10,7 +10,7 @@ header {
     background-color: white;
     padding: 16px 0;
     width: 1280px;
-    color: #2E5A76;
+    color: #122D40;
 }
 
 .nav-content, .nav-content > div, .nav-content > nav {
@@ -40,6 +40,7 @@ header {
     border-radius: 24px;
     font-family: $poppins;
     text-decoration: none;
+    color: #122D40;
 }
 
 .nav-links > a:hover {
@@ -51,7 +52,7 @@ header {
 }
 
 .nav-social > a {
-    border: 1px solid #2A2A2A;
+    border: 1px solid #122D40;
     border-radius: 50%;
 }
 
