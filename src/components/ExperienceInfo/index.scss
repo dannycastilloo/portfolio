@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin: auto;
 }
 
 .exp-info-container>div {
@@ -12,7 +13,10 @@
 
 .exp-info-row {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
+    margin: auto;
 }
 
 .exp-main,
@@ -103,6 +107,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 24% 0;
 }
 
 .exp-activities>ul {
@@ -150,10 +155,109 @@
     width: 25%;
 }
 
-.exp-back:hover, .exp-certificate:hover {
+.exp-back:hover,
+.exp-certificate:hover {
     background-color: #EFEFEF;
 }
 
 .exp-back>img {
     width: 30px;
+}
+
+@media (width < 768px) {
+    .exp-info-row {
+        flex-direction: column;
+    }
+
+    .exp-main {
+        width: 75vw;
+        padding: 60px 0;
+    }
+
+    .exp-main>img {
+        width: 40%;
+    }
+
+    .exp-main>h2 {
+        font-size: 28px;
+    }
+
+    .exp-activities {
+        width: 55vw;
+        padding: 20px 40px;
+    }
+
+    .exp-skills {
+        width: 55vw;
+    }
+
+    .exp-skills-container {
+        flex-direction: column;
+    }
+
+    .exp-date-actions {
+        width: 75vw;
+    }
+
+    .exp-date {
+        padding: 25px 0;
+    }
+    
+    .exp-certificate {
+        padding: 20px;
+        width: 80%;
+    }
+    
+    .exp-back {
+        width: 20%;
+    }
+}
+
+@media (768px <= width < 1440px) {
+    .exp-info-row {
+        flex-direction: column;
+    }
+
+    .exp-main {
+        width: 75vw;
+        padding: 60px 0;
+    }
+
+    .exp-main>img {
+        width: 40%;
+    }
+
+    .exp-main>h2 {
+        font-size: 28px;
+    }
+
+    .exp-activities {
+        width: 65vw;
+        padding: 20px 40px;
+    }
+
+    .exp-skills {
+        width: 65vw;
+    }
+
+    .exp-skills-container {
+        flex-direction: column;
+    }
+
+    .exp-date-actions {
+        width: 75vw;
+    }
+
+    .exp-date {
+        padding: 25px 0;
+    }
+    
+    .exp-certificate {
+        padding: 20px;
+        width: 80%;
+    }
+    
+    .exp-back {
+        width: 20%;
+    }
 }

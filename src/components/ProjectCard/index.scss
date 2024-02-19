@@ -81,7 +81,16 @@
     font-weight: 200;
 }
 
-@media (width < 1440px) {
+@media (width < 768px) {
+    .project-card {
+        width: 260px;
+    }
+    .project-image {
+        width: 260px;
+    }
+}
+
+@media (768px <= width < 1440px) {
     .project-card {
         width: 220px;
     }

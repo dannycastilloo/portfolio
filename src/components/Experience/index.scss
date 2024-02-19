@@ -19,3 +19,24 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (width < 768px) {
+    .experience-content {
+        width: 80%;
+    }
+
+}
+
+@media (768px <= width < 1440px) {
+    .experience-content {
+        width: 75%;
+    }
+
+    .experience-content > h2 {
+        margin-bottom: 60px;
+    }
+
+    .jobs-container {
+        flex-direction: column;
+    }
+}
