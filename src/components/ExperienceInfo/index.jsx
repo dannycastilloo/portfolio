@@ -1,7 +1,7 @@
 import JobSkill from '../JobSkill'
 import './index.scss'
 
-function ExperienceInfo({ companyImg, companyName, jobRole, jobTasks, jobDate, jobSkills, onBackClick }) {
+function ExperienceInfo({ companyImg, companyName, jobRole, jobTasks, jobDate, jobSkills, certificate, onBackClick }) {
     return (
         <div className='exp-info-container'>
             <div className='exp-info-row'>
@@ -34,7 +34,7 @@ function ExperienceInfo({ companyImg, companyName, jobRole, jobTasks, jobDate, j
                     <div className='exp-actions'>
                         <div className='exp-certificate'>
                             <img src='./icons/document.svg' alt='Certificate' />
-                            <span>View Certificate</span>
+                            <a href={certificate}>View Certificate</a>
                         </div>
                         <div className='exp-back' onClick={onBackClick}>
                             <img src='./icons/back.svg' alt='Back' />

@@ -18,7 +18,7 @@ const jobsData = [
             { skillName: 'PHP', skillImg: './technologies/Php.svg'},
             { skillName: 'Figma', skillImg: './technologies/Figma.svg'},
         ],
-        jobDate: 'Jan. 2024 - Present'
+        jobDate: 'Jan. 2024 - Present',
     },
     {
         companyImg: './exp/tecnovedades.svg',
@@ -39,7 +39,8 @@ const jobsData = [
             { skillName: 'WordPress', skillImg: './technologies/Wordpress.svg'},
             { skillName: 'Elementor', skillImg: './technologies/Elementor.svg'},
         ],
-        jobDate: 'Oct. 2023 - Jan. 2024'
+        jobDate: 'Oct. 2023 - Jan. 2024',
+        certificate: './certificates/Tecnovedades_Certificate.pdf',
     },
     {
         companyImg: './exp/devdatep.svg',
@@ -59,7 +60,8 @@ const jobsData = [
             { skillName: 'JavaScript', skillImg: './technologies/JavaScript.svg'},
             { skillName: 'React', skillImg: './technologies/React.svg'},
         ],
-        jobDate: 'Sep. 2023 - Dec. 2023'
+        jobDate: 'Sep. 2023 - Dec. 2023',
+        certificate: './certificates/Devdatep_Certificate.pdf',
     },
 ]
 

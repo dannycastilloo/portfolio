@@ -12,7 +12,7 @@ function Profile() {
                     </div>
                     <div className='profile-actions'>
                         <a href="mailto:dannycastillootiniano@gmail.com" className='hire-me'>Hire Me Now!</a>
-                        <a href="/Danny_Castillo.pdf" className='cv'>Read CV</a>
+                        <a href="./Danny_Castillo.pdf" className='cv'>Read CV</a>
                     </div>
                 </div>
                 <div className='profile-photo'>

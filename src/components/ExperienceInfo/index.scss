@@ -141,11 +141,12 @@
     width: 30px;
 }
 
-.exp-certificate>span {
+.exp-certificate>a {
     color: #586269;
     font-size: 16px;
     font-weight: 400;
     font-family: $poppins;
+    text-decoration: none;
 }
 
 .exp-back {
@@ -238,10 +239,6 @@
 
     .exp-skills {
         width: 65vw;
-    }
-
-    .exp-skills-container {
-        flex-direction: column;
     }
 
     .exp-date-actions {
