@@ -7,7 +7,7 @@ function Profile() {
                 <div className='profile-info'>
                     <div className='profile-text'>
                         <span>Hello there! I'm a</span>
-                        <h2>Web Developer & UX/UI Designer</h2>
+                        <h1>Web Developer & UX/UI Designer</h1>
                         <p>Passionate software developer with strong problem-solving skills and a consistent participation in projects.</p>
                     </div>
                     <div className='profile-actions'>
@@ -16,7 +16,7 @@ function Profile() {
                     </div>
                 </div>
                 <div className='profile-photo'>
-                    <img src='/Danny.svg' alt="Danny Castillo" />
+                    <img src='/Danny.svg' alt="Danny Castillo" title='App Developer & Designer' />
                 </div>
             </div>
         </>

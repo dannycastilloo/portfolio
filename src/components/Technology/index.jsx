@@ -11,7 +11,7 @@ function Technology({ img, name, backgroundColor }) {
 
   return (
     <div className='btn-technology' style={backgroundStyle}>
-        <img src={img} alt={name} />
+        <img src={img} alt={name} title={name} />
     </div>
   )
 }

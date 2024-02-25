@@ -31,7 +31,7 @@ function ProjectModal({ isOpen, onClose, project }) {
                 </div>
                 <div className='project-technologies'>
                     {technologies.map((tech, index) => (
-                        <img key={index} src={tech} alt={`Tech ${index + 1}`} />
+                        <img key={index} src={tech} alt={`Tech ${index + 1}`} title={`Tech ${index + 1}`} />
                     ))}
                 </div>
             </div>

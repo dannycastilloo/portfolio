@@ -12,7 +12,7 @@ function Education() {
           </div>
           <hr />
           <div className='education-photo'>
-            <img src='./education/TECSUP.svg' alt='TECSUP' />
+            <img src='./education/TECSUP.svg' alt='TECSUP' title='Graduated in TECSUP' />
           </div>
         </div>
       </div>

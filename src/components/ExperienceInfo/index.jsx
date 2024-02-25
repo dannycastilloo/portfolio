@@ -6,7 +6,7 @@ function ExperienceInfo({ companyImg, companyName, jobRole, jobTasks, jobDate, j
         <div className='exp-info-container'>
             <div className='exp-info-row'>
                 <div className='exp-main'>
-                    <img src={companyImg} alt={companyName} />
+                    <img src={companyImg} alt={companyName} title={companyName} />
                     <h2>{jobRole}</h2>
                 </div>
                 <div className='exp-activities'>
@@ -33,11 +33,11 @@ function ExperienceInfo({ companyImg, companyName, jobRole, jobTasks, jobDate, j
                     <div className='exp-date'>{jobDate}</div>
                     <div className='exp-actions'>
                         <div className='exp-certificate'>
-                            <img src='./icons/document.svg' alt='Certificate' />
-                            <a href={certificate}>View Certificate</a>
+                            <img src='./icons/document.svg' alt='Certificate' title='See certificate' />
+                            <a href={certificate} title='Job Certificate'>View Certificate</a>
                         </div>
                         <div className='exp-back' onClick={onBackClick}>
-                            <img src='./icons/back.svg' alt='Back' />
+                            <img src='./icons/back.svg' alt='Back' title='Go back' />
                         </div>
                     </div>
                 </div>

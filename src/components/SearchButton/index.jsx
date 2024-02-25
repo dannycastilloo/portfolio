@@ -22,7 +22,7 @@ const SearchButton = ({ setSearch }) => {
                     onChange={(e) => setSearch(e.target.value)}
                 />
             )}
-            <img src='./icons/search.svg' alt="Imagen de ejemplo" />
+            <img src='./icons/search.svg' alt="Search" title='Find the best projects' />
         </form>
     );
 };

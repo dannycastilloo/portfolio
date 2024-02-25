@@ -12,7 +12,7 @@ function About() {
                 </p>
             </div>
             <div className='about-image'>
-                <img src="./about/development.svg" alt="Web Development" />
+                <img src="./about/development.svg" alt="Best website projects" title="We can put your future project here" />
             </div>
         </div>
     )
