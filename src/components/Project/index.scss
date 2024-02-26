@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0;
 }
 
 /* Project Header */
@@ -62,8 +63,11 @@
 .project-body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 /* Project Footer */
@@ -122,9 +126,5 @@
 @media (width < 1440px) {
     .project-content {
         max-width: 80%;
-    }
-
-    .project-body {
-        gap: 10px;
     }
 }

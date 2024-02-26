@@ -20,3 +20,9 @@
     transition: width .3s ease;
     font-family: $poppins;
 }
+
+@media (width < 768px) {
+    .search-button {
+        display: none;
+    }
+}
