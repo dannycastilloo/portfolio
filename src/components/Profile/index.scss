@@ -89,7 +89,7 @@
 
 @media (width < 768px) {
     .profile-content {
-        max-width: 80%;
+        width: 80%;
         flex-direction: column;
         gap: 60px;
     }
@@ -99,7 +99,7 @@
         width: 100%;
     }
 
-    .profile-text>h2 {
+    .profile-text>h1 {
         font-size: 48px;
     }
 
@@ -110,7 +110,7 @@
 
 @media (width < 1440px) {
     .profile-content {
-        max-width: 80%;
+        width: 80%;
         flex-direction: column;
         gap: 60px;
     }
@@ -121,6 +121,6 @@
     }
 
     .profile-photo>img {
-        width: 70%;
+        width: 80%;
     }
 }
