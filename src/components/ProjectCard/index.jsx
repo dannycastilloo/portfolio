@@ -2,7 +2,7 @@ import './index.scss'
 
 function ProjectCard({ title, poster, logo, imgtype, type, onClick }) {
     return (
-        <figure className='project-card' onClick={onClick}>
+        <div className='project-card' onClick={onClick}>
             <div className='poster-container'>
                 <div className='poster-overlay'>
                     <span className='see-more-text'>See More</span>
@@ -19,7 +19,7 @@ function ProjectCard({ title, poster, logo, imgtype, type, onClick }) {
                     <span>{type}</span>
                 </div>
             </div>
-        </figure>
+        </div>
     )
 }
 
