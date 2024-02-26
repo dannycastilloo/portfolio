@@ -11,7 +11,6 @@ function Navbar() {
                     </div>
                     <nav className="nav-links">
                         <a href="#home" title='Home'>Home</a>
-                        <a href="#about" title='About Me'>About Me</a>
                         <a href="#experience" title='Job Experience'>Experience</a>
                         <a href="#projects" title='Web Projects'>Projects</a>
                         <a href="#education" title='Developer Career'>Education</a>
