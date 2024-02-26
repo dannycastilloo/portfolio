@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 .project-card {
-    width: 27%;
+    width: 32%;
     position: relative;
 }
 
@@ -89,6 +89,6 @@
 
 @media (768px <= width < 1440px) {
     .project-card {
-        width: 36%;
+        width: 48%;
     }
 }
