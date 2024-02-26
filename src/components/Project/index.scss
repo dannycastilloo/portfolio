@@ -10,20 +10,26 @@
 /* Project Header */
 .project-header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
-.project-header>h2 {
+.project-title {
+    width: 20%;
+}
+
+.project-title>h2 {
     font-family: $suezone;
     font-size: 32px;
     color: #122D40;
 }
 
 .project-filters {
-    margin: 0 auto;
     display: flex;
     gap: 10px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-filter {
@@ -43,18 +49,21 @@
 }
 
 .project-filter:hover,
-.search-project:hover {
-    background-color: #F8F8F8;
+.search-button:hover {
+    background-color: #f8f8f8;
     transition: all .1s ease-in;
+}
+
+.search-component {
+    width: 20%;
 }
 
 /* Project Body */
 .project-body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
 
 /* Project Footer */

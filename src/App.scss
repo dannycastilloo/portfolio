@@ -35,27 +35,12 @@ body {
 
 /* Experience */
 .experience-container {
-    background-color: #2E2E2E;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px 0;
-}
-
-/* Pre Project */
-.pre-project {
-    background-color: #BAD6EA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-
-.pre-project > span {
-    color: #122D40;
-    font-family: $suezone;
-    font-size: 32px;
 }
 
 /* Projects */

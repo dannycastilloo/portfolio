@@ -14,7 +14,6 @@ function Project() {
   const [currentPage, setCurrentPage] = useState(0)
   const [selectedProject, setSelectedProject] = useState(null)
   const [projectTypeFilter, setProjectTypeFilter] = useState(null)
-  const [activeFilter, setActiveFilter] = useState(null)
   const [search, setSearch] = useState('')
   const [activeFilters, setActiveFilters] = useState([])
 
@@ -70,7 +69,9 @@ function Project() {
   return (
     <div className='project-content'>
       <div className='project-header'>
-        <h2>Projects</h2>
+        <div className='project-title'>
+          <h2>Projects</h2>
+        </div>
         <div className='project-filters'>
           <button
             onClick={() => handleFilterClick('Website')}
@@ -112,7 +113,9 @@ function Project() {
             )}
           </button>
         </div>
-        <SearchButton setSearch={(value) => setSearch(value)} />
+        <div className='search-component'>
+          <SearchButton setSearch={(value) => setSearch(value)} />
+        </div>
       </div>
 
       <div className='project-body'>

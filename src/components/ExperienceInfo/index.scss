@@ -1,260 +1,90 @@
 @import '../../App.scss';
 
 .exp-info-container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin: auto;
-}
-
-.exp-info-container>div {
-    display: flex;
-}
-
-.exp-info-row {
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    margin: auto;
+    gap: 20px;
 }
 
-.exp-main,
-.exp-activities,
-.exp-skills,
-.exp-certificate,
-.exp-back,
-.exp-date {
-    border-radius: 1em;
-    background-color: white;
+.exp-info-container * {
+    margin: 0;
 }
 
-.exp-main {
-    font-family: $poppins;
-    font-size: 16px;
-    font-weight: 500;
-    color: #3C4044;
-    text-align: center;
-    width: 25%;
+.exp-header {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
-}
-
-.exp-main>img {
-    width: 70%;
-    margin: auto;
-    display: block;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-}
-
-.exp-activities {
-    width: 75%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.exp-activities li {
-    margin-bottom: 16px;
-}
-
-.exp-activities>hr,
-.exp-skills>hr {
-    color: #ccc;
     width: 100%;
 }
 
-.exp-activities,
-.exp-skills,
-.exp-date {
-    font-family: $lora;
-}
-
-.exp-activities,
-.exp-skills {
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
-}
-
-.exp-skills {
-    width: 70%;
-    padding: 40px;
-}
-
-.exp-skills>hr {
-    margin-bottom: 20px;
-}
-
-.exp-skills-container {
+.exp-main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.exp-date {
-    font-size: 20px;
-    font-weight: 400;
-    color: #586269;
-    text-align: center;
-    height: 60%;
-    display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: 24% 0;
+    gap: 16px;
 }
 
-.exp-activities>ul {
-    color: #000000;
-    font-size: 16px;
-}
-
-.exp-date-actions {
+.exp-info {
+    font-family: $poppins;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 30%;
+    justify-content: space-between;
+    align-items: start;
 }
 
-.exp-actions {
-    display: flex;
-    gap: 10px;
-    height: 40%;
+.exp-info>h3 {
+    font-weight: 500;
+    color: #2A2A2A;
+    font-size: 20px;
 }
 
-.exp-certificate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 5%;
-    width: 75%;
+.exp-info>span {
+    color: #888888;
+    font-size: 20px;
 }
 
-.exp-certificate>img {
-    width: 30px;
+.exp-location {
+    padding: 8px 20px;
+    background-color: #F2F2F2;
+    border-radius: 12px;
 }
 
-.exp-certificate>a {
-    color: #586269;
-    font-size: 16px;
-    font-weight: 400;
+.exp-location > h3 {
+    font-size: 18px;
     font-family: $poppins;
-    text-decoration: none;
+    color: #2A2A2A;
+    font-weight: 400;
 }
 
-.exp-back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-}
-
-.exp-back:hover,
-.exp-certificate:hover {
-    background-color: #EFEFEF;
-}
-
-.exp-back>img {
-    width: 30px;
+.exp-description > p {
+    color: #545454;
+    font-size: 20px;
+    font-family: $poppins;
 }
 
 @media (width < 768px) {
-    .exp-info-row {
-        flex-direction: column;
-    }
-
-    .exp-main {
-        width: 75vw;
-        padding: 60px 0;
-    }
-
-    .exp-main>img {
-        width: 40%;
-    }
-
-    .exp-main>h2 {
-        font-size: 28px;
-    }
-
-    .exp-activities {
-        width: 55vw;
-        padding: 20px 40px;
-    }
-
-    .exp-skills {
-        width: 55vw;
-    }
-
-    .exp-skills-container {
-        flex-direction: column;
-    }
-
-    .exp-date-actions {
-        width: 75vw;
-    }
-
-    .exp-date {
-        padding: 25px 0;
-    }
-    
-    .exp-certificate {
+    .exp-info-container {
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
         padding: 20px;
-        width: 80%;
+    }
+
+    .exp-info>h3 {
+        font-size: 18px;
     }
     
-    .exp-back {
-        width: 20%;
-    }
-}
-
-@media (768px <= width < 1440px) {
-    .exp-info-row {
-        flex-direction: column;
+    .exp-info>span {
+        font-size: 18px;
     }
 
-    .exp-main {
-        width: 75vw;
-        padding: 60px 0;
+    .exp-location {
+        display: none;
     }
 
-    .exp-main>img {
-        width: 40%;
-    }
-
-    .exp-main>h2 {
-        font-size: 28px;
-    }
-
-    .exp-activities {
-        width: 65vw;
-        padding: 20px 40px;
-    }
-
-    .exp-skills {
-        width: 65vw;
-    }
-
-    .exp-date-actions {
-        width: 75vw;
-    }
-
-    .exp-date {
-        padding: 25px 0;
-    }
-    
-    .exp-certificate {
-        padding: 20px;
-        width: 80%;
-    }
-    
-    .exp-back {
-        width: 20%;
+    .exp-description > p {
+        font-size: 18px;
     }
 }

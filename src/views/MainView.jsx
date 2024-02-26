@@ -24,10 +24,6 @@ function MainView() {
                 <Experience />
             </div>
 
-            <div className='pre-project'>
-                <span>Look at some of my work!</span>
-            </div>
-
             <div className='project-container' id='projects'>
                 <Project />
             </div>

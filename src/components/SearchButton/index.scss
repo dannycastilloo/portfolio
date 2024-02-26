@@ -6,25 +6,16 @@
     align-items: center;
     border-radius: 28px;
     border: 1px solid #000000;
-    padding: 8px 20px;
+    padding: 8px 0;
     gap: 6px;
     overflow: hidden;
     cursor: pointer;
-
-    &.expanded {
-        transition: all .3s ease;
-    }
-
-    &:hover {
-        background-color: #F8F8F8;
-    }
 }
 
 .search-button>input {
     border: none;
     outline: none;
-    width: 0;
-    width: 140px;
+    width: 70%;
     background-color: transparent;
     transition: width .3s ease;
     font-family: $poppins;
