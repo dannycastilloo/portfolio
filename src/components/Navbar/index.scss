@@ -48,7 +48,8 @@ header {
 }
 
 .nav-links > a:hover {
-    color: rgba(30,167,244);
+    color: rgb(30, 133, 244);
+    transition: all .1s ease-out;
 }
 
 .nav-social {
@@ -65,11 +66,13 @@ header {
 }
 
 .nav-social > a:hover {
-    border: 1px solid rgba(30,167,244);
+    border: 1px solid rgb(30, 133, 244);
+    transition: all .1s ease-out;
 }
 
 .nav-social > a:hover svg path {
-    fill: rgba(30,167,244);
+    fill: rgb(30, 133, 244);
+    transition: all .1s ease-out;
 }
 
 @media (width < 768px) {
