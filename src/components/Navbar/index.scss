@@ -78,7 +78,7 @@ header {
 @media (width < 768px) {
     .nav-content {
         width: 80%;
-        padding: 16px 0;
+        padding: 10px 0;
     }
 
     .nav-main {
@@ -93,7 +93,7 @@ header {
         font-size: 20px;
     }
 
-    .nav-links {
+    .nav-links * {
         display: none;
     }
 
