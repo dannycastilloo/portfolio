@@ -26,3 +26,9 @@
         display: none;
     }
 }
+
+@media (768px <= width < 1440px) {
+    .search-button {
+        display: none;
+    }
+}

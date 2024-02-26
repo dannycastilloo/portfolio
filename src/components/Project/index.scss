@@ -105,6 +105,10 @@
 }
 
 @media (width < 768px) {
+    .project-title {
+        width: auto;
+    }
+
     .project-content {
         max-width: 80%;
     }
@@ -123,8 +127,12 @@
     }
 }
 
-@media (width < 1440px) {
+@media (768px <= width < 1440px) {
     .project-content {
         max-width: 80%;
+    }
+
+    .project-title {
+        margin-right: auto;
     }
 }
