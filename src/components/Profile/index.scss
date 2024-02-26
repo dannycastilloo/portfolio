@@ -13,7 +13,8 @@
     align-items: center;
 }
 
-.profile-info, .profile-photo {
+.profile-info,
+.profile-photo {
     width: 50%;
 }
 
@@ -25,22 +26,33 @@
     gap: 40px;
 }
 
-.profile-text > span {
+.profile-text>span {
     font-family: $lora;
     font-size: 24px;
     color: #2E5A76;
     margin: 0;
 }
 
-.profile-text > h1 {
+.profile-text>h1 {
     font-family: $suezone;
     font-size: 64px;
     color: #2E5A76;
     padding: 6px 0 14px 0;
+
+    background: -moz-linear-gradient(90deg, rgba(65, 210, 145, 1) 30%, rgba(96, 135, 244, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(65, 210, 145, 1) 30%, rgba(96, 135, 244, 1) 100%);
+    background: linear-gradient(90deg, rgba(65, 210, 145, 1) 30%, rgba(96, 135, 244, 1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 76px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 95px;
     margin: 0;
 }
 
-.profile-text > p {
+.profile-text>p {
     font-family: $lora;
     font-size: 20px;
     color: #2E5A76;
@@ -94,15 +106,16 @@
         gap: 60px;
     }
 
-    .profile-info, .profile-photo {
+    .profile-info,
+    .profile-photo {
         width: 100%;
     }
 
-    .profile-text > h2 {
+    .profile-text>h2 {
         font-size: 48px;
     }
 
-    .profile-photo > img {
+    .profile-photo>img {
         width: 90%;
     }
 }
@@ -114,11 +127,12 @@
         gap: 60px;
     }
 
-    .profile-info, .profile-photo {
+    .profile-info,
+    .profile-photo {
         width: 100%;
     }
 
-    .profile-photo > img {
+    .profile-photo>img {
         width: 70%;
     }
 }
