@@ -26,36 +26,25 @@
     gap: 40px;
 }
 
-.profile-text>span {
-    font-family: $lora;
-    font-size: 24px;
-    color: #2E5A76;
-    margin: 0;
-}
-
 .profile-text>h1 {
-    font-family: $suezone;
+    font-family: $poppins;
     font-size: 64px;
-    color: #2E5A76;
-    padding: 6px 0 14px 0;
-
-    background: -moz-linear-gradient(90deg, rgba(65, 210, 145, 1) 30%, rgba(96, 135, 244, 1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(65, 210, 145, 1) 30%, rgba(96, 135, 244, 1) 100%);
-    background: linear-gradient(90deg, rgba(65, 210, 145, 1) 30%, rgba(96, 135, 244, 1) 100%);
+    padding: 12px 0 32px 0;
+    background: rgb(30,167,244);
+    background: linear-gradient(90deg, rgba(30,167,244,1) 0%, rgba(141,58,246,1) 100%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 76px;
-    font-weight: 900;
-    text-align: center;
+    font-size: 72px;
+    font-weight: 800;
     line-height: 95px;
     margin: 0;
 }
 
 .profile-text>p {
-    font-family: $lora;
+    font-family: $poppins;
     font-size: 20px;
-    color: #2E5A76;
+    color: #f2f2f2;
     margin: 0;
 }
 
@@ -67,7 +56,6 @@
 }
 
 .hire-me {
-    background-color: #F95959;
     color: white;
     padding: 12px 24px;
     border-radius: 12px;
@@ -75,19 +63,20 @@
     font-family: $poppins;
     font-size: 16px;
     font-weight: 500;
+    background: rgb(30,167,244);
+    background: linear-gradient(90deg, rgba(30,167,244,1) 0%, rgb(120, 50, 200) 100%);
 }
 
 .hire-me:hover {
-    background-color: #FF4D4D;
-    padding: 13px 25px;
-    transition: all .3s ease-in;
+    background: rgb(30,167,244);
+    background: linear-gradient(90deg, rgba(30,160,244,1) 0%, rgb(110, 70, 200) 100%);
 }
 
 .cv {
-    border: 1px solid #F95959;
+    background-color: #F8F8F8;
     padding: 12px 24px;
     border-radius: 12px;
-    color: #F95959;
+    color: #2A2A2A;
     text-decoration: none;
     font-family: $poppins;
     font-size: 16px;
@@ -95,8 +84,7 @@
 }
 
 .cv:hover {
-    padding: 13px 25px;
-    transition: all .3s ease-in;
+    background-color: #eeeeee;
 }
 
 @media (width < 768px) {

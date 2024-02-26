@@ -17,7 +17,7 @@ body {
 
 /* Profile */
 .profile-container {
-    height: 700px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,11 +53,12 @@ body {
 
 /* Copyright */
 .copyright {
-    background-color: #122D40;
+    background-color: #2A2A2A;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
+    border-top: 1px solid #EFEFEF;
 }
 
 .copyright > span {
