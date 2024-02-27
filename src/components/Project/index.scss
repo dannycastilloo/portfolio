@@ -126,6 +126,10 @@
     .search-project {
         display: none;
     }
+
+    .project-body {
+        gap: 40px;
+    }
 }
 
 @media (768px <= width < 1440px) {

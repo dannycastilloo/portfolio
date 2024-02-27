@@ -92,7 +92,7 @@
         width: 80%;
         flex-direction: column;
         gap: 60px;
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .profile-info,
@@ -110,11 +110,13 @@
     }
 }
 
-@media (width < 1440px) {
+@media (768px <= width < 1440px) {
+
     .profile-content {
         width: 80%;
         flex-direction: column;
         gap: 60px;
+        padding: 60px 0;
     }
 
     .profile-info,

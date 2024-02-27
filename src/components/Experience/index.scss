@@ -24,6 +24,10 @@
         width: 80%;
     }
 
+    .experience-content > h2 {
+        text-align: center;
+    }
+
 }
 
 @media (768px <= width < 1440px) {
@@ -33,6 +37,7 @@
 
     .experience-content > h2 {
         margin-bottom: 60px;
+        text-align: center;
     }
 
     .jobs-container {
