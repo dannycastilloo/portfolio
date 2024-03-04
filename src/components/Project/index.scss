@@ -22,7 +22,7 @@
 .project-title>h2 {
     font-family: $suezone;
     font-size: 32px;
-    color: #122D40;
+    color: #F8F8F8;
 }
 
 .project-filters {
@@ -35,13 +35,19 @@
 
 .project-filter {
     padding: 8px 18px;
-    background-color: #FFFFFF;
-    border: 1px solid #303030;
+    background-color: #F8F8F8;
+    border: 1px solid #1E1E1E;
     border-radius: 40px;
     cursor: pointer;
     font-family: $poppins;
     gap: 10px;
     display: flex;
+}
+
+.project-filter.active {
+    background: rgb(30,167,244);
+    background: linear-gradient(90deg, rgba(30,167,244,1) 0%, rgb(120, 50, 200) 100%);
+    color: #F8F8F8;
 }
 
 .clear-filter {
@@ -51,7 +57,7 @@
 
 .project-filter:hover,
 .search-button:hover {
-    background-color: #f8f8f8;
+    background-color: #E8E8E8;
     transition: all .1s ease-in;
 }
 
@@ -91,13 +97,13 @@
 .pagination li a {
     text-decoration: none;
     padding: 8px 16px;
-    border: 1px solid #3A3A3A;
-    color: #3A3A3A;
+    border: 1px solid #F8F8F8;
+    color: #F8F8F8;
     border-radius: 12px;
 }
 
 .pagination li a:hover {
-    background-color: #E3E3E3;
+    background-color: #2E2E2E;
 }
 
 .pagination li.active a {

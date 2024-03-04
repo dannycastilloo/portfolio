@@ -7,6 +7,8 @@ import ProjectModal from '../ProjectModal'
 import './index.scss'
 import SearchButton from '../SearchButton'
 
+const gradientBackground = 'linear-gradient(90deg, rgba(30,167,244,1) 0%, rgb(120, 50, 200) 100%)'
+
 function Project() {
 
   const projectsPerPage = 6
@@ -75,11 +77,7 @@ function Project() {
         <div className='project-filters'>
           <button
             onClick={() => handleFilterClick('Website')}
-            className={`project-filter ${isFilterActive('Website') ? 'active' : ''}`}
-            style={{
-              backgroundColor: isFilterActive('Website') ? '#3A3A3A' : 'initial',
-              color: isFilterActive('Website') ? '#FFFFFF' : 'initial'
-            }}
+            className={`project-filter ${projectTypeFilter === 'Website' ? 'active' : ''}`}
           >
             Website
             {isFilterActive('Website') && (
@@ -88,10 +86,10 @@ function Project() {
               </span>
             )}
           </button>
+
           <button
             onClick={() => handleFilterClick('Mobile')}
             className={`project-filter ${projectTypeFilter === 'Mobile' ? 'active' : ''}`}
-            style={{ backgroundColor: projectTypeFilter === 'Mobile' ? '#3A3A3A' : 'initial', color: projectTypeFilter === 'Mobile' ? '#FFFFFF' : 'initial' }}
           >
             Mobile
             {projectTypeFilter === 'Mobile' && (
@@ -100,10 +98,10 @@ function Project() {
               </span>
             )}
           </button>
+
           <button
             onClick={() => handleFilterClick('Design')}
             className={`project-filter ${projectTypeFilter === 'Design' ? 'active' : ''}`}
-            style={{ backgroundColor: projectTypeFilter === 'Design' ? '#3A3A3A' : 'initial', color: projectTypeFilter === 'Design' ? '#FFFFFF' : 'initial' }}
           >
             Design
             {projectTypeFilter === 'Design' && (

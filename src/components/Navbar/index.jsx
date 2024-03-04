@@ -19,7 +19,6 @@ function Navbar() {
                 <div className='menu' onClick={toggleNavbar}>
                     <img src="./icons/menu.svg" alt="Menu" />
                 </div>
-                <hr />
                 <header className={isNavbarVisible ? 'visible' : ''}>
                     <div className='close-container'>
                         <img className='close' src='./icons/close.svg' onClick={toggleNavbar} />

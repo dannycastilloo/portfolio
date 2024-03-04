@@ -17,11 +17,11 @@ body {
 
 /* Profile */
 .profile-container {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2A2A2A;
+    background-color: #1E1E1E;
 }
 
 /* Experience */
@@ -36,7 +36,7 @@ body {
 
 /* Projects */
 .project-container {
-    background-color: #FFFFFF;
+    background-color: #1E1E1E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ body {
 
 /* Education */
 .education-container {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,10 +72,6 @@ body {
     .profile-container, .about-container, .education-container {
         height: auto;
         padding: 40px 0;
-    }
-
-    .pre-project > span {
-        font-size: 20px;
     }
 
     .copyright > span {

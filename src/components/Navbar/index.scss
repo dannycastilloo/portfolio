@@ -1,12 +1,16 @@
 @import '../../App.scss';
 
+.menu {
+    z-index: 1;
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: center;
-    position: fixed;
     width: 100%;
-    border-bottom: solid 1px #EFEFEF;
-    background-color: #2A2A2A;
+    position: fixed;
+    background-color: #1E1E1E;
     top: 0;
     left: 0;
     right: 0;
@@ -87,15 +91,14 @@ header {
     transition: all .1s ease-out;
 }
 
-.navbar > hr {
-    border-bottom: 1px solid #CCCCCC;
-    display: none;
-}
-
 @media (width < 768px) {
     .navbar {
         display: flex;
         flex-direction: column;
+    }
+
+    .nav-main > img {
+        display: none;
     }
 
     .navbar > hr {
@@ -124,7 +127,7 @@ header {
         position: fixed;
         cursor: pointer;
         padding: 16px;
-        background-color: #2A2A2A;
+        background-color: #1E1E1E;
         width: 100%;
     }
 
@@ -184,6 +187,10 @@ header {
     .nav-social>a>img {
         padding: 6px;
         width: 16px;
+    }
+
+    .navbar>hr {
+        display: block;
     }
 }
 
