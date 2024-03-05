@@ -5,10 +5,16 @@ function Education() {
     <>
       <div className='education-content'>
         <div className='education-card'>
-          <img src="./education/TECSUP.svg" alt="TECSUP" title="TECSUP" />
-          <h3>Software Design & Development</h3>
+          <div className='education-main'>
+            <div className='education-info'>
+              <h3>Software Design & Development</h3>
+              <p>Versatile professional skilled in UX/UI design, web/mobile development, IT, and cloud services. Proven track record in creating user-centric interfaces, executing responsive solutions, and optimizing system functionalities. Proficient in cloud services, driving efficiency and innovation in digital landscapes.</p>
+            </div>
+            <div className='education-image'>
+              <img src="./education/TECSUP.svg" alt="TECSUP" title="TECSUP" />
+            </div>
+          </div>
           <hr />
-          <span>March 2021 - December 2023</span>
           <div className='achievements-container'>
             <button className='achievement'>
               <img src="./education/top.svg" alt="Top thrid" title=' Top third' />

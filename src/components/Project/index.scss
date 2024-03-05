@@ -144,6 +144,15 @@
     }
 
     .project-title {
-        margin-right: auto;
+        width: auto;
+    }
+
+    .project-header {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .project-filters {
+        margin-bottom: 14px;
     }
 }

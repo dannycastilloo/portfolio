@@ -4,7 +4,7 @@ const jobsData = [
         company: 'Consigue Ventas Inversiones',
         role: 'Web Developer',
         tasks: 'Contributed to the development, modification, and optimization of websites, employing a strategic approach to meet the evolving needs of users. Worked collaboratively within cross-functional teams to gain a comprehensive perspective and facilitate effective problem-solving.',
-        date: 'Jan. 2024 - Present',
+        date: 'Jan. 2024 - Mar. 2024',
         location: 'Remote'
     },
     {
