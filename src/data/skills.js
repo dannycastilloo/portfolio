@@ -28,28 +28,28 @@ const skillsData = [
         icon: './technologies/vue.svg',
     },
     {
+        technology: 'Nuxt',
+        icon: './technologies/nuxt.svg',
+    },
+    {
         technology: 'Sass',
         icon: './technologies/sass.svg',
-    },
-    {
-        technology: 'Firebase',
-        icon: './technologies/firebase.svg',
-    },
-    {
-        technology: 'Bootstrap',
-        icon: './technologies/bootstrap.svg',
     },
     {
         technology: 'Tailwind',
         icon: './technologies/tailwind.svg',
     },
     {
+        technology: 'Bootstrap',
+        icon: './technologies/bootstrap.svg',
+    },
+    {
         technology: 'Java',
         icon: './technologies/java.svg',
     },
     {
-        technology: 'Laravel',
-        icon: './technologies/laravel.svg',
+        technology: 'Spring Boot',
+        icon: './technologies/springboot.svg',
     },
     {
         technology: 'MongoDB',
@@ -64,20 +64,28 @@ const skillsData = [
         icon: './technologies/node.svg',
     },
     {
+        technology: 'Firebase',
+        icon: './technologies/firebase.svg',
+    },
+    {
         technology: 'PHP',
         icon: './technologies/php.svg',
+    },
+    {
+        technology: 'Laravel',
+        icon: './technologies/laravel.svg',
     },
     {
         technology: 'WordPress',
         icon: './technologies/wordpress.svg',
     },
     {
-        technology: 'Woocommerce',
-        icon: './technologies/woocommerce.svg',
-    },
-    {
         technology: 'Elementor',
         icon: './technologies/elementor.svg',
+    },
+    {
+        technology: 'Woocommerce',
+        icon: './technologies/woocommerce.svg',
     },
     {
         technology: 'Figma',
@@ -88,17 +96,10 @@ const skillsData = [
         icon: './technologies/photoshop.svg',
     },
     {
-        technology: 'Spring Boot',
-        icon: './technologies/springboot.svg',
-    },
-    {
         technology: 'Angular',
         icon: './technologies/angular.svg',
     },
-    {
-        technology: 'Nuxt',
-        icon: './technologies/nuxt.svg',
-    },
+    
 ]
 
 export default skillsData
