@@ -1,103 +1,103 @@
 const skillsData = [
     {
         technology: 'HTML',
-        icon: './technologies/html.svg',
+        icon: './technologies/html.png',
     },
     {
         technology: 'CSS',
-        icon: './technologies/css.svg',
+        icon: './technologies/css.png',
     },
     {
         technology: 'JavaScript',
-        icon: './technologies/js.svg',
+        icon: './technologies/js.png',
     },
     {
         technology: 'TypeScript',
-        icon: './technologies/ts.svg',
+        icon: './technologies/ts.png',
     },
     {
         technology: 'React',
-        icon: './technologies/react.svg',
+        icon: './technologies/react.png',
     },
     {
         technology: 'Next',
-        icon: './technologies/next.svg',
+        icon: './technologies/next.png',
     },
     {
         technology: 'Vue',
-        icon: './technologies/vue.svg',
+        icon: './technologies/vue.png',
     },
     {
         technology: 'Nuxt',
-        icon: './technologies/nuxt.svg',
+        icon: './technologies/nuxt.png',
     },
     {
         technology: 'Sass',
-        icon: './technologies/sass.svg',
+        icon: './technologies/sass.png',
     },
     {
         technology: 'Tailwind',
-        icon: './technologies/tailwind.svg',
+        icon: './technologies/tailwind.png',
     },
     {
         technology: 'Bootstrap',
-        icon: './technologies/bootstrap.svg',
+        icon: './technologies/bootstrap.png',
     },
     {
         technology: 'Java',
-        icon: './technologies/java.svg',
+        icon: './technologies/java.png',
     },
     {
         technology: 'Spring Boot',
-        icon: './technologies/springboot.svg',
+        icon: './technologies/springboot.png',
     },
     {
         technology: 'MongoDB',
-        icon: './technologies/mongodb.svg',
+        icon: './technologies/mongodb.png',
     },
     {
         technology: 'MySQL',
-        icon: './technologies/mysql.svg',
+        icon: './technologies/mysql.png',
     },
     {
         technology: 'Node',
-        icon: './technologies/node.svg',
+        icon: './technologies/node.png',
     },
     {
         technology: 'Firebase',
-        icon: './technologies/firebase.svg',
+        icon: './technologies/firebase.png',
     },
     {
         technology: 'PHP',
-        icon: './technologies/php.svg',
+        icon: './technologies/php.png',
     },
     {
         technology: 'Laravel',
-        icon: './technologies/laravel.svg',
+        icon: './technologies/laravel.png',
     },
     {
         technology: 'WordPress',
-        icon: './technologies/wordpress.svg',
+        icon: './technologies/wordpress.png',
     },
     {
         technology: 'Elementor',
-        icon: './technologies/elementor.svg',
+        icon: './technologies/elementor.png',
     },
     {
         technology: 'Woocommerce',
-        icon: './technologies/woocommerce.svg',
+        icon: './technologies/woocommerce.png',
     },
     {
         technology: 'Figma',
-        icon: './technologies/figma.svg',
+        icon: './technologies/figma.png',
     },
     {
         technology: 'Photoshop',
-        icon: './technologies/photoshop.svg',
+        icon: './technologies/photoshop.png',
     },
     {
         technology: 'Angular',
-        icon: './technologies/angular.svg',
+        icon: './technologies/angular.png',
     },
     
 ]
