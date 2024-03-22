@@ -37,10 +37,10 @@ function HomeView() {
             </div>
 
             <section className='w-full flex justify-between items-center bg-white py-20 md:py-32'>
-                <div className='container-sm mx-auto flex flex-col gap-16 lg:gap-24 lg:container'>
+                <div className='container-sm mx-auto flex flex-col gap-16 w-10/12 lg:w-12/12 lg:gap-24 lg:container'>
                     <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
-                        <h3 className='text-raleway font-extrabold text-4xl text-center text-defaultFont lg:text-5xl'>Services</h3>
-                        <p className='text-center text-xl text-neutral600 w-10/12 lg:text-2xl lg:w-6/6'>Elevate your business with my tailored solutions, spanning consultation to execution, across diverse domains.</p>
+                        <h3 className='text-raleway font-extrabold text-3xl md:text-4xl lg:text-5xl text-neutral-800 text-center lg:text-start'>Services</h3>
+                        <p className='text-center text-lg text-neutral600 w-12/12 md:text-xl lg:text-2xl lg:w-10/12'>Elevate your business with my tailored solutions, spanning consultation to execution, across diverse domains.</p>
                     </div>
                     <div className='flex flex-col gap-10 mx-auto justify-center lg:gap-5'>
                         <div className='flex flex-col gap-10 h-6/6 justify-center mx-auto lg:h-4/6 lg:flex-row lg:gap-5'>
@@ -106,11 +106,11 @@ function HomeView() {
                 </div>
             </section>
 
-            <section className='w-full flex justify-between items-center bg-gradient-to-r from-lightpurple to-lightblue py-24 md:py-32'>
-                <div className='container mx-auto flex flex-col gap-28 w-10/12 lg:w-12/12 lg:gap-36'>
+            <section className='w-full flex justify-between items-center bg-gradient-to-r from-lightpurple to-lightblue py-20 md:py-32'>
+                <div className='container mx-auto flex flex-col w-10/12 lg:w-12/12 gap-16 md:gap-20 lg:gap-24'>
                     <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
-                        <h3 className='text-raleway font-extrabold text-4xl text-center text-white lg:text-5xl'>Check my projects</h3>
-                        <p className='text-center text-xl text-neutral100 w-10/12 lg:text-2xl lg:w-6/6'>Explore my portfolio of innovative endeavors and successful collaborations that highlight my expertise and commitment to excellence.</p>
+                        <h3 className='text-raleway font-extrabold text-3xl text-center text-white md:text-4xl lg:text-5xl'>Check my projects</h3>
+                        <p className='text-center text-lg text-neutral100 w-12/12 md:text-xl lg:text-2xl lg:w-10/12'>Explore my portfolio of innovative endeavors and successful collaborations that highlight my expertise and commitment to excellence.</p>
                     </div>
                     <div className='flex mx-auto'>
                         <img src="./projects/website.png" alt="Website" title='Website' />
@@ -122,11 +122,11 @@ function HomeView() {
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-white py-20 lg:py-28'>
-                <div className='container flex flex-col mx-auto justify-between items-center gap-6 md:gap-14'>
+            <section className='w-full flex flex-col justify-between items-center bg-white py-20 md:py-32'>
+                <div className='container flex flex-col mx-auto justify-between items-center gap-6 md:gap-14 w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-16 justify-center items-center'>
                         <h3 className='text-raleway font-extrabold text-4xl text-center text-defaultFont lg:text-5xl'>Featured partnerships</h3>
-                        <p className='text-center text-xl text-neutral700 w-10/12 lg:text-2xl'>Trusted organizations we've collaborated with to deliver outstanding results.</p>
+                        <p className='text-center text-neutral700 text-lg w-12/12 md:text-xl lg:text-2xl lg:w-10/12'>Trusted organizations we've collaborated with to deliver outstanding results.</p>
                     </div>
                     <Swiper
                         slidesPerView={4}
@@ -176,7 +176,7 @@ function HomeView() {
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-brand100 py-32'>
+            <section className='w-full flex flex-col justify-between items-center bg-brand100 py-20 md:py-32'>
                 <div className='container flex flex-col mx-auto justify-center items-center w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
                         <h3 className='text-raleway font-extrabold text-4xl text-center text-defaultFont lg:text-5xl'>Testimonials</h3>
