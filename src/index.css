@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 .title {
-    font-size: 6em;
+    font-size: 5rem;
     text-wrap: wrap;
+}
+
+.subtitle {
+    font-size: 1.6rem;
 }
 
 .presentation {
@@ -20,8 +24,12 @@
 
 @media (width <= 390px) {
     .title {
-        font-size: 3em;
+        font-size: 3rem;
     }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }    
 
     .presentation {
         background-image: url('/background/background_sm.webp');
@@ -30,8 +38,8 @@
 
 @media (390px < width < 1440px) {
     .title {
-        font-size: 5.4em;
-    }
+        font-size: 5rem;
+    }  
 
     .presentation {
         background-image: url('/background/background_md.webp');
