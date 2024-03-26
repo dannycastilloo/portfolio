@@ -14,12 +14,12 @@
 
 @media (width <= 390px) {
     .presentation {
-        background-image: url('./background_sm.webp');
+        background-image: url('./background/background_sm.webp');
     }
 }
 
 @media (390px < width < 1440px) {
     .presentation {
-        background-image: url('./background_md.webp');
+        background-image: url('./background/background_md.webp');
     }
 }
