@@ -6,6 +6,7 @@
     background-image: url('/background_full.webp');
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+    background-color: #0A0A0A;
 }
 
 .bento, .project-card {
