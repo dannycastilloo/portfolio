@@ -6,7 +6,7 @@
     background-image: url('/background.png');
     background-repeat: no-repeat;
     background-size: 100% 100vh;
-    background-color: #0A0A0A;
+    background-color: rgba(10, 10, 10, 0.7);
 }
 
 .bento, .project-card {
