@@ -12,7 +12,7 @@ function ProjectCard({ title, poster, logo, description, url }) {
 
                 <p className="text-neutral600">{description}</p>
 
-                <a href={url} className="bg-brand500 flex gap-3 justify-center items-center rounded-lg text-white mt-6 py-2 font-medium hover:bg-brand600 cursor-pointer hover:py-3 transition-all duration-500">
+                <a href={url} className="bg-purple1 flex gap-3 justify-center items-center rounded-lg text-white mt-6 py-2 font-medium hover:bg-purple2 cursor-pointer hover:py-3 transition-all duration-500">
                     Visit project
                     <img src="./icons/external_link.svg" alt="See project" title="See project" />
                 </a>

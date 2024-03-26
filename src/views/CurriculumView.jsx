@@ -9,9 +9,9 @@ import skillsData from '../data/skills';
 
 function CurriculumView() {
   return (
-    <div className='py-44 bg-neutral100'>
+    <div className='py-44 bg-backgroundBlack'>
       <div className='container mx-auto flex flex-col gap-20 w-10/12'>
-        <h2 className='text-center font-raleway font-extrabold text-defaultFont text-5xl'>Curriculum</h2>
+        <h2 className='text-center font-archivo font-extrabold text-white text-5xl'>Curriculum</h2>
 
         <div className='bg-white container'>
           <section className='flex flex-col py-16 px-10 gap-10'>

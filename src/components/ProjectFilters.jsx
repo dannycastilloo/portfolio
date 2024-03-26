@@ -15,13 +15,11 @@ function ProjectFilters({ activeFilters, handleFilterClick, handleClearFilter })
                 <button
                     key={filter.type}
                     onClick={() => handleFilterClick(filter.type)}
-                    className={`flex justify-center gap-2 project-filter ${activeFilters.includes(filter.type) ? 'active bg-neutral800 text-white px-3 py-1 rounded text-sm' : ''}`}
+                    className={`flex justify-center gap-2 project-filter text-gray1 hover:text-white ${activeFilters.includes(filter.type) ? 'active text-white px-3 py-1 rounded' : ''}`}
                 >
                     {filter.label}
                     {activeFilters.includes(filter.type) && (
-                        <span className="clear-filter" onClick={() => handleClearFilter(filter.type)}>
-                            x
-                        </span>
+                        <span className="clear-filter" onClick={() => handleClearFilter(filter.type)}>x</span>
                     )}
                 </button>
             ))}

@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.presentation {
+    background-image: url('./background_full.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.bento {
+    background-color: rgba(62, 59, 64, 0.5);
+}
+
+@media (width <= 390px) {
+    .presentation {
+        background-image: url('./background_sm.png');
+    }
+}
+
+@media (390px < width < 1400px) {
+    .presentation {
+        background-image: url('./background_md.png');
+    }
+}
