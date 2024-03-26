@@ -136,11 +136,11 @@ function HomeView() {
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
-                                spaceBetween: 0,
+                                spaceBetween: 5,
                             },
                             768: {
                                 slidesPerView: 2,
-                                spaceBetween: 3,
+                                spaceBetween: 5,
                             },
                             1024: {
                                 slidesPerView: 4,
@@ -169,13 +169,13 @@ function HomeView() {
                             <img className='mx-auto' src="./companies/marketing.png" alt="Marketing 70" title='Marketing 70' />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img className='mx-aut' src="./companies/ventas.png" alt="Consigue Ventas Inversiones" title='Consigue Ventas Inversiones' />
+                            <img className='mx-auto' src="./companies/ventas.png" alt="Consigue Ventas Inversiones" title='Consigue Ventas Inversiones' />
                         </SwiperSlide>
                     </Swiper>
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-backgroundBlack py-20 md:py-32'>
+            <section className='w-full flex flex-col justify-between items-center bg-backgroundBlack py-10 md:py-16'>
                 <div className='container flex flex-col mx-auto justify-center items-center w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
                         <h3 className='text-archivo font-extrabold text-4xl text-center text-white lg:text-5xl'>Testimonials</h3>
@@ -190,11 +190,11 @@ function HomeView() {
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
-                                spaceBetween: 0,
+                                spaceBetween: 5,
                             },
                             768: {
                                 slidesPerView: 2,
-                                spaceBetween: 0,
+                                spaceBetween: 5,
                             },
                             1024: {
                                 slidesPerView: 3,
@@ -215,9 +215,9 @@ function HomeView() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className='flex flex-col mx-auto gap-3 justify-center items-center lg:flex-row'>
-                        <span className='font-light'>Need a good experience, too?</span>
-                        <a href="mailto:dannycastillootiniano@gmail.com" className='underline'>Contact Me</a>
+                    <div className='flex flex-col mx-auto gap-3 justify-center items-center text-gray1 lg:flex-row md:text-lg'>
+                        <span>Need a good experience, too?</span>
+                        <a href="mailto:dannycastillootiniano@gmail.com" className='font-semibold hover:text-white transition-all duration-300'>Contact Me</a>
                     </div>
                 </div>
             </section>

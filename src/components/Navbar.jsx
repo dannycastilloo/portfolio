@@ -39,7 +39,7 @@ function Navbar() {
                     <NavLink onClick={closeMenu} title="Blog" className="text-gray1 py-3 px-2 hover:text-white transition-all duration-300 rounded text-sm" to="/blog">Blog</NavLink>
                 </nav>
                 <div className={`flex justify-between ml-auto gap-3 lg:flex lg:gap-6 ${isOpen ? 'flex' : 'hidden'}`}>
-                    <a href="./cv.pdf" target="_blank" className="px-6 py-2 bg-brand100 text-brand600 rounded font-semibold text-sm justify-center items-center cursor-pointer text-center text-gray1 hover:text-white transition-all duration-300">Read CV</a>
+                    <a href="./Danny_Castillo.pdf" target="_blank" className="px-6 py-2 bg-brand100 text-brand600 rounded font-semibold text-sm justify-center items-center cursor-pointer text-center text-gray1 hover:text-white transition-all duration-300">Read CV</a>
                     <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 bg-brand600 text-black1 bg-gray2 hover:bg-purple1 hover:text-white rounded font-semibold text-sm flex justify-center items-center cursor-pointer transition-all duration-300">Contact Me</a>
                 </div>
             </header>

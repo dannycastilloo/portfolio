@@ -13,7 +13,7 @@ function CurriculumView() {
       <div className='container mx-auto flex flex-col gap-20 w-10/12'>
         <h2 className='text-center font-archivo font-extrabold text-white text-5xl'>Curriculum</h2>
 
-        <div className='bg-white container'>
+        <div className='bg-white container rounded-lg'>
           <section className='flex flex-col py-16 px-10 gap-10'>
             <h3 className='font-medium text-3xl text-defaultFont'>Education</h3>
             <div>
