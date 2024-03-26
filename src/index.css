@@ -8,18 +8,18 @@
     background-size: 100% 100vh;
 }
 
-.bento {
+.bento, .project-card {
     background-color: rgba(62, 59, 64, 0.5);
 }
 
 @media (width <= 390px) {
     .presentation {
-        background-image: url('./background_sm.png');
+        background-image: url('./background_sm.webp');
     }
 }
 
-@media (390px < width < 1400px) {
+@media (390px < width < 1440px) {
     .presentation {
-        background-image: url('./background_md.png');
+        background-image: url('./background_md.webp');
     }
 }

@@ -43,7 +43,7 @@ function HomeView() {
                     </div>
                     <div className='flex flex-col gap-10 mx-auto justify-center lg:gap-5'>
                         <div className='flex flex-col gap-10 h-6/6 justify-center mx-auto lg:h-4/6 lg:flex-row lg:gap-5'>
-                            <div className='rounded-xl bg-lightblue2 shadow-md p-10 flex flex-col gap-10 w-10/12 mx-auto lg:w-5/12 lg:gap-5 bento'>
+                            <div className='rounded-xl shadow-md p-10 flex flex-col gap-10 w-10/12 mx-auto lg:w-5/12 lg:gap-5 bento'>
                                 <div className='flex flex-col gap-5'>
                                     <h2 className='font-semibold text-2xl text-white text-center lg:text-start'>Web Development</h2>
                                     <p className='text-white text-center lg:text-start'>Empower your online presence with bespoke web solutions tailored to your needs.</p>
@@ -57,7 +57,7 @@ function HomeView() {
                                 <img className='mt-auto rounded-md mx-auto lg:ml-auto lg:mx-0' src="./services/desktop.svg" alt="Web Development" title='Web Development' />
                             </div>
                             <div className='flex flex-col gap-10 w-10/12 justify-center mx-auto lg:w-7/12 lg:gap-5'>
-                                <div className='w-full rounded-xl bg-lightblue2 items-center shadow-md mx-auto p-10 flex flex-col h-6/6 gap-10 lg:h-3/6 lg:flex-row bento'>
+                                <div className='w-full rounded-xl items-center shadow-md mx-auto p-10 flex flex-col h-6/6 gap-10 lg:h-3/6 lg:flex-row bento'>
                                     <div className='flex flex-col gap-5 w-6/6 lg:w-4/6'>
                                         <h2 className='font-semibold text-2xl text-white text-center lg:text-start'>Mobile Development</h2>
                                         <p className='text-white text-center lg:text-start'>Reach your audience on the go with immersive mobile applications designed for success.</p>
@@ -68,7 +68,7 @@ function HomeView() {
                                     </div>
                                 </div>
                                 <div className='w-full flex flex-col gap-10 h-6/6 mx-auto justify-center lg:flex-row lg:h-3/6 lg:gap-5'>
-                                    <div className='rounded-xl bg-lightblue2 shadow-md p-10 flex flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bento'>
+                                    <div className='rounded-xl shadow-md p-10 flex flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bento'>
                                         <div className='flex flex-col gap-5'>
                                             <h2 className='font-semibold text-2xl text-white text-center lg:text-start'>UX/UI Design</h2>
                                             <p className='text-white text-center lg:text-start'>Elevate user satisfaction and retention.</p>
@@ -76,7 +76,7 @@ function HomeView() {
 
                                         <img className='mt-auto rounded-md mx-auto lg:ml-auto lg:mx-0' src="./services/design.svg" alt="UX/UI" title='UX/UI' />
                                     </div>
-                                    <div className='rounded-xl bg-lightblue2 shadow-md p-10 flex flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bento'>
+                                    <div className='rounded-xl shadow-md p-10 flex flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bento'>
                                         <div className='flex flex-col gap-5'>
                                             <h2 className='font-semibold text-2xl text-white text-center lg:text-start'>SEO</h2>
                                             <p className='text-white text-center lg:text-start'>Climb the ranks of search engines and drive traffic.</p>
@@ -89,14 +89,14 @@ function HomeView() {
                         </div>
 
                         <div className='flex flex-col gap-10 h-6/6 lg:flex-row lg:h-2/6 lg:gap-5'>
-                            <div className='rounded-xl bg-lightblue2 shadow-md py-10 px-0 flex flex-col mx-auto w-10/12 justify-between gap-10 lg:w-8/12 lg:flex-row lg:gap-0 lg:p-10 bento'>
+                            <div className='rounded-xl shadow-md py-10 px-0 flex flex-col mx-auto w-10/12 justify-between gap-10 lg:w-8/12 lg:flex-row lg:gap-0 lg:p-10 bento'>
                                 <div className='flex flex-col gap-5 w-7/12 mx-auto py-4'>
                                     <h2 className='font-medium text-2xl text-white text-center lg:text-start'>Brand Identity</h2>
                                     <p className='text-white text-center lg:text-start'>Resonate with your audience and set yourself apart from the competition.</p>
                                 </div>
                                 <img className='mt-auto rounded-md mx-auto' src="./services/brand.svg" alt="Brand Identity" title='Brand Identity' />
                             </div>
-                            <div className='rounded-xl bg-lightblue2 shadow-md py-10 px-6 flex flex-col justify-center items-center gap-10 mx-auto w-10/12 lg:w-4/12 lg:gap-5 lg:p-10 bento'>
+                            <div className='rounded-xl shadow-md py-10 px-6 flex flex-col justify-center items-center gap-10 mx-auto w-10/12 lg:w-4/12 lg:gap-5 lg:p-10 bento'>
                                 <span className='font-semibold text-3xl text-white text-center lg:text-2xl'>Ready for the change?</span>
                                 <p className='text-white text-center text-lg lg:text-base'>Write me and let's achieve our goals together!</p>
                             </div>
