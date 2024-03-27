@@ -13,7 +13,7 @@ function HomeView() {
                 <div className='container flex flex-col gap-16 mx-auto justify-between items-center mt-32 md:mt-36 lg:mt-0 lg:flex-row lg:gap-0 w-10/12 h-screen'>
                     <div className='flex flex-col mx-auto items-start gap-10'>
                         <h1 className='font-extrabold text-start text-white font-archivo lg:text-center text-6xl leading-18 md:text-7xl lg:text-8xl md:leading-24'>Web Developer & UX/UI Designer</h1>
-                        <p className='text-start text-gray1 text-neutral100 lg:text-center lg:mx-auto subtitle'>Unleash the Power of Technology & Elevate Your Digital Presence</p>
+                        <p className='text-start text-gray1 lg:text-center lg:mx-auto text-lg md:text-xl lg:texl-2xl'>Unleash the Power of Technology & Elevate Your Digital Presence</p>
                         <div className='flex flex-col gap-6 lg:mx-auto justify-start items-start md:flex-row md:justify-center md:items-center md:gap-5'>
                             <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-purple1 hover:bg-purple2 text-white rounded font-semibold text-sm flex justify-center items-center cursor-pointer transition-all duration-300">Hire Me!</a>
                             <div className='flex gap-5'>
