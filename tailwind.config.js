@@ -27,7 +27,7 @@ export default {
         archivo: ['Archivo'],
       },
       lineHeight: {
-        '14': '4rem',
+        '18': '5rem',
         '24': '6.5rem',
       },
       width: {
