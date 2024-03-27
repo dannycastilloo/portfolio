@@ -7,10 +7,6 @@
     text-wrap: wrap;
 }
 
-.subtitle {
-    font-size: 1.6rem;
-}
-
 .presentation {
     background-image: url('/background.png');
     background-repeat: no-repeat;
@@ -22,21 +18,13 @@
     background-color: rgba(62, 59, 64, 0.5);
 }
 
-@media (width <= 390px) {
-    .title {
-        font-size: 3rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-    }    
-
+@media (width < 768px) {  
     .presentation {
         background-image: url('/background/background_sm.webp');
     }
 }
 
-@media (390px < width < 1440px) {
+@media (768px <= width < 1440px) {
     .title {
         font-size: 5rem;
     }  
