@@ -10,7 +10,7 @@ function ProjectFilters({ activeFilters, handleFilterClick, handleClearFilter })
     ];
 
     return (
-        <div className='flex justify-center items-center flex-wrap gap-6 lg:gap-10'>
+        <div className='flex justify-center items-center flex-wrap gap-6 lg:justify-between'>
             {filters.map((filter) => (
                 <button
                     key={filter.type}
