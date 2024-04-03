@@ -28,7 +28,8 @@ export default {
       },
       lineHeight: {
         '18': '5rem',
-        '24': '6.5rem',
+        '26': '7rem',
+        '36': '8rem',
       },
       width: {
         '112': '28rem',

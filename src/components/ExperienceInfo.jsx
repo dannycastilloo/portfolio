@@ -20,7 +20,7 @@ function ExperienceInfo({ company, role }) {
                         <span>{date}</span>
                     </div>
                 </div>
-                <div className='exp-location'>
+                <div className='bg-gray1 p-10 rounded-md'>
                     <h3>{location}</h3>
                 </div>
             </div>

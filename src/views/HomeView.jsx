@@ -12,7 +12,7 @@ function HomeView() {
             <section className='w-full h-screen flex flex-col justify-between items-center presentation m-auto'>
                 <div className='container flex flex-col gap-16 mx-auto justify-between items-center mt-32 md:mt-36 lg:mt-0 lg:flex-row lg:gap-0 w-10/12 h-screen'>
                     <div className='flex flex-col mx-auto items-start gap-10'>
-                        <h1 className='font-extrabold text-start text-white font-archivo lg:text-center text-6xl leading-18 md:text-7xl lg:text-8xl md:leading-24'>Web Developer & UX/UI Designer</h1>
+                        <h1 className='font-extrabold text-start text-white font-archivo lg:text-center text-6xl leading-18 md:text-7xl lg:text-8xl md:leading-26 lg:leading-36'>Web Developer & UX/UI Designer</h1>
                         <p className='text-start text-gray1 lg:text-center lg:mx-auto text-lg md:text-xl lg:texl-2xl'>Unleash the Power of Technology & Elevate Your Digital Presence</p>
                         <div className='flex flex-col gap-6 lg:mx-auto justify-start items-start md:flex-row md:justify-center md:items-center md:gap-5'>
                             <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-purple1 hover:bg-purple2 text-white rounded font-semibold text-sm flex justify-center items-center cursor-pointer transition-all duration-300">Hire Me!</a>
@@ -36,7 +36,7 @@ function HomeView() {
             </section>
 
             <section className='w-full flex justify-between items-center bg-backgroundBlack py-20 md:py-32'>
-                <div className='container-sm mx-auto flex flex-col gap-16 w-10/12 lg:w-12/12 lg:gap-24 lg:container'>
+                <div className='container-sm mx-auto flex flex-col gap-16 w-10/12 md:w-10/12 lg:w-12/12 lg:gap-24 lg:container'>
                     <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
                         <h3 className='text-archivo font-extrabold text-3xl md:text-4xl lg:text-5xl text-white text-center lg:text-start'>Services</h3>
                         <p className='text-center text-lg text-neutral600 w-12/12 md:text-xl lg:text-2xl lg:w-10/12 text-gray3'>Elevate your business with my tailored solutions, spanning consultation to execution, across diverse domains.</p>
@@ -215,7 +215,7 @@ function HomeView() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className='flex flex-col mx-auto gap-3 justify-center items-center text-gray1 lg:flex-row md:text-lg'>
+                    <div className='flex flex-col mx-auto gap-3 justify-center items-center text-gray1 md:text-lg'>
                         <span>Need a good experience, too?</span>
                         <a href="mailto:dannycastillootiniano@gmail.com" className='font-semibold hover:text-white transition-all duration-300'>Contact Me</a>
                     </div>
