@@ -39,9 +39,6 @@ function Footer() {
                         <a href="https://github.com/dannycastilloo" title="Github">
                             <img className="w-10/12 lg:w-12/12" src="./icons/github.svg" alt="Github" title="Github" />
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=61551768310042" title="Facebook">
-                            <img className="w-10/12 lg:w-12/12" src="./icons/facebook.svg" alt="Facebook" title="Facebook" />
-                        </a>
                         <a href="https://dribbble.com/dannycastillo" title="Dribble">
                             <img className="w-10/12 lg:w-12/12" src="./icons/dribble.svg" alt="Dribble" title="Dribble" />
                         </a>
