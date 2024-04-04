@@ -33,13 +33,16 @@ function Footer() {
                 <div className='flex flex-col gap-6 justify-between items-center md:flex-row md:gap-0'>
                     <p className='font-light text-white text-sm lg:text-base'>Designed & Developed by Danny Castillo</p>
                     <div className='flex gap-5'>
-                        <a href="https://www.linkedin.com/in/dannycastilloo/" title="Linkedin">
+                        <a target="_blank" href="https://www.behance.net/dannycastillo8" title="Behance">
+                            <img className="w-10/12 lg:w-12/12" src="./icons/behance.svg" alt="Behance" title="Behance" />
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/dannycastilloo/" title="Linkedin">
                             <img className="w-10/12 lg:w-12/12" src="./icons/linkedin.svg" alt="Linkedin" title="Linkedin" />
                         </a>
-                        <a href="https://github.com/dannycastilloo" title="Github">
+                        <a target="_blank" href="https://github.com/dannycastilloo" title="Github">
                             <img className="w-10/12 lg:w-12/12" src="./icons/github.svg" alt="Github" title="Github" />
                         </a>
-                        <a href="https://dribbble.com/dannycastillo" title="Dribble">
+                        <a target="_blank" href="https://dribbble.com/dannycastillo" title="Dribble">
                             <img className="w-10/12 lg:w-12/12" src="./icons/dribble.svg" alt="Dribble" title="Dribble" />
                         </a>
                     </div>

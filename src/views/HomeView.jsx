@@ -12,18 +12,21 @@ function HomeView() {
             <section className='w-full h-screen flex flex-col justify-between items-center presentation m-auto'>
                 <div className='container flex flex-col gap-16 mx-auto justify-between items-center mt-32 md:mt-36 lg:mt-0 lg:flex-row lg:gap-0 w-10/12 h-screen'>
                     <div className='flex flex-col mx-auto items-start gap-10'>
-                        <h1 className='font-extrabold text-start text-white font-archivo lg:text-center text-6xl leading-18 md:text-7xl lg:text-7xl md:leading-26 lg:leading-36'>Web Developer & UX/UI Designer</h1>
+                        <h1 className='font-bold text-start text-white font-archivo lg:text-center text-6xl leading-18 md:text-7xl lg:text-7xl md:leading-26 lg:leading-36'>Web Developer & UX/UI Designer</h1>
                         <p className='text-start text-gray1 lg:text-center lg:mx-auto text-lg md:text-xl lg:texl-2xl'>Unleash the Power of Technology & Elevate Your Digital Presence</p>
                         <div className='flex flex-col gap-6 lg:mx-auto justify-start items-start md:flex-row md:justify-center md:items-center md:gap-5'>
                             <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-purple1 hover:bg-purple2 text-white rounded font-semibold text-sm flex justify-center items-center cursor-pointer transition-all duration-300">Hire Me!</a>
                             <div className='flex gap-5'>
-                                <a className='px-3 py-3 rounded-full hover:bg-black transition-all duration-30' href="https://www.linkedin.com/in/dannycastilloo/" title="Linkedin">
+                                <a target="_blank" className='px-3 py-3 rounded-full hover:bg-black transition-all duration-300' href="https://www.behance.net/dannycastillo8" title="Behance">
+                                    <img className="w-10/12 lg:w-12/12 m-auto" src="./icons/behance.svg" alt="Behance" title="Behance" />
+                                </a>
+                                <a target="_blank" className='px-3 py-3 rounded-full hover:bg-black transition-all duration-30' href="https://www.linkedin.com/in/dannycastilloo/" title="Linkedin">
                                     <img className="w-10/12 lg:w-12/12 m-auto" src="./icons/linkedin.svg" alt="Linkedin" title="Linkedin" />
                                 </a>
-                                <a className='px-3 py-3 rounded-full hover:bg-black transition-all duration-30' href="https://github.com/dannycastilloo" title="Github">
+                                <a target="_blank" className='px-3 py-3 rounded-full hover:bg-black transition-all duration-30' href="https://github.com/dannycastilloo" title="Github">
                                     <img className="w-10/12 lg:w-12/12 m-auto" src="./icons/github.svg" alt="Github" title="Github" />
                                 </a>
-                                <a className='px-3 py-3 rounded-full hover:bg-black transition-all duration-300' href="https://dribbble.com/dannycastillo" title="Dribble">
+                                <a target="_blank" className='px-3 py-3 rounded-full hover:bg-black transition-all duration-300' href="https://dribbble.com/dannycastillo" title="Dribble">
                                     <img className="w-10/12 lg:w-12/12 m-auto" src="./icons/dribble.svg" alt="Dribble" title="Dribble" />
                                 </a>
                             </div>
