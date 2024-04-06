@@ -19,9 +19,9 @@ function Footer() {
                             <img src="./icons/map_pin.svg" alt="Location" title="Location" />
                             <span>VA, United States</span>
                         </a>
-                        <a className="hidden gap-2 md:flex" href="https://wa.link/zvm7kf">
+                        <a className="hidden gap-2 md:flex" href="https://wa.link/x63qdy">
                             <img src="./icons/message_circle.svg" alt="Chat" title="Chat" />
-                            <span>+51 992 975 372</span>
+                            <span>+1 (703) 884 - 5926</span>
                         </a>
                         <a className="hidden gap-2 md:flex" href="mailto:dannycastillootiniano@gmail.com">
                             <img src="./icons/mail.svg" alt="Mail" title="Mail" />
