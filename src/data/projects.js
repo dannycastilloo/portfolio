@@ -10,7 +10,7 @@ const projectsData = [
     },
     {
         title: 'Audioluxe',
-        description: 'NASA hackaton project that allows users to share their projects and receive support from investors.',
+        description: 'Shopping website made to buy various instruments.',
         poster: './projects/audioluxe.jpg',
         logo: './logos/audioluxe.svg',
         type: 'Ecommerce',
@@ -18,8 +18,17 @@ const projectsData = [
         technologies: ['./technologies/HTML.svg', './technologies/CSS.svg', './technologies/Bootstrap.svg', './technologies/Figma.svg'],
     },
     {
+        title: 'Explore Me',
+        description: 'Website made to explore details of all the countries in the world.',
+        poster: './projects/exploreme.jpg',
+        logo: './logos/exploreme.svg',
+        type: 'Entertainment',
+        screenshots: ['./projects/exploreme.jpg'],
+        technologies: ['./technologies/HTML.svg', './technologies/CSS.svg', './technologies/React.svg'],
+    },
+    {
         title: 'Airbnb Clone',
-        description: 'NASA hackaton project that allows users to share their projects and receive support from investors.',
+        description: 'User interface of the famous Airbnb company.',
         poster: './projects/airbnb.jpg',
         logo: './logos/airbnb.svg',
         type: 'Clone',
@@ -28,7 +37,7 @@ const projectsData = [
     },
     {
         title: 'Shocket',
-        description: 'NASA hackaton project that allows users to share their projects and receive support from investors.',
+        description: 'Ecommerce page that extracts products information from the internet.',
         poster: './projects/shocket.jpg',
         logo: './logos/shocket.svg',
         type: 'Ecommerce',
@@ -37,7 +46,7 @@ const projectsData = [
     },
     {
         title: 'Bonapharm Clone',
-        description: 'NASA hackaton project that allows users to share their projects and receive support from investors.',
+        description: 'Website made to inform Bonapharm clients about their services and history as a health company.',
         poster: './projects/bonapharm.jpg',
         logo: './logos/bonapharm.svg',
         type: 'Clone',
@@ -46,7 +55,7 @@ const projectsData = [
     },
     {
         title: 'Vue Clone',
-        description: 'NASA hackaton project that allows users to share their projects and receive support from investors.',
+        description: 'Home page of the famous Vue.js official site.',
         poster: './projects/vue.jpg',
         logo: './logos/vue.svg',
         type: 'Clone',
