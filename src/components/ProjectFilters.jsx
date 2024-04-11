@@ -2,15 +2,15 @@ function ProjectFilters({ activeFilters, handleFilterClick, handleClearFilter })
     const filters = [
         { type: 'Ecommerce', label: 'Ecommerce' },
         { type: 'Landing Page', label: 'Landing Page' },
-        { type: 'Portfolio', label: 'Portfolio' },
         { type: 'Streaming', label: 'Streaming' },
         { type: 'Learning', label: 'Learning' },
+        { type: 'Data', label: 'Data' },
         { type: 'Entertainment', label: 'Entertainment' },
         { type: 'Clone', label: 'Clone' }
     ];
 
     return (
-        <div className='flex justify-center items-center flex-wrap gap-6 lg:justify-between'>
+        <div className='flex justify-between items-center flex-wrap lg:gap-10 lg:justify-center'>
             {filters.map((filter) => (
                 <button
                     key={filter.type}
