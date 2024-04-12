@@ -51,7 +51,7 @@ function ProjectsView() {
                         handleClearFilter={handleClearFilter}
                     />
 
-                    <div className='flex flex-wrap justify-between items-center md:justify-between lg:justify-center mt-0 md:mt-4 lg:gap-32'>
+                    <div className='flex flex-wrap justify-between items-center gap-10 md:justify-between lg:justify-center mt-0 md:mt-4 lg:gap-32'>
                         {searchedProjects.map((project, index) => (
                             <ProjectCard
                                 key={index}
