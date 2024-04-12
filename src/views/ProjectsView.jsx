@@ -50,16 +50,16 @@ function ProjectsView() {
                         handleFilterClick={handleFilterClick}
                         handleClearFilter={handleClearFilter}
                     />
+                </div>
 
-                    <div className='flex flex-wrap justify-between items-center gap-12 md:justify-between md:gap-20 lg:justify-center mt-0 md:mt-4 lg:gap-32'>
-                        {searchedProjects.map((project, index) => (
-                            <ProjectCard
-                                key={index}
-                                {...project}
-                                onClick={() => handleProjectClick(project)}
-                            />
-                        ))}
-                    </div>
+                <div className='flex flex-wrap justify-between items-center gap-12 md:justify-between md:gap-20 lg:justify-center mt-0 md:mt-4 lg:gap-32'>
+                    {searchedProjects.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            {...project}
+                            onClick={() => handleProjectClick(project)}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
