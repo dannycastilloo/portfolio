@@ -3,14 +3,13 @@ function ProjectFilters({ activeFilters, handleFilterClick, handleClearFilter })
         { type: 'Ecommerce', label: 'Ecommerce' },
         { type: 'Landing Page', label: 'Landing Page' },
         { type: 'Streaming', label: 'Streaming' },
-        { type: 'Learning', label: 'Learning' },
         { type: 'Data', label: 'Data' },
         { type: 'Entertainment', label: 'Entertainment' },
         { type: 'Clone', label: 'Clone' }
     ];
 
     return (
-        <div className='flex justify-between items-center flex-wrap lg:gap-10 lg:justify-center'>
+        <div className='flex justify-center items-center flex-wrap gap-5 md:gap-10'>
             {filters.map((filter) => (
                 <button
                     key={filter.type}
