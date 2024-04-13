@@ -54,7 +54,7 @@ const projectsData = [
         description: 'Landing page for the clothes shop Stranger.',
         poster: './projects/stranger.jpg',
         logo: './logos/stranger.svg',
-        type: 'Clone',
+        type: 'Landing Page',
         screenshots: ['./projects/stranger.jpg'],
         technologies: ['./technologies/html.png', './technologies/css.png', './technologies/js.png'],
         url: 'https://stranger-shop.vercel.app/',

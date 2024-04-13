@@ -10,7 +10,7 @@ function ProjectCard({ title, poster, logo, description, url }) {
                     <span className="text-xl font-medium text-white">{title}</span>
                 </div>
 
-                <p className="text-gray1 h-20">{description}</p>
+                <p className="text-gray1 h-20 md:h-24">{description}</p>
 
                 <a target="_blank" href={url} className="bg-purple1 flex gap-3 justify-center items-center rounded-lg text-white mt-6 py-2 font-medium hover:bg-purple2 cursor-pointer hover:py-3 transition-all duration-500">
                     Visit project

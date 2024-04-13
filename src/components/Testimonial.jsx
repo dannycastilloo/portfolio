@@ -8,7 +8,7 @@ function Testimonial({ photo, names, role, message }) {
           <span className='text-neutral400'>{role}</span>
         </div>
         <img className='w-2/12' src="./icons/thumbs_up-1.svg" alt="Like" title="Like" />
-        <div className="h-72 md:h-80 lg:h-56">
+        <div className="h-64 md:h-72 lg:h-56">
           <p className='leading-7 text-neutral500 text-center m-auto'>{message}</p>
         </div>
       </div>
