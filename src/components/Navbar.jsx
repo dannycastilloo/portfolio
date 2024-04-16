@@ -35,7 +35,7 @@ function Navbar() {
                 </div>
                 <nav className={`gap-2 lg:gap-4 lg:flex lg:flex-row lg:justify-between lg:items-center flex-col mr-auto ${isOpen ? 'flex' : 'hidden'}`}>
                     <NavLink onClick={closeMenu} title="Projects" className="text-gray1 py-3 px-2 hover:text-white transition-all duration-300 rounded text-sm" to="/projects">Projects</NavLink>
-                    <NavLink onClick={closeMenu} title="Curriculum" className="text-gray1 py-3 px-2 hover:text-white transition-all duration-300 rounded text-sm" to="/curriculum">Curriculum</NavLink>
+                    <NavLink onClick={closeMenu} title="Resume" className="text-gray1 py-3 px-2 hover:text-white transition-all duration-300 rounded text-sm" to="/resume">Resume</NavLink>
                     <NavLink onClick={closeMenu} title="Blog" className="text-gray1 py-3 px-2 hover:text-white transition-all duration-300 rounded text-sm" to="/blog">Blog</NavLink>
                 </nav>
                 <div className={`flex justify-between ml-auto gap-3 lg:flex lg:gap-6 ${isOpen ? 'flex' : 'hidden'}`}>
