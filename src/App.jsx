@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import HomeView from './views/HomeView'
 import ProjectsView from './views/ProjectsView'
 import BlogView from './views/BlogView'
-import CurriculumView from './views/CurriculumView'
+import ResumeView from './views/ResumeView'
 
 import './index.css'
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<HomeView />} />
         <Route path="/projects" element={<ProjectsView />} />
         <Route path="/blog" element={<BlogView />} />
-        <Route path="/curriculum" element={<CurriculumView />} />
+        <Route path="/resume" element={<ResumeView />} />
       </Routes>
 
       <Footer />
