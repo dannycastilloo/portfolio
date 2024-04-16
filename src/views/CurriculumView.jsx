@@ -7,7 +7,7 @@ import educationData from '../data/education';
 import jobsData from '../data/jobs';
 import skillsData from '../data/skills';
 
-function CurriculumView() {
+function ResumeView() {
   return (
     <div className='py-44 bg-backgroundBlack'>
       <div className='container mx-auto flex flex-col gap-20 w-10/12'>
@@ -75,4 +75,4 @@ function CurriculumView() {
   )
 }
 
-export default CurriculumView
+export default ResumeView
