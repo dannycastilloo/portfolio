@@ -1,15 +1,15 @@
 const testimonialsData = [
     {
-        photo: './companies/marfa.jpg',
-        name: 'Miguel Cruzado',
-        company: 'Grupo Marfa Perú',
-        message: 'I recommend Danny as a web developer. His work is exceptionally neat and fast. Furthermore, he advised me precisely and effectively. Very happy with his work.',
-    },
-    {
         photo: './companies/tecnovedades.jpg',
         name: 'Jose Vilchez',
         company: 'Tecnovedades Web',
         message: 'The professional demonstrated outstanding performance, standing out for presenting innovative ideas that contributed significantly to the assigned projects. His leadership capacity was notable in addition to the correct use of communication for the exchange of ideas.',
+    },
+    {
+        photo: './companies/marfa.jpg',
+        name: 'Miguel Cruzado',
+        company: 'Grupo Marfa Perú',
+        message: 'I recommend Danny as a web developer. His work is exceptionally neat and fast. Furthermore, he advised me precisely and effectively. Very happy with his work.',
     },
     {
         photo: './companies/devdatep.jpg',

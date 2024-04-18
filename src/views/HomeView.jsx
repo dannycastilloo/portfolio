@@ -15,7 +15,7 @@ function HomeView() {
                         <h1 className='font-bold text-start text-white font-archivo lg:text-center text-6xl leading-18 md:text-7xl lg:text-7xl md:leading-26 lg:leading-36'>Web Developer & UX/UI Designer</h1>
                         <p className='text-start text-gray1 lg:text-center lg:mx-auto text-lg md:text-2xl md:mb-5 lg:text-3xl'>Unleash the Power of Technology & Elevate Your Digital Presence</p>
                         <div className='flex flex-col gap-6 lg:mx-auto justify-start items-start md:flex-row md:justify-center md:items-center md:gap-5'>
-                            <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-purple1 hover:bg-purple2 text-white rounded font-semibold text-sm flex justify-center items-center cursor-pointer transition-all duration-300 mb-4 md:mb-0">Hire Me!</a>
+                            <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white hover:bg-gradient-to-r hover:from-gradient1 hover:to-gradient2 hover:text-white transition-all duration-500 text-black1 rounded font-bold text-sm flex justify-center items-center cursor-pointer mb-4 md:mb-0">Hire Me!</a>
                             <div className='flex gap-5'>
                                 <a target="_blank" className='px-3 py-3 rounded-full hover:bg-black transition-all duration-300' href="https://www.behance.net/dannycastillo8" title="Behance">
                                     <img className="w-10/12 lg:w-12/12 m-auto" src="./icons/behance.svg" alt="Behance" title="Behance" />
@@ -115,7 +115,7 @@ function HomeView() {
                         <img className='w-96 hover:w-112 transition-all duration-500' src="./projects/website.png" alt="Website" title='Website' />
                         <img className='w-96 hover:w-112 transition-all duration-500 hidden lg:block' src="./projects/mobile.png" alt="Mobile" title='Mobile' />
                     </div>
-                    <NavLink to='/projects' className='flex gap-2 text-defaultFont bg-white w-3/6 mx-auto justify-center items-center text-xl font-medium text-center py-4 rounded-xl hover:bg-gradient-to-r hover:from-gradient1 hover:to-gradient2 hover:text-white transition-all duration-300'>
+                    <NavLink to='/projects' className='flex gap-2 text-defaultFont bg-white w-3/6 mx-auto justify-center items-center text-xl font-medium text-center py-4 rounded-xl hover:bg-gradient-to-r hover:from-gradient1 hover:to-gradient2 hover:text-white transition-all duration-500'>
                         See Projects
                     </NavLink>
                 </div>

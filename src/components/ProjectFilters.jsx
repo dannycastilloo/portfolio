@@ -1,8 +1,7 @@
 function ProjectFilters({ activeFilters, handleFilterClick, handleClearFilter }) {
     const filters = [
         { type: 'Ecommerce', label: 'Ecommerce' },
-        { type: 'Landing Page', label: 'Landing Page' },
-        { type: 'Streaming', label: 'Streaming' },
+        { type: 'Landing', label: 'Landing' },
         { type: 'Data', label: 'Data' },
         { type: 'Entertainment', label: 'Entertainment' },
         { type: 'Clone', label: 'Clone' }
