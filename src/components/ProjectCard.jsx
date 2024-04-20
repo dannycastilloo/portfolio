@@ -1,6 +1,6 @@
 function ProjectCard({ title, poster, logo, description, url }) {
     return (
-        <div className='flex flex-col justify-center items-center shadow-lg w-12/12 gap-2 md:w-5/12 lg:w-3/12 rounded-xl bento'>
+        <div className='flex flex-col justify-center items-center shadow-lg w-12/12 gap-2 md:w-5/12 lg:w-3/12 rounded-xl'>
             <div>
                 <img src={poster} alt={title} title={title} />
             </div>
