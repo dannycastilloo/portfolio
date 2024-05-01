@@ -108,7 +108,7 @@ function HomeView() {
                             },
                         }}
 
-                        className="mySwiper container flex mx-auto mt-10 py-4 md:mt-0"
+                        className="mySwiper container flex mx-auto mt-8 pb-5 md:mt-0"
                     >
                         {projectsData.map((project, index) => (
                             <SwiperSlide key={index}>
