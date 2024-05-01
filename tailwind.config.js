@@ -6,25 +6,31 @@ export default {
       colors: {
         backgroundBlack: '#0A0A0A',
 
-        gray1: '#CCCCCC',
-        gray2: '#EEEEEE',
-        gray3: '#DDDDDD',
-
-        black1: '#3E3E3E',
-        black2: '#1E1E1E',
-
-        purple1: '#A747EB',
-        purple2: '#9C30E8',
-
         project1: '#0A0A0A',
         project2: '#281520',
 
         gradient1: '#5940BF',
         gradient2: '#BF4040',
+
+        neutral50: '#F9FAFB',
+        neutral100: '#F3F4F6',
+        neutral200: '#E5E7EB',
+        neutral300: '#D1D5DB',
+        neutral400: '#9CA3AF',
+        neutral500: '#6B7280',
+        neutral600: '#4B5563',
+        neutral700: '#374151',
+        neutral800: '#1F2937',
+        neutral900: '#111827',
+
+        blue3: '#639AE9',
+
+        brandPrimary: '#2563EB',
       },
       fontFamily: {
         lato: ['Lato'],
         archivo: ['Archivo'],
+        raleway: ['Raleway'],
       },
       lineHeight: {
         '18': '5rem',

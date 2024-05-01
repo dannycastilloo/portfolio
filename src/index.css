@@ -7,29 +7,18 @@
     text-wrap: wrap;
 }
 
-.presentation {
-    background-image: url('/background.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-    background-color: rgba(10, 10, 10, 0.7);
-}
-
-.bento, .project-card {
-    background-color: rgba(62, 59, 64, 0.5);
-}
-
-@media (width < 768px) {  
-    .presentation {
-        background-image: url('/background/background_sm.webp');
-    }
-}
-
 @media (768px <= width < 1440px) {
     .title {
         font-size: 5rem;
-    }  
+    }
 
-    .presentation {
-        background-image: url('/background/background_md.webp');
+    .project-card {
+        width: 43%;
+    }
+}
+
+@media (1440px <= width) {
+    .project-card {
+        width: 26%;
     }
 }

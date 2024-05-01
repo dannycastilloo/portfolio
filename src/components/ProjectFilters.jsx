@@ -13,7 +13,7 @@ function ProjectFilters({ activeFilters, handleFilterClick, handleClearFilter })
                 <button
                     key={filter.type}
                     onClick={() => handleFilterClick(filter.type)}
-                    className={`flex justify-center gap-2 project-filter text-gray1 hover:text-white ${activeFilters.includes(filter.type) ? 'active text-white px-3 py-1 rounded' : ''}`}
+                    className={`flex justify-center gap-2 project-filter text-neutral600 hover:text-neutral700 ${activeFilters.includes(filter.type) ? 'active text-neutral800 px-3 py-1 rounded' : ''}`}
                 >
                     {filter.label}
                     {activeFilters.includes(filter.type) && (

@@ -41,9 +41,9 @@ function ProjectsView() {
         : filteredProjects;
 
     return (
-        <section className='w-full flex justify-between items-center bg-backgroundBlack py-36 lg:py-44'>
+        <section className='w-full flex justify-between items-center bg-neutral100 py-36 lg:py-44'>
             <div className='container mx-auto flex flex-col gap-20 w-10/12 lg:w-12/12'>
-                <h2 className='text-center font-archivo font-extrabold text-white text-4xl lg:text-5xl'>Projects</h2>
+                <h2 className='text-center font-raleway font-extrabold text-neutral800 text-4xl lg:text-5xl'>Projects</h2>
                 <div className='flex flex-col gap-16'>
                     <ProjectFilters
                         activeFilters={activeFilters}
@@ -52,7 +52,7 @@ function ProjectsView() {
                     />
                 </div>
 
-                <div className='flex flex-wrap justify-between items-center gap-12 md:justify-between md:gap-20 lg:justify-center mt-0 md:mt-4 lg:gap-32'>
+                <div className='flex flex-wrap justify-between items-center gap-12 md:justify-between md:gap-20 mt-0 md:mt-4 lg:gap-24'>
                     {searchedProjects.map((project, index) => (
                         <ProjectCard
                             key={index}
