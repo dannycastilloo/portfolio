@@ -204,7 +204,7 @@ function HomeView() {
             <section className='w-full flex flex-col justify-between items-center bg-blue3 py-20 md:py-24 lg:py-32'>
                 <div className='container flex flex-col mx-auto justify-center items-center gap-16 w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-10'>
-                        <h5 className='font-raleway text-neutral50 text-3xl md:text-4xl lg:text-5xl font-medium text-center'>Transform your online presence today</h5>
+                        <h5 className='font-raleway text-neutral50 text-3xl md:text-4xl lg:text-5xl font-bold text-center'>Transform your online presence today</h5>
                         <p className='text-neutral100 text-lg md:text-2xl lg:text-3xl text-center'>This is the moment to change everything in your brand.
                             Embark on your journey towards stunning web design and seamless development.</p>
                     </div>
