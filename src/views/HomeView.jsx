@@ -16,7 +16,7 @@ function HomeView() {
                     <div className='flex flex-col mx-auto items-center justify-center gap-10 h-full'>
                         <div className='flex flex-col gap-8 justify-center items-center'>
                             <h2 className='text-neutral600 md:text-lg lg:text-2xl text-center'>SOFTWARE DEVELOPER & DESIGNER</h2>
-                            <hr className='w-6 h-1 bg-brandPrimary' />
+                            <hr className='w-6 h-1 bg-blue-500' />
                         </div>
                         <h1 className='font-extrabold text-center text-neutral700 font-raleway text-7xl leading-26 md:text-8xl md:leading-36'>Danny Castillo</h1>
                         <p className='text-neutral500 text-center lg:mx-auto text-xl md:text-2xl md:mb-5'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
