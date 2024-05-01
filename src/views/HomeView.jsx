@@ -37,7 +37,7 @@ function HomeView() {
 
                     <div className='flex flex-col gap-10 mx-auto justify-center lg:gap-5'>
                         <div className='flex flex-col gap-10 h-6/6 justify-center mx-auto lg:h-4/6 lg:flex-row lg:gap-5'>
-                            <div className='rounded-xl p-10 flex flex-col md:flex-row lg:flex-col gap-10 w-12/12 mx-auto lg:w-4/12 lg:gap-5 bg-white'>
+                            <div className='rounded-xl p-10 flex flex-col md:flex-row lg:flex-col gap-10 w-12/12 mx-auto lg:w-4/12 lg:gap-5 bg-white hover:bg-neutral100 transition-all duration-300'>
                                 <img className='w-10' src="./services/desktop.svg" alt="Web Development" title='Web Development' />
                                 <div className='flex flex-col gap-4'>
                                     <h2 className='font-semibold text-2xl text-neutral800'>Web Development</h2>
@@ -50,7 +50,7 @@ function HomeView() {
                                 </div>
                             </div>
                             <div className='flex flex-col gap-10 w-12/12 justify-center mx-auto lg:w-8/12 lg:gap-5'>
-                                <div className='w-full rounded-xl mx-auto p-10 flex flex-col md:flex-row lg:flex-col h-6/6 gap-10 lg:gap-5 lg:h-3/6 bg-white'>
+                                <div className='w-full rounded-xl mx-auto p-10 flex flex-col md:flex-row lg:flex-col h-6/6 gap-10 lg:gap-5 lg:h-3/6 bg-white hover:bg-neutral100 transition-all duration-300'>
                                     <img className='w-10' src="./services/mobile.svg" alt="Mobile Development" title='Mobile Development' />
                                     <div className='flex flex-col gap-4'>
                                         <h2 className='font-semibold text-2xl text-neutral800'>Mobile Development</h2>
@@ -58,14 +58,14 @@ function HomeView() {
                                     </div>
                                 </div>
                                 <div className='w-full flex flex-col gap-10 h-6/6 mx-auto justify-center lg:flex-row lg:h-3/6 lg:gap-5'>
-                                    <div className='rounded-xl p-10 flex flex-col md:flex-row lg:flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bg-white'>
+                                    <div className='rounded-xl p-10 flex flex-col md:flex-row lg:flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bg-white hover:bg-neutral100 transition-all duration-300'>
                                         <img className='w-10' src="./services/design.svg" alt="UX/UI" title='UX/UI' />
                                         <div className='flex flex-col gap-4'>
                                             <h2 className='font-semibold text-2xl text-neutral800'>UX/UI Design</h2>
                                             <p className='text-neutral700'>Elevate user satisfaction and retention.</p>
                                         </div>
                                     </div>
-                                    <div className='rounded-xl p-10 flex flex-col md:flex-row lg:flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bg-white'>
+                                    <div className='rounded-xl p-10 flex flex-col md:flex-row lg:flex-col gap-10 w-12/12 lg:w-1/2 lg:gap-3 bg-white hover:bg-neutral100 transition-all duration-300'>
                                         <img className='w-10' src="./services/seo.svg" alt="SEO" title='SEO' />
                                         <div className='flex flex-col gap-4'>
                                             <h2 className='font-semibold text-2xl text-neutral800'>SEO</h2>
