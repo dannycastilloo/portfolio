@@ -158,7 +158,7 @@ function HomeView() {
                 <div className='container flex flex-col mx-auto justify-center items-center w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
                         <h3 className='font-raleway font-extrabold text-4xl text-center text-neutral800 lg:text-5xl'>Testimonials</h3>
-                        <p className='text-xl text-gray1 lg:text-2xl text-center text-neutral600'>Real stories from satisfied customers who have experienced the impact of my exceptional service.</p>
+                        <p className='text-lg text-gray1 lg:text-2xl text-center text-neutral600'>Real stories from satisfied customers who have experienced the impact of my exceptional service.</p>
                     </div>
                     <Swiper
                         slidesPerView={4}
