@@ -205,13 +205,13 @@ function HomeView() {
                 <div className='container flex flex-col mx-auto justify-center items-center gap-16 w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-10'>
                         <h5 className='font-raleway text-neutral50 text-3xl md:text-4xl lg:text-5xl font-bold text-center'>Transform your online presence today</h5>
-                        <p className='text-neutral100 text-lg md:text-2xl lg:text-3xl text-center'>This is the moment to change everything in your brand.
+                        <p className='text-neutral100 text-lg md:text-2xl lg:text-2xl text-center'>This is the moment to change everything in your brand.
                             Embark on your journey towards stunning web design and seamless development.</p>
                     </div>
 
-                    <div className='flex gap-4 md:gap-5 lg:gap-10'>
-                        <a href='mailto:dannycastillootiniano@gmail.com' target='_blank' className='px-8 py-2 flex justify-center items-center md:px-10 md:py-6 neutral-lg rounded-full text-center bg-neutral800 font-medium text-neutral100 hover:bg-neutral900 hover:text-neutral50 transition-all duration-300'>Contact Me</a>
-                        <NavLink to='/about' className='px-8 py-6 flex justify-center items-center rounded-full text-center bg-neutral100 text-neutral800 hover:bg-neutral100 hover:text-neutral900 transition-all duration-300'>Learn More</NavLink>
+                    <div className='flex gap-4 md:gap-5 lg:gap-10 py-4'>
+                        <a href='mailto:dannycastillootiniano@gmail.com' target='_blank' className='px-8 py-2 flex justify-center items-center md:px-10 md:py-5 neutral-lg rounded-full text-center bg-neutral800 font-medium text-neutral100 hover:bg-neutral900 hover:text-neutral50 transition-all duration-300 lg:text-lg'>Contact Me</a>
+                        <NavLink to='/about' className='px-8 py-6 flex justify-center items-center rounded-full text-center bg-neutral100 text-neutral800 hover:bg-neutral100 hover:text-neutral900 transition-all duration-300 lg:text-lg'>Learn More</NavLink>
                     </div>
 
                     <div className='flex gap-2'>

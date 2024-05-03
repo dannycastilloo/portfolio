@@ -14,7 +14,7 @@ function Footer() {
                         <p className="text-neutral600 font-base text-sm text-center md:text-start md:text-sm lg:text-base md:font-light">Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
                     </div>
 
-                    <div className='flex flex-col gap-3 text-neutral600 font-light text-sm'>
+                    <div className='flex flex-col gap-3 text-neutral600 font-light text-sm mt-auto'>
                         <a className="hidden gap-2 md:flex">
                             <img src="./icons/map_pin.svg" alt="Location" title="Location" />
                             <span>VA, United States</span>
