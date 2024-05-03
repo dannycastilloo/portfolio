@@ -12,18 +12,56 @@ function HomeView() {
     return (
         <>
             <section className='w-full flex flex-col justify-between items-center m-auto bg-neutral50'>
-                <div className='container flex flex-col gap-16 mx-auto justify-between items-center lg:mt-0 lg:flex-row lg:gap-0 w-10/12 h-screen'>
-                    <div className='flex flex-col mx-auto items-center justify-center gap-10 h-full'>
-                        <div className='flex flex-col gap-8 justify-center items-center'>
-                            <h2 className='text-neutral600 md:text-lg lg:text-2xl text-center'>SOFTWARE DEVELOPER & DESIGNER</h2>
-                            <hr className='w-6 h-1 bg-blue-500' />
+                <div className='container flex flex-col gap-10 md:gap-16 lg:gap-24 mx-auto justify-center items-center w-10/12 py-10 md:py-16 lg:py-20'>
+                    <div className='flex flex-col lg:flex-row mx-auto items-start justify-between'>
+                        <div className='lg:w-7/12'>
+                            <div className='flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center lg:justify-start items-center mb-8 lg:mb-4'>
+                                <hr className='w-1 h-6 bg-blue-500 hidden lg:flex' />
+                                <h2 className='text-neutral500 md:text-lg lg:text-xl'>SOFTWARE DEVELOPER & DESIGNER</h2>
+                                <hr className='w-6 h-1 bg-blue-500 flex lg:hidden' />
+                            </div>
+                            <h1 className='font-extrabold text-neutral700 font-raleway text-6xl leading-18 md:text-8xl md:leading-36 text-center lg:text-start'>Danny Castillo</h1>
+                            <p className='text-neutral500 lg:mx-auto text-xl md:text-2xl py-5 text-center lg:text-start'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
                         </div>
-                        <h1 className='font-extrabold text-center text-neutral700 font-raleway text-7xl leading-26 md:text-8xl md:leading-36'>Danny Castillo</h1>
-                        <p className='text-neutral500 text-center lg:mx-auto text-xl md:text-2xl md:mb-5'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
-                        <div className='flex gap-6 lg:mx-auto justify-center items-center flex-row md:gap-5 mt-5 md:mt-0'>
-                            <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-neutral700 text-neutral100 hover:bg-neutral800 transition-all duration-500 rounded-full font-bold text-sm lg:text-lg flex justify-center items-center cursor-pointer mb-4 md:mb-0">Hire Me!</a>
-                            
-                            <a href="./Danny_Castillo.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-neutral100 text-neutral800 hover:bg-neutral200 transition-all duration-500 rounded-full font-bold text-sm flex justify-center items-center cursor-pointer mb-4 lg:text-lg md:mb-0">Read CV</a>
+                        <div className='rounded-full bg-neutral800 h-64 mx-auto my-10 lg:my-0'>
+                            <img className='h-64 mx-auto' src="./photo.svg" alt="Danny Castillo" title='Danny Castillo' />
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center w-full lg:h-64'>
+                        <div className='flex flex-col md:flex-row justify-between items-center gap-10 w-full lg:w-6/12'>
+                            <div className='p-8 rounded-lg bg-brand300 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-6/12'>
+                                <img src="./presentation/experience.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
+                                <div className='flex flex-col gap-5 md:gap-3'>
+                                    <span className='text-neutral700 text-3xl md:text-2xl font-semibold text-center md:text-start'>+1</span>
+                                    <p className='text-neutral700 text-2xl font-semibold text-center md:text-start'>Year of Experience</p>
+                                </div>
+                            </div>
+                            <div className='p-8 rounded-lg bg-neutral200 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-6/12'>
+                                <img src="./presentation/availability.svg" alt="Availability" title='Availability' className='mx-auto md:mx-0 w-14 md:w-auto' />
+                                <div className='flex flex-col gap-5 md:gap-3'>
+                                    <span className='text-neutral700 text-3xl md:text-2xl font-semibold text-center md:text-start'>24/7</span>
+                                    <p className='text-neutral700 text-2xl font-semibold text-center md:text-start'>Availability</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row lg:flex-col justify-center items-center w-full lg:w-5/12 gap-10 md:gap-6 lg:h-64'>
+                            <div className='flex justify-center items-center m-auto rounded-lg gap-6 h-full lg:h-4/6 md:w-3/6 lg:w-full'>
+                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
+                                    <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
+                                </NavLink>
+                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
+                                    <img src="./icons/instagram.svg" alt="Instagram" title='Instagram' />
+                                </NavLink>
+                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
+                                    <img src="./icons/github.svg" alt="Github" title='Github' />
+                                </NavLink>
+                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
+                                    <img src="./icons/youtube.svg" alt="YouTube" title='YouTube' />
+                                </NavLink>
+                            </div>
+                            <div className='w-3/6 lg:w-full h-full lg:h-2/6 flex justify-center items-center'>
+                                <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-neutral700 text-neutral100 hover:bg-neutral800 transition-all duration-500 rounded-full font-bold lg:text-lg flex justify-center items-center cursor-pointer w-full">Hire Me Now!</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,7 +239,7 @@ function HomeView() {
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-blue3 py-20 md:py-24 lg:py-32'>
+            <section className='w-full flex flex-col justify-between items-center bg-brand400 py-20 md:py-24 lg:py-32'>
                 <div className='container flex flex-col mx-auto justify-center items-center gap-16 w-10/12 lg:w-12/12'>
                     <div className='flex flex-col gap-10'>
                         <h5 className='font-raleway text-neutral50 text-3xl md:text-4xl lg:text-5xl font-bold text-center'>Transform your online presence today</h5>

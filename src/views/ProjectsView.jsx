@@ -41,7 +41,7 @@ function ProjectsView() {
         : filteredProjects;
 
     return (
-        <section className='w-full flex justify-between items-center bg-neutral100 py-36 lg:py-44'>
+        <section className='w-full flex justify-between items-center bg-neutral50 py-16 md:py-20 lg:py-24'>
             <div className='container mx-auto flex flex-col gap-20 w-10/12 lg:w-12/12'>
                 <h2 className='text-center font-raleway font-extrabold text-neutral800 text-4xl lg:text-5xl'>Projects</h2>
                 <div className='flex flex-col gap-16'>

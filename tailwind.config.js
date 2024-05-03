@@ -23,7 +23,16 @@ export default {
         neutral800: '#1F2937',
         neutral900: '#111827',
 
-        blue3: '#639AE9',
+        brand50: '#EFF6FF',
+        brand100: '#DBEAFE',
+        brand200: '#BFDBFE',
+        brand300: '#93C5FD',
+        brand400: '#60A5FA',
+        brand500: '#3B82F6',
+        brand600: '#2563EB',
+        brand700: '#1D4ED8',
+        brand800: '#1E40AF',
+        brand900: '#1E3A8A',
 
         brandPrimary: '#2563EB',
       },
