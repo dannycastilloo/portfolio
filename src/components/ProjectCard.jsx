@@ -10,7 +10,7 @@ function ProjectCard({ title, poster, logo, description, url }) {
                     <span className="text-xl font-medium text-neutral800">{title}</span>
                 </div>
 
-                <p className="text-neutral600 h-20 md:h-24">{description}</p>
+                <p className="text-neutral600 h-20">{description}</p>
 
             </div>
         </div>

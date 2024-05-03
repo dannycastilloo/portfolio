@@ -21,17 +21,17 @@ const projectsData = [
     },
     {
         title: 'Audioluxe',
-        description: 'Shopping website made to buy various instruments.',
+        description: 'Website that shows a big catalogue of various instruments and login pages.',
         poster: './projects/audioluxe.jpg',
         logo: './logos/audioluxe.svg',
-        type: 'Ecommerce',
+        type: 'Landing',
         screenshots: ['./projects/audioluxe.jpg'],
         technologies: ['./technologies/html.png', './technologies/css.png', './technologies/bootstrap.png', './technologies/figma.png'],
         url: 'https://audioluxe.vercel.app/',
     },
     {
         title: 'Dashboard',
-        description: 'Secure website that uses JWT for user registration.',
+        description: 'Secure website that uses JWT for user registration and generates a dashboard.',
         poster: './projects/dashboard.jpg',
         logo: './logos/dashboard.svg',
         type: 'Data',
@@ -41,7 +41,7 @@ const projectsData = [
     },
     {
         title: 'Explore Me',
-        description: 'Website made to explore details of all the countries in the world.',
+        description: 'Website made to explore details of all the countries in the world, including languages, states, etc.',
         poster: './projects/exploreme.jpg',
         logo: './logos/exploreme.svg',
         type: 'Entertainment',
@@ -51,7 +51,7 @@ const projectsData = [
     },
     {
         title: 'Stranger',
-        description: 'Website made for the peruvian clothes shop called Stranger.',
+        description: 'Website made for the peruvian clothes shop called Stranger, owned by Stephanie Castillo.',
         poster: './projects/stranger.jpg',
         logo: './logos/stranger.svg',
         type: 'Landing',
@@ -61,7 +61,7 @@ const projectsData = [
     },
     {
         title: 'Airbnb Clone',
-        description: 'User interface of the famous Airbnb company.',
+        description: 'User interface of the famous marketplace made by the American Company Airbnb.',
         poster: './projects/airbnb.jpg',
         logo: './logos/airbnb.svg',
         type: 'Clone',
@@ -71,7 +71,7 @@ const projectsData = [
     },
     {
         title: 'Bonapharm',
-        description: 'Website made to inform Bonapharm clients about their services and history as a health company.',
+        description: 'Website made to inform Bonapharm clients about their services and history.',
         poster: './projects/bonapharm.jpg',
         logo: './logos/bonapharm.svg',
         type: 'Landing',
@@ -81,7 +81,7 @@ const projectsData = [
     },
     {
         title: 'Vue Clone',
-        description: 'Home page of the famous vue.js official site.',
+        description: 'Home page interface of the famous framework Vue.js official website.',
         poster: './projects/vue.jpg',
         logo: './logos/vue.svg',
         type: 'Clone',
