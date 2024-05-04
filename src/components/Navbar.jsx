@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div className='shadow-md w-full bg-neutral50 px-4 py-4 lg:px-0'>
             <header className="container w-11/12 md:w-10/12 mx-auto flex justify-between items-center gap-8 lg:gap-6">
-                <NavLink aria-current="page" className="flex justify-between items-center gap-2.5 bg-neutral50 hover:bg-neutral100 transition-all duration-300 px-3 py-1.5 rounded active" to="/">
+                <NavLink aria-current="page" className="flex justify-between items-center gap-2.5 bg-neutral100 hover:bg-neutral200 transition-all duration-300 px-3 py-1.5 rounded active" to="/">
                     <img className="rounded" src="./logo.svg" alt="Danny" title="Danny" />
                     <span className="hidden md:flex text-neutral800 font-extrabold text-base font-raleway">Danny Castillo</span>
                 </NavLink>
