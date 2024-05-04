@@ -11,40 +11,40 @@ function HomeView() {
 
     return (
         <>
-            <section className='w-full flex flex-col justify-between items-center m-auto bg-neutral50'>
-                <div className='container flex flex-col gap-10 md:gap-16 lg:gap-24 mx-auto justify-center items-center w-10/12 py-10 md:py-16 lg:py-20'>
-                    <div className='flex flex-col lg:flex-row mx-auto items-start justify-between'>
-                        <div className='lg:w-7/12'>
+            <section className='w-full flex flex-col justify-between items-center m-auto bg-neutral100'>
+                <div className='container flex flex-col gap-10 md:gap-16 lg:gap-10 mx-auto justify-center items-center w-10/12 py-10 md:py-16'>
+                    <div className='flex flex-col lg:flex-row mx-auto items-start justify-between lg:px-8 lg:py-12 lg:bg-neutral700 rounded-xl'>
+                        <div className='lg:w-7/12 rounded-lg'>
                             <div className='flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center lg:justify-start items-center mb-8 lg:mb-4'>
                                 <hr className='w-1 h-6 bg-blue-500 hidden lg:flex' />
-                                <h2 className='text-neutral500 md:text-lg lg:text-xl'>SOFTWARE DEVELOPER & DESIGNER</h2>
+                                <h2 className='text-neutral500 lg:text-neutral300 md:text-lg lg:text-xl'>SOFTWARE DEVELOPER & DESIGNER</h2>
                                 <hr className='w-6 h-1 bg-blue-500 flex lg:hidden' />
                             </div>
-                            <h1 className='font-extrabold text-neutral700 font-raleway text-6xl leading-18 md:text-8xl md:leading-36 text-center lg:text-start'>Danny Castillo</h1>
-                            <p className='text-neutral500 lg:mx-auto text-xl md:text-2xl py-5 text-center lg:text-start'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
+                            <h1 className='font-extrabold text-neutral700 lg:text-neutral200 font-raleway text-6xl leading-18 md:text-7xl md:leading-36 text-center lg:text-start'>Danny Castillo</h1>
+                            <p className='text-neutral500 lg:text-neutral300 lg:mx-auto text-xl md:text-2xl py-5 text-center lg:text-start'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
                         </div>
-                        <div className='rounded-full bg-neutral800 h-64 mx-auto my-10 lg:my-0'>
+                        <div className='rounded-full bg-neutral800 lg:bg-neutral-100 h-64 mx-auto my-10 lg:my-0'>
                             <img className='h-64 mx-auto' src="./photo.svg" alt="Danny Castillo" title='Danny Castillo' />
                         </div>
                     </div>
-                    <div className='flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center w-full lg:h-64'>
-                        <div className='flex flex-col md:flex-row justify-between items-center gap-10 w-full lg:w-6/12'>
+                    <div className='flex flex-col gap-10 lg:flex-row justify-between items-center w-full lg:h-64 lg:gap-6'>
+                        <div className='flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-6 w-full lg:w-6/12'>
                             <div className='p-8 rounded-lg bg-brand300 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-6/12'>
                                 <img src="./presentation/experience.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
                                 <div className='flex flex-col gap-5 md:gap-3'>
-                                    <span className='text-neutral700 text-3xl md:text-2xl font-semibold text-center md:text-start'>+1</span>
-                                    <p className='text-neutral700 text-2xl font-semibold text-center md:text-start'>Year of Experience</p>
+                                    <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>+1</span>
+                                    <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Year of Experience</p>
                                 </div>
                             </div>
                             <div className='p-8 rounded-lg bg-neutral200 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-6/12'>
                                 <img src="./presentation/availability.svg" alt="Availability" title='Availability' className='mx-auto md:mx-0 w-14 md:w-auto' />
                                 <div className='flex flex-col gap-5 md:gap-3'>
-                                    <span className='text-neutral700 text-3xl md:text-2xl font-semibold text-center md:text-start'>24/7</span>
-                                    <p className='text-neutral700 text-2xl font-semibold text-center md:text-start'>Availability</p>
+                                    <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>24/7</span>
+                                    <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Availability</p>
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row lg:flex-col justify-center items-center w-full lg:w-5/12 gap-10 md:gap-6 lg:h-64 bg-white'>
+                        <div className='flex flex-col md:flex-row lg:flex-col justify-center items-center w-full lg:w-6/12 gap-10 p-8 rounded-lg md:gap-6 lg:h-64 bg-white'>
                             <div className='flex justify-center items-center m-auto rounded-lg gap-6 h-full lg:h-4/6 md:w-3/6 lg:w-full'>
                                 <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
                                     <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
