@@ -44,7 +44,7 @@ function HomeView() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row lg:flex-col justify-center items-center w-full lg:w-5/12 gap-10 md:gap-6 lg:h-64'>
+                        <div className='flex flex-col md:flex-row lg:flex-col justify-center items-center w-full lg:w-5/12 gap-10 md:gap-6 lg:h-64 bg-white'>
                             <div className='flex justify-center items-center m-auto rounded-lg gap-6 h-full lg:h-4/6 md:w-3/6 lg:w-full'>
                                 <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
                                     <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
