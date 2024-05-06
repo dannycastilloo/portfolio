@@ -1,74 +1,124 @@
-import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+
 import projectsData from '../data/projects'
 import Testimonial from '../components/Testimonial'
 import testimonialsData from '../data/testimonials'
+import ProjectCard from '../components/ProjectCard'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import ProjectPreview from '../components/ProjectPreview'
 
 function HomeView() {
 
+    const [selectedProject, setSelectedProject] = useState(null)
+    const [projectTypeFilter, setProjectTypeFilter] = useState(null)
+    const [search, setSearch] = useState('')
+    const [activeFilters, setActiveFilters] = useState([])
+
+    const handleProjectClick = (project) => {
+        setSelectedProject(project)
+    }
+
+    const handleFilterClick = (type) => {
+        if (projectTypeFilter === type) {
+            handleClearFilter(type);
+        } else {
+            setProjectTypeFilter(type);
+            setActiveFilters([type]);
+        }
+    };
+
+    const handleClearFilter = (type) => {
+        setProjectTypeFilter(null);
+        setActiveFilters((prevFilters) => prevFilters.filter((filter) => filter !== type));
+    };
+
+    const isFilterActive = (type) => activeFilters.includes(type);
+
+    const filteredProjects = projectTypeFilter
+        ? projectsData.filter((project) => project.type === projectTypeFilter)
+        : projectsData;
+
+    const searchedProjects = search
+        ? filteredProjects.filter((project) =>
+            project.title.toLowerCase().includes(search.toLowerCase())
+        )
+        : filteredProjects;
+
     return (
         <>
-            <section className='w-full flex flex-col justify-between items-center m-auto bg-neutral100'>
-                <div className='container flex flex-col gap-10 md:gap-16 lg:gap-10 mx-auto justify-center items-center w-10/12 py-10 md:py-16'>
-                    <div className='flex flex-col lg:flex-row mx-auto items-start justify-between lg:px-8 lg:py-12 lg:bg-neutral700 rounded-xl'>
-                        <div className='lg:w-7/12 rounded-lg'>
-                            <div className='flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center lg:justify-start items-center mb-8 lg:mb-4'>
+            <section id='home' className='w-full flex flex-col justify-between items-center m-auto'>
+                <div className='container flex flex-col gap-10 md:gap-16 lg:gap-20 mx-auto justify-center items-center w-11/12 py-10 md:py-16'>
+                    <div className='flex flex-col lg:flex-row mx-auto items-center justify-between rounded-xl'>
+                        <div className='lg:w-7/12 flex flex-col justify-between items-center lg:items-start gap-5 md:gap-8'>
+                            <div className='flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center lg:justify-start items-center mb-2'>
                                 <hr className='w-1 h-6 bg-blue-500 hidden lg:flex' />
-                                <h2 className='text-neutral500 lg:text-neutral300 md:text-lg lg:text-xl'>SOFTWARE DEVELOPER & DESIGNER</h2>
+                                <h2 className='text-neutral500 md:text-lg lg:text-xl'>SOFTWARE DEVELOPER & DESIGNER</h2>
                                 <hr className='w-6 h-1 bg-blue-500 flex lg:hidden' />
                             </div>
-                            <h1 className='font-extrabold text-neutral700 lg:text-neutral200 font-raleway text-6xl leading-18 md:text-7xl md:leading-36 text-center lg:text-start'>Danny Castillo</h1>
-                            <p className='text-neutral500 lg:text-neutral300 lg:mx-auto text-xl md:text-2xl py-5 text-center lg:text-start'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
+
+                            <div className='flex flex-col gap-4 md:gap-8 lg:gap-5'>
+                                <h1 className='font-extrabold text-neutral700 font-raleway text-6xl leading-18 md:text-7xl text-center lg:text-start'>Danny Castillo</h1>
+                                <p className='text-neutral500 lg:mx-auto text-xl md:text-2xl py-5 text-center lg:text-start'>Redefine your digital presence, where innovation meets design, and every click sparks a sensation.</p>
+                            </div>
+
+                            <div className='flex flex-col md:flex-row justify-start items-center gap-10 md:gap-8'>
+                                <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-8 py-5 md:px-8 md:py-4 lg:px-10 lg:py-4 bg-neutral700 text-neutral100 hover:bg-neutral800 transition-all duration-500 rounded-full font-bold lg:text-lg flex justify-center items-center cursor-pointer">Hire Me Now!</a>
+                                <div className='flex justify-center items-center md:justify-start gap-6'>
+                                    <a href='https://www.linkedin.com/in/dannycastilloo/' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-neutral200 transition-all duration-300'>
+                                        <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
+                                    </a>
+                                    <a href='https://www.instagram.com/dannycastillo.o/' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-neutral200 transition-all duration-300'>
+                                        <img src="./icons/instagram.svg" alt="Instagram" title='Instagram' />
+                                    </a>
+                                    <a href='https://github.com/dannycastilloo' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-neutral200 transition-all duration-300'>
+                                        <img src="./icons/github.svg" alt="Github" title='Github' />
+                                    </a>
+                                    <a href='https://www.youtube.com/channel/UCUKb3-8nupEbRym3HLbZMOg' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-neutral200 transition-all duration-300'>
+                                        <img src="./icons/youtube.svg" alt="YouTube" title='YouTube' />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div className='rounded-full bg-neutral800 lg:bg-neutral-100 h-64 mx-auto my-10 lg:my-0'>
-                            <img className='h-64 mx-auto' src="./photo.svg" alt="Danny Castillo" title='Danny Castillo' />
+                        <div className='flex justify-center items-center lg:justify-end my-20 lg:my-0'>
+                            <div className='rounded-full bg-neutral800 w-auto'>
+                                <img src="./photo.svg" alt="Danny Castillo" title='Danny Castillo' />
+                            </div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-10 lg:flex-row justify-between items-center w-full lg:h-64 lg:gap-6'>
-                        <div className='flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-6 w-full lg:w-6/12'>
-                            <div className='p-8 rounded-lg bg-brand300 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-6/12'>
-                                <img src="./presentation/experience.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
-                                <div className='flex flex-col gap-5 md:gap-3'>
-                                    <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>+1</span>
-                                    <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Year of Experience</p>
-                                </div>
-                            </div>
-                            <div className='p-8 rounded-lg bg-neutral200 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-6/12'>
-                                <img src="./presentation/availability.svg" alt="Availability" title='Availability' className='mx-auto md:mx-0 w-14 md:w-auto' />
-                                <div className='flex flex-col gap-5 md:gap-3'>
-                                    <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>24/7</span>
-                                    <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Availability</p>
-                                </div>
+                    <div className='flex flex-col gap-10 md:flex-row justify-between items-center w-full lg:gap-6 flex-wrap lg:flex-nowrap'>
+                        <div className='p-8 rounded-lg bg-brand300 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-7/12 lg:w-3/12'>
+                            <img src="./presentation/experience.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
+                            <div className='flex flex-col gap-5 md:gap-3'>
+                                <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>+1</span>
+                                <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Year of Experience</p>
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row lg:flex-col justify-center items-center w-full lg:w-6/12 gap-10 p-8 rounded-lg md:gap-6 lg:h-64 bg-white'>
-                            <div className='flex justify-center items-center m-auto rounded-lg gap-6 h-full lg:h-4/6 md:w-3/6 lg:w-full'>
-                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
-                                    <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
-                                </NavLink>
-                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
-                                    <img src="./icons/instagram.svg" alt="Instagram" title='Instagram' />
-                                </NavLink>
-                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
-                                    <img src="./icons/github.svg" alt="Github" title='Github' />
-                                </NavLink>
-                                <NavLink className='rounded-full px-4 py-4 bg-white hover:bg-neutral200 transition-all duration-300'>
-                                    <img src="./icons/youtube.svg" alt="YouTube" title='YouTube' />
-                                </NavLink>
+                        <div className='p-8 rounded-lg bg-error300 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-4/12 lg:w-3/12'>
+                            <img src="./presentation/availability.svg" alt="Availability" title='Availability' className='mx-auto md:mx-0 w-14 md:w-auto' />
+                            <div className='flex flex-col gap-5 md:gap-3'>
+                                <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>24/7</span>
+                                <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Availability</p>
                             </div>
-                            <div className='w-3/6 lg:w-full h-full lg:h-2/6 flex justify-center items-center'>
-                                <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-neutral700 text-neutral100 hover:bg-neutral800 transition-all duration-500 rounded-full font-bold lg:text-lg flex justify-center items-center cursor-pointer w-full">Hire Me Now!</a>
+                        </div>
+                        <div className='p-8 rounded-lg bg-success300 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-4/12 lg:w-3/12'>
+                            <img src="./presentation/experience.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
+                            <div className='flex flex-col gap-5 md:gap-3'>
+                                <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>+100</span>
+                                <p className='text-neutral700 text-2xl font-medium text-center md:text-start'>Projects</p>
                             </div>
+                        </div>
+                        <div className='p-8 rounded-lg bg-warning200 flex flex-col justify-between items-center md:items-start h-64 w-full md:w-7/12 lg:w-3/12'>
+                            <img src="./presentation/experience.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
+                            <a href='./Danny_Castillo.pdf' target='_blank' className='text-neutral700 text-2xl font-medium text-center underline md:text-start'>Download Resume</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className='w-full flex justify-between items-center bg-neutral100 py-20 md:py-32'>
-                <div className='container-sm mx-auto flex flex-col gap-14 lg:gap-16 w-10/12 md:w-10/12 lg:w-12/12 lg:container'>
+            <section id='services' className='w-full flex justify-between items-center py-10'>
+                <div className='container rounded-xl mx-auto flex flex-col bg-neutral200 px-6 md:px-10 lg:px-20 py-20 gap-14 lg:gap-16 w-11/12'>
                     <div className='flex flex-col gap-10 lg:gap-16'>
                         <h3 className='font-raleway font-extrabold text-3xl md:text-4xl lg:text-5xl text-neutral800 text-center'>Services</h3>
                     </div>
@@ -117,54 +167,24 @@ function HomeView() {
                 </div>
             </section>
 
-            <section className='w-full flex justify-between items-center bg-neutral50 py-20 md:py-32'>
-                <div className='container mx-auto flex flex-col w-10/12 lg:w-12/12 gap-0 md:gap-16 lg:gap-20'>
-                    <div className='flex gap-10 justify-between items-center'>
-                        <h3 className='font-raleway font-extrabold text-3xl text-neutral800 md:w-4/6 md:text-4xl lg:text-5xl'>Check my projects</h3>
-                        <NavLink to='/projects' className='text-neutral600 hidden md:flex w-2/6 lg:w-1/6 justify-end items-center text-2xl font-medium text-end underline transition-all duration-300 hover:text-neutral700'>
-                            See more
-                        </NavLink>
-                    </div>
-                    <Swiper
-                        slidesPerView={2}
-                        spaceBetween={5}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        breakpoints={{
-                            0: {
-                                slidesPerView: 1,
-                                spaceBetween: 5,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                                spaceBetween: 5,
-                            },
-                            1024: {
-                                slidesPerView: 2,
-                                spaceBetween: 5,
-                            },
-                        }}
+            <section id='projects' className='w-full flex justify-between items-center py-10'>
+                <div className='container mx-auto flex flex-col px-6 md:px-10 lg:px-20 py-20 bg-backgroundBlack rounded-xl gap-14 lg:gap-16 w-11/12'>
+                    <h2 className='text-center font-raleway font-extrabold text-neutral100 text-4xl lg:text-5xl'>Check my projects</h2>
 
-                        className="mySwiper container flex mx-auto mt-8 pb-5 md:mt-0"
-                    >
-                        {projectsData.map((project, index) => (
-                            <SwiperSlide key={index}>
-                                <ProjectPreview
-                                    title={project.title}
-                                    poster={project.poster}
-                                />
-                            </SwiperSlide>
+                    <div className='flex flex-wrap justify-between items-center gap-12 md:justify-between md:gap-20 mt-0 md:mt-4 lg:gap-24'>
+                        {searchedProjects.map((project, index) => (
+                            <ProjectCard
+                                key={index}
+                                {...project}
+                                onClick={() => handleProjectClick(project)}
+                            />
                         ))}
-                    </Swiper>
-                    <NavLink to='/projects' className='text-neutral600 flex md:hidden justify-end items-center text-xl ml-auto font-medium text-end underline transition-all duration-300 hover:text-neutral700'>
-                        See more
-                    </NavLink>
+                    </div>
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-neutral100 py-20 md:py-28 lg:py-32'>
-                <div className='container flex flex-col m-auto justify-between items-start gap-16 md:gap-20 lg:gap-26 w-10/12 lg:w-12/12'>
+            <section id='partners' className='w-full flex flex-col justify-between items-center py-10'>
+                <div className='container px-6 md:px-10 lg:px-20 py-20 flex flex-col m-auto justify-between items-start gap-16 md:gap-20 lg:gap-26 w-11/12 bg-brand200 rounded-xl'>
                     <div className='flex flex-col gap-10 md:gap-12 lg:gap-16 w-full justify-center items-center'>
                         <h3 className='font-raleway font-extrabold text-4xl text-neutral800 lg:text-5xl text-center'>Featured partnerships</h3>
                         <p className='text-center text-neutral600 text-lg md:text-2xl lg:text-3xl'>Trusted organizations we've collaborated with to deliver outstanding results.</p>
@@ -192,11 +212,11 @@ function HomeView() {
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-neutral50 py-20 md:py-24 lg:py-32'>
-                <div className='container flex flex-col mx-auto justify-center items-center w-10/12 lg:w-12/12'>
-                    <div className='flex flex-col gap-10 justify-center items-center lg:gap-16'>
+            <section id='testimonials' className='w-full flex flex-col justify-between items-center py-10'>
+                <div className='container px-6 md:px-10 lg:px-20 py-20 flex flex-col m-auto justify-between items-start gap-12 w-11/12 rounded-xl bg-success300'>
+                    <div className='flex flex-col gap-10 justify-center items-center w-full lg:gap-16'>
                         <h3 className='font-raleway font-extrabold text-4xl text-center text-neutral800 lg:text-5xl'>Testimonials</h3>
-                        <p className='text-lg text-gray1 lg:text-2xl text-center text-neutral600'>Real stories from satisfied customers who have experienced the impact of my exceptional service.</p>
+                        <p className='text-lg md:text-2xl lg:text-3xl text-center text-neutral700'>Real stories from satisfied customers who have experienced the impact of my exceptional service.</p>
                     </div>
                     <Swiper
                         slidesPerView={4}
@@ -219,7 +239,7 @@ function HomeView() {
                             },
                         }}
 
-                        className="mySwiper container flex py-4 mx-auto my-10 lg:my-16"
+                        className="mySwiper container flex py-4 mx-auto my-6"
                     >
                         {testimonialsData.map((testimonial, index) => (
                             <SwiperSlide key={index}>
@@ -232,29 +252,51 @@ function HomeView() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className='flex flex-col mx-auto gap-3 justify-center items-center text-gray1 md:text-lg'>
-                        <span>Need a good experience, too?</span>
-                        <a href="mailto:dannycastillootiniano@gmail.com" className='font-semibold hover:text-white transition-all duration-300'>Contact Me</a>
-                    </div>
                 </div>
             </section>
 
-            <section className='w-full flex flex-col justify-between items-center bg-brand400 py-20 md:py-24 lg:py-32'>
-                <div className='container flex flex-col mx-auto justify-center items-center gap-16 w-10/12 lg:w-12/12'>
+            <section className='w-full flex flex-col justify-between items-center py-10'>
+                <div className='container px-6 md:px-10 lg:px-20 py-20 flex flex-col m-auto lg:justify-center lg:items-center gap-16 w-11/12 rounded-xl bg-brand400'>
                     <div className='flex flex-col gap-10'>
                         <h5 className='font-raleway text-neutral50 text-3xl md:text-4xl lg:text-5xl font-bold text-center'>Transform your online presence today</h5>
                         <p className='text-neutral100 text-lg md:text-2xl lg:text-2xl text-center'>This is the moment to change everything in your brand.
                             Embark on your journey towards stunning web design and seamless development.</p>
                     </div>
 
-                    <div className='flex gap-4 md:gap-5 lg:gap-10 py-4'>
-                        <a href='mailto:dannycastillootiniano@gmail.com' target='_blank' className='px-8 py-2 flex justify-center items-center md:px-10 md:py-5 neutral-lg rounded-full text-center bg-neutral800 font-medium text-neutral100 hover:bg-neutral900 hover:text-neutral50 transition-all duration-300 lg:text-lg'>Contact Me</a>
-                        <NavLink to='/about' className='px-8 py-6 flex justify-center items-center rounded-full text-center bg-neutral100 text-neutral800 hover:bg-neutral100 hover:text-neutral900 transition-all duration-300 lg:text-lg'>Learn More</NavLink>
+                    <div className='flex flex-col md:flex-row gap-6 lg:gap-10 py-4 justify-center items-center'>
+                        <a href='mailto:dannycastillootiniano@gmail.com' target='_blank' className='px-8 py-4 flex justify-center items-center md:px-10 md:py-5 neutral-lg rounded-full text-center bg-neutral800 font-medium text-neutral100 hover:bg-neutral900 hover:text-neutral50 transition-all duration-300 lg:text-lg'>Contact Me</a>
+                        <a href='./Danny_Castillo.pdf' target='_blank' className='px-8 py-4 flex justify-center items-center rounded-full text-center bg-neutral100 text-neutral800 hover:bg-neutral100 hover:text-neutral900 transition-all duration-300 lg:text-lg'>Learn More</a>
                     </div>
 
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2 justify-center items-center'>
                         <span className='text-neutral100 text-lg'>Wanna get in touch?</span>
                         <a className='text-neutral50 underline text-lg' href='https://www.linkedin.com/in/dannycastilloo/' target='_blank'>Follow Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <section className='w-full flex flex-col justify-between items-center py-10'>
+                <div className='container flex flex-col md:flex-row m-auto lg:justify-center lg:items-center gap-16 w-11/12'>
+                    <div className='flex flex-col justify-center items-center rounded-lg m-auto bg-neutral200 w-full md:w-1/2 h-72 py-16 gap-10 lg:gap-12'>
+                        <p className='text-neutral700 text-center font-semibold text-3xl'>Let's connect!</p>
+                        <div className='flex justify-center items-center gap-4'>
+                            <a href='https://www.linkedin.com/in/dannycastilloo/' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-white transition-all duration-300'>
+                                <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
+                            </a>
+                            <a href='https://www.instagram.com/dannycastillo.o/' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-white transition-all duration-300'>
+                                <img src="./icons/instagram.svg" alt="Instagram" title='Instagram' />
+                            </a>
+                            <a href='https://github.com/dannycastilloo' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-white transition-all duration-300'>
+                                <img src="./icons/github.svg" alt="Github" title='Github' />
+                            </a>
+                            <a href='https://www.youtube.com/channel/UCUKb3-8nupEbRym3HLbZMOg' target='_blank' title='' className='rounded-full px-4 py-4 hover:bg-white transition-all duration-300'>
+                                <img src="./icons/youtube.svg" alt="YouTube" title='YouTube' />
+                            </a>
+                        </div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center m-auto rounded-lg gap-10 lg:gap-12 w-full md:w-1/2 bg-backgroundBlack h-72 py-16'>
+                        <p className='text-neutral50 text-center font-semibold text-3xl'>Check my musician website</p>
+                        <a href="" target='_blank' className='py-4 px-6 rounded-full text-neutral50 font-bold bg-warning400 hover:bg-warning500 transition-all duration-300' title='Danny Castillo'>Visit Website</a>
                     </div>
                 </div>
             </section>

@@ -1,23 +1,43 @@
-import { NavLink } from "react-router-dom"
+import { useState } from "react"
+import Sidebar from "./Sidebar"
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
 
     return (
-        <div className='shadow-md w-full bg-neutral50 px-4 py-4 lg:px-0'>
-            <header className="container w-11/12 md:w-10/12 mx-auto flex justify-between items-center gap-8 lg:gap-6">
-                <NavLink aria-current="page" className="flex justify-between items-center gap-2.5 bg-neutral100 hover:bg-neutral200 transition-all duration-300 px-3 py-1.5 rounded active" to="/">
-                    <img className="rounded" src="./logo.svg" alt="Danny" title="Danny" />
-                    <span className="hidden md:flex text-neutral800 font-extrabold text-base font-raleway">Danny Castillo</span>
-                </NavLink>
+        <header className='flex justify-center items-center w-full bg-white py-4'>
+            <div className="w-11/12 md:10/12 flex justify-between items-center">
 
-                <div className='flex justify-between items-center ml-auto md:gap-4 lg:flex lg:gap-6'>
-                    <nav className='hidden gap-2 lg:gap-4 md:flex lg:justify-between lg:items-center mr-auto'>
-                        <NavLink title="Projects" className="text-neutral900 py-3 px-2 hover:text-black transition-all duration-300 rounded text-sm" to="/projects">Projects</NavLink>
-                    </nav>
-                    <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-brand500 text-neutral100 hover:bg-blue-600 hover:text-neutral50 rounded-full font-semibold text-sm flex justify-center items-center cursor-pointer transition-all duration-300">Contact Me</a>
-                </div>
-            </header>
-        </div>
+                {/* Logo */}
+                <a href='#home' title="Home" className="flex justify-start items-center gap-4 px-5 py-2 lg:h-full rounded-md bg-neutral100">
+                    <img className="rounded" src="./logo.svg" alt="Danny Castillo" title='Danny Castillo' />
+                    <span className="text-neutral700 font-extrabold font-raleway">Danny Castillo</span>
+                </a>
+
+                {/* Navigation Links (Hidden on Small Devices) */}
+                <nav className={`hidden lg:flex justify-end items-center gap-1 ${menuOpen ? 'hidden' : ''}`}>
+                    <a className="px-5 py-2 rounded-md text-neutral700 text-end hover:bg-neutral100 transition-all duration-300 md:text-md lg:h-full" href='#services' title='Services'>Services</a>
+                    <a className="px-5 py-2 rounded-md text-neutral700 text-end hover:bg-neutral100 transition-all duration-300 md:text-md lg:h-full" href='#projects' title='Projects'>Projects</a>
+                    <a className="px-5 py-2 rounded-md text-neutral700 text-end hover:bg-neutral100 transition-all duration-300 md:text-md lg:h-full" href='#partners' title='Partners'>Partners</a>
+                    <a className="px-5 py-2 rounded-md text-neutral700 text-end hover:bg-neutral100 transition-all duration-300 md:text-md lg:h-full" href='#testimonials' title='Testimonials'>Testimonials</a>
+                </nav>
+
+                {/* Hamburger Menu Button */}
+                <button className="lg:hidden p-2 rounded-md h-full bg-neutral100" onClick={toggleMenu}>
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#2A2A2A">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+            </div>
+
+            {/* Sidebar */}
+            <Sidebar isOpen={menuOpen} onClose={toggleMenu} />
+        </header>
     )
 }
 

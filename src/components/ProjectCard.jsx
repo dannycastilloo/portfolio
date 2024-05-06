@@ -1,17 +1,12 @@
 function ProjectCard({ title, poster, logo, description, url }) {
     return (
-        <div className='flex flex-col justify-center items-center shadow-md gap-2 project-card rounded-xl'>
+        <div className='flex flex-col justify-start items-start gap-2 project-card'>
             <div>
                 <img src={poster} alt={title} title={title} />
             </div>
-            <div className='px-4 py-5 flex flex-col gap-4'>
-                <div className='flex gap-5'>
-                    <img src={logo} alt={title} title={title} />
-                    <span className="text-xl font-medium text-neutral800">{title}</span>
-                </div>
-
-                <p className="text-neutral600 h-20">{description}</p>
-
+            <div className='px-2 py-5 flex gap-4'>
+                    <img className="w-6" src={logo} alt={title} title={title} />
+                    <span className="text-xl font-medium text-neutral200">{title}</span>
             </div>
         </div>
     )
