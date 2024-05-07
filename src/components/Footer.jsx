@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
     return (
         <div className="bg-white py-14">
-            <footer className='container flex flex-col mx-auto gap-6 w-10/12 lg:w-12/12'>
+            <footer className='container flex flex-col mx-auto gap-6 w-11/12'>
                 <div className='container flex flex-col justify-between items-center md:flex-row'>
                     <div className="flex flex-col gap-6 md:gap-5 w-6/6 md:w-3/6 lg:w-2/6">
                         <NavLink aria-current="page" className="mx-auto flex justify-between items-center gap-2.5 bg-neutral100 px-3 py-2 rounded active w-44 md:mx-0" to="/">
