@@ -13,10 +13,10 @@ function Sidebar ({ isOpen, onClose }) {
             </button>
 
             {/* Links */}
-            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='/services' onClick={handleClose}>Services</a>
-            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='/projects' onClick={handleClose}>Projects</a>
-            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='/partners' onClick={handleClose}>Partners</a>
-            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='/testimonials' onClick={handleClose}>Testimonials</a>
+            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='#services' onClick={handleClose}>Services</a>
+            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='#projects' onClick={handleClose}>Projects</a>
+            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='#partners' onClick={handleClose}>Partners</a>
+            <a className="w-11/12 py-4 hover:bg-neutral100 rounded-md text-center" href='#testimonials' onClick={handleClose}>Testimonials</a>
         </aside>
     )
 }
