@@ -336,7 +336,7 @@ function HomeView() {
                     </div>
                     <div className='flex flex-col justify-center items-center m-auto rounded-lg gap-10 lg:gap-12 w-full md:w-1/2 bg-backgroundBlack h-72 py-16 px-4'>
                         <p className='text-neutral50 text-center font-semibold text-3xl'>Check my musician website</p>
-                        <a href="" target='_blank' className='py-4 px-6 rounded-full text-neutral50 font-bold bg-warning400 hover:bg-warning500 transition-all duration-300' title='Danny Castillo'>Visit Website</a>
+                        <a href="https://linktr.ee/dannycastillo" target='_blank' className='py-4 px-6 rounded-full text-neutral50 font-bold bg-warning400 hover:bg-warning500 transition-all duration-300' title='Danny Castillo'>Visit Website</a>
                     </div>
                 </div>
             </section>
