@@ -1,3 +1,3 @@
 ### Welcome to my Porfolio! 👋
 
-![image](https://github.com/dannycastilloo/portfolio/assets/76531494/d507c132-4f83-4615-9581-af4266d79926)
+![image](https://github.com/user-attachments/assets/938b4572-c3d3-4ac7-bbd1-fcb91dff2a93)
