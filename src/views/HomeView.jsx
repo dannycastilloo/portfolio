@@ -133,7 +133,7 @@ function HomeView() {
                             <img src="./presentation/file.svg" alt="Experience" title='Experience' className='mx-auto md:mx-0 w-14 md:w-auto' />
                             <div className='flex flex-col gap-5 md:gap-3'>
                                 <span className='text-neutral700 text-3xl md:text-2xl font-medium text-center md:text-start'>Need more info?</span>
-                                <p className='text-neutral700 underline text-2xl font-medium text-center md:text-start'>Download resume</p>
+                                <a href='./Danny_Castillo.pdf' target='_blank' className='text-neutral700 underline text-2xl font-medium text-center md:text-start'>Download resume</a>
                             </div>
                         </div>
                     </div>
