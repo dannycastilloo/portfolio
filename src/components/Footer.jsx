@@ -17,11 +17,11 @@ function Footer() {
                     <div className='flex flex-col gap-3 text-neutral600 font-light text-sm mt-auto'>
                         <a className="hidden gap-2 md:flex">
                             <img src="./icons/map_pin.svg" alt="Location" title="Location" />
-                            <span>VA, United States</span>
+                            <span>Leesburg, VA</span>
                         </a>
                         <a className="hidden gap-2 md:flex" href="https://wa.link/x63qdy">
                             <img src="./icons/message_circle.svg" alt="Chat" title="Chat" />
-                            <span>+1 (703) 884 - 5926</span>
+                            <span>+1 (571) 328 - 9191</span>
                         </a>
                         <a className="hidden gap-2 md:flex" href="mailto:dannycastillootiniano@gmail.com">
                             <img src="./icons/mail.svg" alt="Mail" title="Mail" />
@@ -32,6 +32,7 @@ function Footer() {
                 <hr className="w-full bg-neutral600" />
                 <div className='flex flex-col gap-6 justify-between items-center md:flex-row md:gap-0'>
                     <p className='font-light text-neutral600 text-sm lg:text-base'>Designed & Developed by Danny Castillo</p>
+                    <span className='font-light text-neutral600 text-sm lg:text-base'>2025</span>
                 </div>
             </footer>
         </div>
