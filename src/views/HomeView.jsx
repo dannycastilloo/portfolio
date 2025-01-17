@@ -84,7 +84,7 @@ function HomeView() {
                             </div>
 
                             <div className='flex flex-col md:flex-row justify-start items-center gap-10 md:gap-8'>
-                                <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-8 py-5 md:px-8 md:py-4 lg:px-10 lg:py-4 bg-neutral700 text-neutral100 hover:bg-neutral800 transition-all duration-500 rounded-full font-bold lg:text-lg flex justify-center items-center cursor-pointer">Hire Me Now!</a>
+                                <a href="mailto:dannycastillootiniano@gmail.com" target="_blank" rel="noopener noreferrer" className="px-8 py-5 md:px-8 md:py-4 lg:px-10 lg:py-4 bg-neutral700 text-neutral100 hover:bg-neutral800 transition-all duration-500 rounded-full font-bold lg:text-lg flex justify-center items-center cursor-pointer">Contact me</a>
                                 <div className='flex justify-center items-center md:justify-start gap-6'>
                                     <a href='https://www.linkedin.com/in/dannycastilloo/' target='_blank' title='Linkedin' className='rounded-full px-4 py-4 hover:bg-neutral200 transition-all duration-300'>
                                         <img src="./icons/linkedin.svg" alt="Linkedin" title='Linkedin' />
